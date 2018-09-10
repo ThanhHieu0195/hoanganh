@@ -737,6 +737,13 @@ if( function_exists('acf_add_local_field_group') ):
                     'value' => '9',
                 ),
             ),
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '71',
+                ),
+            ),
         ),
         'menu_order' => 0,
         'position' => 'normal',
