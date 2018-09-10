@@ -736,6 +736,8 @@ if( function_exists('acf_add_local_field_group') ):
                     'operator' => '==',
                     'value' => '9',
                 ),
+            ),
+            array (
                 array (
                     'param' => 'page',
                     'operator' => '==',
