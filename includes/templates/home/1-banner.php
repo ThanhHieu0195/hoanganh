@@ -1,20 +1,22 @@
 <?php
 // $page
 $page_id = $page->ID;
-$slider = get_field('slider', $page, []);
-$type = 0;
-if ($type == 1):
-?>
+$slider = get_field('slider', $page->ID, []);
+$type = get_field('banner_type', $page->ID, 0);
+if ($type == 0):
+    $title = get_field('slider_video_title', $page_id, '');
+    $subtitle = get_field('slider_video_subtitle', $page_id, '');
+    $video_url = get_field('slider_video', $page_id, '');
+    ?>
     <div class="sc-slider-video slider">
         <div class="border"></div>
         <div class="textbox">
             <button onclick="playPause(); return false;"> <i class="fas fa-play"></i></button>
-            <h3>The First and <span>Pioneering</span></h3>
-            <div class="big-title">VIETNAMESE FLAVOR HOUSE</div>
+            <h3><?= $subtitle ?></h3>
+            <div class="big-title"><?= $title ?></div>
         </div>
         <video class="video-js vjs-default-skin" id="my_video_1" preload="none" width="100%" height="700px" data-setup="{}" poster="assets/images/slider/Slider_Hero_Video.png">
-            <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-            <source src="https://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+            <source src="<?= $video_url ?>" type="video/mp4">
         </video>
     </div>
 <?php else: ?>

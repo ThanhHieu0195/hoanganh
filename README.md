@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # HOANG ANH DOCUMENT 
 #### link web: 
     http://localhost/hoanganh
@@ -48,4 +47,3 @@ http://localhost/hoanganh
 --
 db: hoanganh
 import: hoanganh.sql
->>>>>>> parent of e93b455... add readme
