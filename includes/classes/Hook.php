@@ -10,6 +10,7 @@ class Hook implements HookInterface{
         $this->registerAsset();
         $this->registerShortcodes();
     }
+
     public function registerAction() {
         // TODO: Implement registerAction() method.
         add_action('add_meta_boxes', [$this, 'addOtherOption']);
@@ -19,6 +20,7 @@ class Hook implements HookInterface{
         add_action('init', [$this, 'registerPostType']);
         add_action('admin_menu', [$this, 'registerMenu']);
         add_filter( 'template_include', [$this, 'customTemplate']);
+        add_action( 'admin_init', [$this, 'registerSetting'] );
     }
 
     public function registerFilter() {
@@ -34,10 +36,11 @@ class Hook implements HookInterface{
     public function addStyles() {
         $path = get_template_directory_uri();
         $styles = array(
-            'slick' => 'assets/lib/css/slick.min.css',
-            'jquery-ui' => 'assets/lib/css/jquery-ui.min.css',
-		'font-google' => 'assets/lib/css/font-google.min.css',
-		'bosevent' => 'assets/css/bosevent.min.css',
+            'bootstrap' => 'assets/lib/css/bootstrap.min.css',
+            'slick' => 'assets/lib/js/slick/slick.css',
+            'slick-theme' => 'assets/lib/js/slick/slick-theme.css',
+            'hoanganh' => 'assets/css/style.css',
+            'response' => 'assets/css/response.css'
         );
         foreach ($styles as $style) {
             wp_enqueue_style($style, $path .'/'. $style, array(), self::VERSION);
@@ -48,10 +51,10 @@ class Hook implements HookInterface{
         $path = get_template_directory_uri();
         $scripts = array(
             'jquery-3' => 'assets/lib/js/jquery-3.3.1.min.js',
-            'slick' => 'assets/lib/js/slick.min.js',
-            'jquery-ui' => 'assets/lib/js/jquery-ui.min.js',
-            'bosevent' => 'assets/js/bosevent.js',
-            'language' => 'assets/js/language.js',
+            'bootstrap' => 'assets/lib/js/bootstrap.min.js',
+            'slick' => 'assets/lib/js/slick/slick.min.js',
+            'hoanganh' => 'assets/js/main.js',
+            'language' => 'assets/js/language.js'
         );
         foreach ($scripts as $script) {
             wp_enqueue_script($script, $path .'/'. $script, array('jquery'), self::VERSION, true);
@@ -180,5 +183,27 @@ class Hook implements HookInterface{
             $model = new $class_name();
             $model->register();
         }
+    }
+
+    public function registerSetting() {
+        // footer_icon
+        register_setting('general', 'footer_icon', 'esc_attr');
+        add_settings_field('footer_icon', '<label for="footer_icon">'.__('Footer icon' , 'footer_icon' ).'</label>' , [$this, 'renderFooterIconHtml'], 'general');
+
+        // footer_video
+        register_setting('general', 'footer_video', 'esc_attr');
+        add_settings_field('footer_video', '<label for="footer_video">'.__('Footer video' , 'footer_video' ).'</label>' , [$this, 'renderFooterVideoHtml'], 'general');
+    }
+
+    public function renderFooterIconHtml()
+    {
+        $value = get_option( 'footer_icon', '' );
+        echo '<input type="text" id="footer_icon" name="footer_icon" value="' . $value . '" />';
+    }
+
+    public function renderFooterVideoHtml()
+    {
+        $value = get_option( 'footer_video', '' );
+        echo '<input type="text" id="footer_video" name="footer_video" value="' . $value . '" />';
     }
 }

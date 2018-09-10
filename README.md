@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HOANG ANH DOCUMENT 
 #### link web: 
     http://localhost/hoanganh
@@ -40,3 +41,11 @@ define('BLOG_ID_CURRENT_SITE', 1);
     install acf pro plugin
 
 
+=======
+--
+link web: 
+http://localhost/hoanganh
+--
+db: hoanganh
+import: hoanganh.sql
+>>>>>>> parent of e93b455... add readme
