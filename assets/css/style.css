@@ -839,7 +839,7 @@ video::-webkit-media-controls-mute-button {
   font-stretch: normal;
   letter-spacing: normal;
   line-height: 80px;
-  padding-left: 12px;
+  padding: 0 0 0 6px;
 }
 
 .sc-slider-video.slider button:focus {
@@ -2154,7 +2154,7 @@ theme.
 
 .footer-main ul.list-video li img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -2307,7 +2307,21 @@ theme.
   letter-spacing: 1.8px;
   color: #f5f5f5;
   margin-bottom: 10px;
+  display: inline-block;
 }
+
+.sc-counter .item-counter .plus {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 0.72;
+  letter-spacing: 1.8px;
+  color: #f5f5f5;
+}
+
+.sc-counter .item-counter .subtitle {
+  display: block;
+}
+
 
 .sc-counter .item-image {
   text-align: center;

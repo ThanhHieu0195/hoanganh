@@ -15,9 +15,10 @@ if (!empty($counters)):
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="item-counter">
                     <div class="count">
-                        <?= $num ?>+
+                        <?= $num ?>
                     </div>
-                    <span><?= $des ?></span>
+                    <span class="plus">+</span>
+                    <span class="subtitle"><?= $des ?></span>
                 </div>
             </div>
             <?php endforeach; ?>
