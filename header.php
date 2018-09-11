@@ -14,6 +14,8 @@ $logo_url = '';
 if (!empty($arr)) {
 	$logo_url = $arr[0];
 }
+
+$menus = wp_get_nav_menu_items('main');
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -71,11 +73,11 @@ if (!empty($arr)) {
 			</div>
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="nav navbar-nav navbar-right sc-header__menu">
-				<li class="active"><a href="#">Về Hoàng Anh</a></li>
-				<li><a href="#">Hương Thực Phẩm</a></li>
-				<li><a href="#">Nguyên Liệu Thực Phẩm</a></li>
-				<li><a href="#">Xu HƯớng</a></li>
-				<li><a href="#">Nghiên Cứu</a></li>
+					<?php if (!empty($menus)): ?>
+					<?php for($i=1; $i<count($menus); $i++): ?>
+					<li><a href="<?= $menus[$i]->url ?>"><?= $menus[$i]->title ?></a></li>
+					<?php endfor; ?>
+					<?php endif; ?>
 				</ul>
 			</div>
 			</div>

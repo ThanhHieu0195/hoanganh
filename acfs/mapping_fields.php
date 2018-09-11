@@ -16,7 +16,7 @@ array (
     ),
     'choices' => array (
         'Slider' => '0',
-        'Video: 1' => 'Video: 1',
+        'Video' => '1',
     ),
     'allow_null' => 0,
     'other_choice' => 0,
