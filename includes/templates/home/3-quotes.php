@@ -6,8 +6,11 @@ $description1 = get_field('quote_description1', $page_id, '');
 $description2 = get_field('quote_description2', $page_id, '');
 $viewmore1 = get_field('quote_viewmore1', $page_id, '');
 $viewmore2 = get_field('quote_viewmore2', $page_id, '');
+$bg1 = wp_get_attachment_image_url(get_field('quote_bg1', $page_id, ''), 'full');
+$bg2 = wp_get_attachment_image_url(get_field('quote_bg2', $page_id, ''), 'full');
+
 ?>
-<div class="sc-banner sc-banner--left">
+<div class="sc-banner sc-banner--left" style="background-image: url(<?= $bg1 ?>)">
     <div class="container">
         <div class="row">
             <div class="col-md-7">
@@ -29,7 +32,7 @@ $viewmore2 = get_field('quote_viewmore2', $page_id, '');
         </div>
     </div>
 </div>
-<div class="sc-banner sc-banner--right">
+<div class="sc-banner sc-banner--right" style="background-image: url(<?= $bg2 ?>)">
     <div class="container">
         <div class="row">
             <div class="col-md-5"></div>
