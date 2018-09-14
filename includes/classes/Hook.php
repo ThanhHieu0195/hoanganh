@@ -53,6 +53,7 @@ class Hook implements HookInterface{
             'jquery-3' => 'assets/lib/js/jquery-3.3.1.min.js',
             'bootstrap' => 'assets/lib/js/bootstrap.min.js',
             'slick' => 'assets/lib/js/slick/slick.min.js',
+            'parallax' => 'assets/js/parallax.js',
             'hoanganh' => 'assets/js/main.js',
             'language' => 'assets/js/language.js'
         );
