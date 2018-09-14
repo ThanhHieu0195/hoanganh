@@ -164,7 +164,7 @@ class Hook implements HookInterface{
         $slug = \includes\Bootstrap::bootstrap()->helper->getSubUrl();
         if (array_key_exists($slug, $mapping)) {
             $slug = $mapping[$slug];
-	  }
+        }
         $path_file = $path . '/templates/'.$slug.'.php';
         if (file_exists($path_file)) {
             $template = $path_file;

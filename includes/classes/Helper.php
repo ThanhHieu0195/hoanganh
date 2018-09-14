@@ -66,7 +66,7 @@ class Helper implements HelperInterface {
     }
 
     public function getSubUrl() {
-        $request_url = isset($_SERVER['REQUEST_URL']) ? $_SERVER['REDIRECT_URL'] : '';
+        $request_url = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
         preg_match('/\/(.*)$/', $request_url, $matches);
         $slug = '';
         if (count($matches) > 0) {
@@ -106,5 +106,28 @@ class Helper implements HelperInterface {
 
     public function getLinkFilterCat($cat) {
         return $this->getLinkBlog()  . '?cat='.$cat;
+    }
+
+    public function getMenu($menus) {
+        $arr_parents = [];
+        for ($i=0; $i<count($menus); $i++) {
+            $menu = $menus[$i];
+            echo '<li><a href="' .$menu->url. '">' .$menu->title. '</a>';
+            if ($i < count($menus)-1) {
+                $menuNext = $menus[$i+1];
+
+                if ($menuNext->menu_item_parent != 0 && !in_array($menuNext->menu_item_parent, $arr_parents)) {
+                    $arr_parents[] = $menuNext->menu_item_parent;
+                    echo '<ul class="sub-menu">';
+                }
+
+                $check_child = count($arr_parents) - array_search($menuNext->menu_item_parent, $arr_parents) - 1;
+                while ( $check_child > 0||
+                    ($menuNext->menu_item_parent == 0 && count($arr_parents) > 0)) {
+                    echo '</ul>';
+                    array_pop($arr_parents);
+                }
+            }
+        }
     }
 }
