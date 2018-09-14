@@ -1,9 +1,10 @@
 <?php
 $counters = get_field('counters', $page->ID, []);
 $title = get_field('counterstitle', $page->ID, '');
+$bg = wp_get_attachment_image_url(get_field('counter_bg', $page->ID, ''), 'full');
 if (!empty($counters)):
 ?>
-<div class="sc-counter">
+<div class="sc-counter" style="background-image: url(<?= $bg ?>)">
     <div class="container">
         <div class="row">
             <div class="title"><?= $title ?></div>
