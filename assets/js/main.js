@@ -158,7 +158,6 @@ $( document ).ready(function(e) {
          }
        });
  });
- 
 $('#parallax').parallax({
 	invertX: false,
 	invertY: false,

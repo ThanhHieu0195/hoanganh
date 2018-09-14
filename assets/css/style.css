@@ -286,6 +286,10 @@ body {
   top: -210px;
 }
 
+.sc-team-block .block-item.top-left {
+  left: -20px;
+}
+
 .sc-team-block .block-item.bottom-left {
   bottom: -610px;
   left: 0px;

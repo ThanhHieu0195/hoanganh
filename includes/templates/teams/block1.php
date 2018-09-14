@@ -7,10 +7,10 @@ $btn_path = get_field('team1_view_more', $page_id, '');
 <div class="sc-team-block layout-2">
     <div id="parallax">
         <div class="layer" data-depth="0.1">
-          <div class="block-item top-left"><img src="./assets/images/home/leaf-left.png" alt=""></div>
+            <div class="block-item top-left"><img src="<?= get_template_directory_uri() ?>/assets/images/home/leaf-left.png" alt=""></div>
         </div>
         <div class="layer" data-depth="0.1">
-          <div class="block-item bottom-left"><img src="./assets/images/home/leaf-clean-2.png" alt=""></div>
+            <div class="block-item bottom-left"><img src="<?= get_template_directory_uri() ?>/assets/images/home/leaf-clean-2.png" alt=""></div>
         </div>
         <div class="container">
             <div class="row">
@@ -29,10 +29,10 @@ $btn_path = get_field('team1_view_more', $page_id, '');
             </div>
         </div>
         <div class="layer" data-depth="0.1">
-          <div class="block-item top-right"><img src="./assets/images/home/leaf-clean-1.png" alt=""></div>
+          <div class="block-item top-right"><img src="<?= get_template_directory_uri() ?>/assets/images/home/leaf-clean-1.png" alt=""></div>
         </div>
         <div class="layer" data-depth="0.1">
-          <div class="block-item bottom-right"><img src="./assets/images/home/leaf-right.png" alt=""></div>
+          <div class="block-item bottom-right"><img src="<?= get_template_directory_uri() ?>/assets/images/home/leaf-right.png" alt=""></div>
         </div>
     </div>
 </div>
