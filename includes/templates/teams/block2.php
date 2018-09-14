@@ -6,7 +6,8 @@ $background2 = wp_get_attachment_image_url(get_field('team2_background2', $page_
 $btn_path = get_field('team2_view_more', $page_id, '');
 ?>
 <div class="sc-team-block">
-    <div class="sc-main-title sc-team-block__title"><?= $title ?></div>
+    <div class="sc-main-title sc-team-123
+"><?= $title ?></div>
     <div class="row">
         <div class="col-md-5">
             <div class="sc-team-block__description">
