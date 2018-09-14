@@ -26,7 +26,7 @@ foreach (glob($dir_path . "/shortcodes/classes/*.php") as $filename)
  */
 class Bootstrap implements interfaces\ManagementInterface {
 	/**
-	 * @var
+	 * @var $bootstrap Bootstrap
 	 */
 	static $bootstrap;
 	public $helper;
