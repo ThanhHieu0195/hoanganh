@@ -26,7 +26,7 @@ $menus = wp_get_nav_menu_items('main');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" crossorigin="anonymous">
 	<?php wp_head(); ?>
-</head>
+</head>git 
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
