@@ -4,10 +4,10 @@ $description = get_field('team1_description', $page_id, '');
 $background = wp_get_attachment_image_url(get_field('team1_background', $page_id, ''), 'full', '');
 $btn_path = get_field('team1_view_more', $page_id, '');
 
-$bg_top = wp_get_attachment_image_url(get_field('teams_bg_top', $page_id, ''));
-$bg_bottom = wp_get_attachment_image_url(get_field('teams_bg_bottom', $page_id, ''));
-$bg_right = wp_get_attachment_image_url(get_field('teams_bg_right', $page_id, ''));
-$bg_left = wp_get_attachment_image_url(get_field('teams_bg_left', $page_id, ''));
+$bg_top = wp_get_attachment_image_url(get_field('teams_bg_top', $page_id, ''), 'full');
+$bg_bottom = wp_get_attachment_image_url(get_field('teams_bg_bottom', $page_id, ''), 'full');
+$bg_right = wp_get_attachment_image_url(get_field('teams_bg_right', $page_id, ''), 'full');
+$bg_left = wp_get_attachment_image_url(get_field('teams_bg_left', $page_id, ''), 'full');
 ?>
 <div class="sc-team-block layout-2">
     <div id="parallax">
