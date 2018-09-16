@@ -2136,6 +2136,7 @@ theme.
   letter-spacing: normal;
   text-align: center;
   color: #d0d1da;
+  margin-bottom: 30px;
 }
 
 .sc-counter .item-counter .count {
