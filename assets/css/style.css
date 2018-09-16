@@ -2721,6 +2721,10 @@ theme.
   color: #ababab;
 }
 
+.socials__link:visited {
+  color: #ababab;
+}
+
 .socials__link:hover {
   color: #444444;
 }
@@ -2800,6 +2804,10 @@ theme.
 .recruitment__link {
   padding: 0 15px;
   font-size: 14px;
+  color: #ababab;
+}
+
+.recruitment__link:visited {
   color: #ababab;
 }
 
