@@ -266,6 +266,10 @@ body {
   padding: 108px 0 110px;
 }
 
+.sc-team-block.layout-2 .layer {
+  position: relative !important;
+}
+
 .sc-team-block .block-item {
   position: absolute;
   margin-top: 0;
