@@ -55,6 +55,12 @@ class Hook implements HookInterface{
             'slick' => 'assets/lib/js/slick/slick.min.js',
             'parallax' => 'assets/js/parallax.js',
             'hoanganh' => 'assets/js/main.js',
+            'banner-slider' => 'assets/js/banner-slider.js',
+            'couter' => 'assets/js/counter.js',
+            'play-video' => 'assets/js/play-video.js',
+            'post-carousel-layout-2' => 'assets/js/post-carousel-layout-2.js',
+            'post-carousel' => 'assets/js/post-carousel.js',
+            'team-parallax' => 'assets/js/team-parallax.js',
             'language' => 'assets/js/language.js'
         );
         foreach ($scripts as $script) {
