@@ -2419,6 +2419,7 @@ theme.
   z-index: 9;
   top: 100%;
   text-align: left;
+  margin-left: 0;
   -ms-transform: translateY(-20px);
       transform: translateY(-20px);
   -webkit-transform: translateY(-20px);
