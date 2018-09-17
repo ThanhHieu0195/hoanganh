@@ -7,6 +7,7 @@ $posts = get_posts(array(
     <div class="carousel-slide">
         <div class="container">
             <div class="carousel-slide-wrapper">
+                <div class="sc-main-title sc-team-block__title">Những Tin Tức Nổi Bật</div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-md-10">
                         <div class="carousel-slide-for">

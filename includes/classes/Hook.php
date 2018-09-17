@@ -63,6 +63,7 @@ class Hook implements HookInterface{
             'post-carousel-layout-2' => 'assets/js/post-carousel-layout-2.js',
             'post-carousel' => 'assets/js/post-carousel.js',
             'team-parallax' => 'assets/js/team-parallax.js',
+            'jquery-matchHeight' => 'assets/lib/js/jquery-matchHeight.js',
             'language' => 'assets/js/language.js'
         );
         foreach ($scripts as $script) {
