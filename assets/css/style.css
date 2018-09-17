@@ -1043,6 +1043,12 @@ a:hover, a:focus {
   }
 }
 
+@media screen and (min-width: 1700px) and (max-width: 1920px) {
+  .banner-slider .slick-arrow.arrow--left {
+    left: 15%;
+  }
+}
+
 .banner-slider .slick-arrow.arrow--right {
   right: 2%;
   left: auto;
@@ -1051,6 +1057,12 @@ a:hover, a:focus {
 @media screen and (min-width: 1360px) {
   .banner-slider .slick-arrow.arrow--right {
     right: 5%;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1920px) {
+  .banner-slider .slick-arrow.arrow--right {
+    right: 15%;
   }
 }
 
