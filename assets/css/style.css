@@ -1039,7 +1039,7 @@ a:hover, a:focus {
 
 @media screen and (min-width: 1360px) {
   .banner-slider .slick-arrow.arrow--left {
-    left: 285px;
+    left: 5%;
   }
 }
 
@@ -1050,7 +1050,7 @@ a:hover, a:focus {
 
 @media screen and (min-width: 1360px) {
   .banner-slider .slick-arrow.arrow--right {
-    right: 285px;
+    right: 5%;
   }
 }
 
