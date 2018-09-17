@@ -4242,6 +4242,34 @@ theme.
   height: 40px;
 }
 
+.parllax-common {
+  position: relative;
+}
+
+.parllax-common .block-layer {
+  position: absolute;
+}
+
+.parllax-common .middle-left {
+  left: 0;
+  top: 300px;
+}
+
+.parllax-common .bottom-left {
+  left: 0;
+  bottom: -220px;
+}
+
+.parllax-common .bottom-left-left {
+  left: 100px;
+  bottom: -130px;
+}
+
+.parllax-common .top-right {
+  right: 110px;
+  top: 45%;
+}
+
 .sc-product-layout-2 {
   text-align: center;
 }
