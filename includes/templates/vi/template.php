@@ -2,18 +2,15 @@
 get_header('bosevent');
 $path_template_url = get_template_directory_uri();
 global $post;
-$page = $post;
-?>
-<?php
 // render all file folder home
 $dir_path = dirname(__FILE__);
-foreach (glob($dir_path . "/flavors/*.php") as $filename)
+$slug = \includes\Bootstrap::$bootstrap->hook->template;
+foreach (glob($dir_path . "/{$slug}/*.php") as $filename)
 {
     echo \includes\Bootstrap::bootstrap()->helper->render($filename, [
         'path_template_url' => $path_template_url,
-        'page' => $page
+        'page' => $post
 
     ]);
 }
-?>
-<?php get_footer('bosevent'); ?>
+get_footer('bosevent');

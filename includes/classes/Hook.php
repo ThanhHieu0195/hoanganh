@@ -1,9 +1,11 @@
 <?php
 namespace includes\classes;
+use includes\Bootstrap;
 use includes\interfaces\HookInterface;
 
 class Hook implements HookInterface{
     const VERSION = '1.0';
+    public $template = '';
     public function init() {
         $this->registerAction();
         $this->registerFilter();
@@ -170,10 +172,13 @@ class Hook implements HookInterface{
         $slug = \includes\Bootstrap::bootstrap()->helper->getSubUrl();
         if (array_key_exists($slug, $mapping)) {
             $slug = $mapping[$slug];
-        }
-        $path_file = $path . '/templates/'.$slug.'.php';
-        if (file_exists($path_file)) {
-            $template = $path_file;
+
+            $lang = Bootstrap::$bootstrap->language->lang;
+            $path_file = $path . '/templates/' . $lang . '/template.php';
+            if (file_exists($path_file)) {
+                $template = $path_file;
+                $this->template = $slug;
+            }
         }
         return $template;
     }

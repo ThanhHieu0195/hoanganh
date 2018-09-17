@@ -1,4 +1,21 @@
 <?php
+// tab
+array (
+    'key' => 'field_5b93769991779',
+    'label' => 'Banner',
+    'name' => '',
+    'type' => 'tab',
+    'instructions' => '',
+    'required' => 0,
+    'conditional_logic' => 0,
+    'wrapper' => array (
+        'width' => '',
+        'class' => '',
+        'id' => '',
+    ),
+    'placement' => 'top',
+    'endpoint' => 0,
+);
 
 // radio
 array (
@@ -25,6 +42,7 @@ array (
     'layout' => 'vertical',
     'return_format' => 'value',
 );
+
 // message
 array (
     'key' => 'field_quote_first_block',

@@ -1,5 +1,6 @@
 <?php
 namespace includes;
+use includes\classes\Hook;
 use includes\classes\Language;
 
 $dir_path = dirname(__FILE__);
@@ -57,6 +58,10 @@ class Bootstrap implements interfaces\ManagementInterface {
 	public static function getPath() {
 		return dirname(__FILE__);
 	}
+
+	public static function getTemplate() {
+        return self::getPath() . '/templates/' . self::$bootstrap->language->lang;
+    }
 
 	public function registerHook() {
 		$hook = new \includes\classes\Hook();
