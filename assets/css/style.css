@@ -2218,7 +2218,7 @@ theme.
 .header-main-01 {
   font-size: 0;
   width: 100%;
-  height: 95px;
+  height: 105px;
   position: fixed;
   z-index: 999;
   /* -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.2);
@@ -2232,7 +2232,7 @@ theme.
 
 .mainNav {
   width: 100%;
-  height: 95px;
+  height: 105px;
   line-height: 30px;
   background: #fff;
   z-index: 999;
@@ -2244,6 +2244,7 @@ theme.
   vertical-align: middle;
   height: 85px;
   width: 170px;
+  margin: 10px 0;
 }
 
 .header-main-01 .logo img {
@@ -2615,6 +2616,7 @@ theme.
     top: 5px;
     position: relative;
     left: 15px;
+    margin: 0;
   }
   .main-menu-mobile {
     display: block;
@@ -2947,7 +2949,7 @@ theme.
 }
 
 .footer-top .title {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
@@ -2966,7 +2968,7 @@ theme.
 }
 
 .footer-top .description {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -3041,7 +3043,7 @@ theme.
   background-color: #444444;
   position: absolute;
   right: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -3093,7 +3095,7 @@ theme.
 }
 
 .footer-main h4 {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
