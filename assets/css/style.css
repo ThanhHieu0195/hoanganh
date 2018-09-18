@@ -2613,7 +2613,7 @@ theme.
     position: static;
   }
   .header-main-01 .logo {
-    top: 5px;
+    top: 10px;
     position: relative;
     left: 15px;
     margin: 0;
