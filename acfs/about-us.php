@@ -50,7 +50,14 @@ $tab_history = array(
     ]]),
 );
 
-$about_fields = array_merge($tab_banner, $tab_message, $tab_quote1, $tab_quote2, $tab_history);
+$tab_news = array(
+    ACFCS::fieldTab(['name' => 'tab-news', 'label' => 'News']),
+    ACFCS::getText(['name' => 'news-title', 'label' => 'Title']),
+    ACFCS::getText(['name' => 'news-number', 'label' => 'Number']),
+);
+
+
+$about_fields = array_merge($tab_banner, $tab_message, $tab_quote1, $tab_quote2, $tab_history, $tab_news);
 
 $page = get_page_by_path('about-us');
 if (!empty($page)) {

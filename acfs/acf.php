@@ -112,4 +112,26 @@ class ACFCS {
             'sub_fields' => isset($attrs['sub_fields']) ? $attrs['sub_fields'] : array()
         );
     }
+
+    public static function getFile($attrs=array()) {
+        return array (
+            'key' => 'field-' . $attrs['name'],
+            'label' => isset($attrs['label']) ? $attrs['label'] : '',
+            'name' => $attrs['name'],
+            'type' => 'file',
+            'instructions' => isset($attrs['instructions']) ? $attrs['instructions'] : '',
+            'required' => isset($attrs['required']) ? $attrs['required'] : 0,
+            'conditional_logic' => isset($attrs['conditional_logic']) ? $attrs['conditional_logic'] : 0,
+            'wrapper' => isset($attrs['wrapper']) ? $attrs['wrapper'] : array (
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'return_format' => isset($attrs['return_format']) ? $attrs['return_format'] : 'url',
+            'library' => isset($attrs['library']) ? $attrs['library'] : 'all',
+            'min_size' => isset($attrs['min_size']) ? $attrs['min_size'] : '',
+            'max_size' => isset($attrs['max_size']) ? $attrs['max_size'] : '',
+            'mime_types' => isset($attrs['mime_types']) ? $attrs['mime_types'] : '',
+        );
+    }
 }

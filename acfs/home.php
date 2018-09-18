@@ -875,7 +875,14 @@ $tab_counters = array(
         )
     )
 );
-$home_fields = array_merge($tab_sliders, $tab_teams, $tab_quotes, $tab_counters);
+
+$tab_news = array(
+    ACFCS::fieldTab(['name' => 'tab-news', 'label' => 'News']),
+    ACFCS::getText(['name' => 'news-title', 'label' => 'Title']),
+    ACFCS::getText(['name' => 'news-number', 'label' => 'Number']),
+);
+
+$home_fields = array_merge($tab_sliders, $tab_teams, $tab_quotes, $tab_counters, $tab_news);
 
 $page_home = get_page_by_path('home');
 $page_home2 = get_page_by_path('home-2');

@@ -162,6 +162,7 @@ class Hook implements HookInterface{
 
     public function registerPostType() {
         \includes\classes\PostTypeEvents::getInstance();
+        \includes\classes\PostTypeVideos::getInstance();
     }
 
     public function registerMenu() {

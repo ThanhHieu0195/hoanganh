@@ -5,4 +5,5 @@ if( function_exists('acf_add_local_field_group') ):
     include 'acf.php';
     include 'home.php';
     include 'about-us.php';
+    include 'pt-videos.php';
 endif;
