@@ -130,4 +130,18 @@ class Helper implements HelperInterface {
             }
         }
     }
+
+    public function getBanner() {
+        if ( !is_front_page() && !is_page('home-2')) {
+            $banner_url = $this->getPathTemplate('/components/banner');
+            echo \includes\Bootstrap::bootstrap()->helper->render($banner_url, [
+                'banner_title' => 'Về Hoàng Anh',
+                'banner_subtitle' => 'CHÚNG TÔI LÀ HOÀNG ANH',
+                'banner_description' => 'Với sự nhiệt huyết và niềm đam mê, chúng tôi hiểu làm thế nào để truyền cảm hứng cho mọi người tại Hoàng Anh, tạo môi trường làm việc chuyên nghiệp, và dẫn dắt công việc lên một tầm cao mới.',
+                'banner_author' => 'DUY T. PHAM',
+                'banner_pos' => 'General Director',
+                'banner_bg_url' => 'http://localhost/hoanganh/wp-content/uploads/2018/09/breadcrumb.png'
+            ]);
+        }
+    }
 }
