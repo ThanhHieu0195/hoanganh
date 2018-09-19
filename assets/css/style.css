@@ -274,7 +274,7 @@ body {
   position: absolute;
   margin-top: 0;
   padding: 0;
-  z-index: 9999;
+  z-index: 9;
   -ms-transform: translate3d(0%, 0%, 0);
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
@@ -2218,7 +2218,7 @@ theme.
 .header-main-01 {
   font-size: 0;
   width: 100%;
-  height: 95px;
+  height: 105px;
   position: fixed;
   z-index: 999;
   /* -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.2);
@@ -2232,7 +2232,7 @@ theme.
 
 .mainNav {
   width: 100%;
-  height: 95px;
+  height: 105px;
   line-height: 30px;
   background: #fff;
   z-index: 999;
@@ -2242,13 +2242,14 @@ theme.
 .header-main-01 .logo {
   display: inline-block;
   vertical-align: middle;
-  height: 45px;
-  width: 200px;
+  height: 85px;
+  width: 170px;
+  margin: 10px 0;
 }
 
 .header-main-01 .logo img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .header-main-01 .main-header {
@@ -2342,7 +2343,7 @@ theme.
   letter-spacing: 1.3px;
   text-transform: capitalize;
   display: inline-block;
-  line-height: 95px;
+  line-height: 100px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -2612,9 +2613,10 @@ theme.
     position: static;
   }
   .header-main-01 .logo {
-    top: 15px;
+    top: 10px;
     position: relative;
     left: 15px;
+    margin: 0;
   }
   .main-menu-mobile {
     display: block;
@@ -2947,7 +2949,7 @@ theme.
 }
 
 .footer-top .title {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
@@ -2966,7 +2968,7 @@ theme.
 }
 
 .footer-top .description {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -3041,7 +3043,7 @@ theme.
   background-color: #444444;
   position: absolute;
   right: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -3093,7 +3095,7 @@ theme.
 }
 
 .footer-main h4 {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
@@ -4072,6 +4074,10 @@ theme.
   }
 }
 
+.sc-carousel-layout-2 .sc-main-title {
+  margin-bottom: 60px;
+}
+
 .sc-carousel-layout-2 .carousel-slide-wrapper {
   margin-bottom: 110px;
 }
@@ -4262,9 +4268,20 @@ theme.
   position: absolute;
 }
 
+@media screen and (max-width: 1024px) {
+  .parllax-common .block-layer {
+    display: none !important;
+  }
+}
+
+.parllax-common .top-left {
+  left: 52px;
+  top: 335px;
+}
+
 .parllax-common .middle-left {
   left: 0;
-  top: 300px;
+  bottom: 230px;
 }
 
 .parllax-common .bottom-left {
@@ -4280,6 +4297,26 @@ theme.
 .parllax-common .top-right {
   right: 110px;
   top: 45%;
+}
+
+.parllax-common .middle-right {
+  top: 65%;
+  right: 84px;
+}
+
+.parllax-common .middle-right-right {
+  top: 70%;
+  right: 0;
+}
+
+.parllax-common .bottom-right {
+  bottom: 96px;
+  right: 114px;
+}
+
+.parllax-common .bottom-right-right {
+  bottom: -85px;
+  right: 138px;
 }
 
 .sc-product-layout-2 {
@@ -4611,4 +4648,67 @@ theme.
   .sc-innovation--rd-center .sc-innovation__item {
     padding: 70px 0 90px;
   }
+}
+
+.sc-team-block.layout-3 {
+  padding-bottom: 0;
+}
+
+.sc-team-block.layout-3 .sc-team-block__block-image::before {
+  padding-top: 56%;
+}
+
+.sc-team-block.layout-3 .sc-team-block__block-content {
+  padding-top: 0;
+  padding-bottom: 106px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sc-team-block.layout-3 .block-item {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sc-team-block.layout-3 .block-item {
+    display: block;
+    position: relative;
+  }
+}
+
+.sc-team-block.layout-3 .block-item .block-content {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-team-block.layout-3 .block-item .block-content {
+    margin-top: 20px;
+  }
+}
+
+.sc-team-block.layout-3 .sc-main-title--big {
+  font-size: 42px;
+  line-height: 1.24;
+  font-weight: bold;
+  color: #3f3f3f;
+  margin-bottom: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-team-block.layout-3 .sc-main-title--big {
+    margin-top: 35px;
+    font-size: 30px;
+  }
+}
+
+.mt-15 {
+  height: 15px;
+}
+
+.ingredient .sc-carousel-layout-2 {
+  background-color: #f9f9f9;
+}
+
+.ingredient .parllax-common .top-left {
+  top: 61px;
 }
