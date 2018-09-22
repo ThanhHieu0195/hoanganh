@@ -11,6 +11,7 @@ class Hook implements HookInterface{
         $this->registerFilter();
         $this->registerAsset();
         $this->registerShortcodes();
+        $this->registerSetting();
     }
 
     public function registerAction() {
@@ -22,7 +23,6 @@ class Hook implements HookInterface{
         add_action('init', [$this, 'registerPostType']);
         add_action('admin_menu', [$this, 'registerMenu']);
         add_filter( 'template_include', [$this, 'customTemplate']);
-        add_action( 'admin_init', [$this, 'registerSetting'] );
     }
 
     public function registerFilter() {
@@ -200,24 +200,27 @@ class Hook implements HookInterface{
     }
 
     public function registerSetting() {
-        // footer_icon
-        register_setting('general', 'footer_icon', 'esc_attr');
-        add_settings_field('footer_icon', '<label for="footer_icon">'.__('Footer icon' , 'footer_icon' ).'</label>' , [$this, 'renderFooterIconHtml'], 'general');
+        if( function_exists('acf_add_options_page') ) {
+            acf_add_options_page(array(
+                'page_title' 	=> 'Theme General Settings',
+                'menu_title'	=> 'Theme Settings',
+                'menu_slug' 	=> 'theme-general-settings',
+                'capability'	=> 'edit_posts',
+                'redirect'		=> false
+            ));
 
-        // footer_video
-        register_setting('general', 'footer_video', 'esc_attr');
-        add_settings_field('footer_video', '<label for="footer_video">'.__('Footer video' , 'footer_video' ).'</label>' , [$this, 'renderFooterVideoHtml'], 'general');
-    }
+            acf_add_options_sub_page(array(
+                'page_title' 	=> 'Theme Header Settings',
+                'menu_title'	=> 'Header',
+                'parent_slug'	=> 'theme-general-settings',
+            ));
 
-    public function renderFooterIconHtml()
-    {
-        $value = get_option( 'footer_icon', '' );
-        echo '<input type="text" id="footer_icon" name="footer_icon" value="' . $value . '" />';
-    }
+            acf_add_options_sub_page(array(
+                'page_title' 	=> 'Theme Footer Settings',
+                'menu_title'	=> 'Footer',
+                'parent_slug'	=> 'theme-general-settings',
+            ));
 
-    public function renderFooterVideoHtml()
-    {
-        $value = get_option( 'footer_video', '' );
-        echo '<input type="text" id="footer_video" name="footer_video" value="' . $value . '" />';
+        }
     }
 }

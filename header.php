@@ -9,14 +9,14 @@
  * @package hoanganh
  */
 $path_template_url = get_template_directory_uri();
-$custom_logo_id = get_theme_mod( 'custom_logo' );
-$arr = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 $logo_url = '';
-if (!empty($arr)) {
-	$logo_url = $arr[0];
-}
 
+$logo = get_field('theme-setting-header-logo', 'option');
+if ( !empty($logo) ) {
+    $logo_url = $logo['url'];
+}
 $menus = wp_get_nav_menu_items('main');
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -32,17 +32,16 @@ $menus = wp_get_nav_menu_items('main');
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<header>
-
         <div class="sc-header-top">
           <div class="container">
-            <div class="sc-header-top__left"><a class="sc-header-top__contact" href="#"><i class="far fa-envelope sc-header-top__contact__icon"></i><span class="sc-header-top__contact__text">hello@hoanganh.com.vn</span></a><a class="sc-header-top__contact" href="#"><i class="fas fa-phone-volume sc-header-top__contact__icon__phone"></i><span class="sc-header-top__contact__text">(+1) 369-258-147</span></a></div>
+            <div class="sc-header-top__left"><a class="sc-header-top__contact" href="#"><i class="far fa-envelope sc-header-top__contact__icon"></i><span class="sc-header-top__contact__text"><?=get_field('theme-setting-header-email', 'option', '') ?></span></a><a class="sc-header-top__contact" href="#"><i class="fas fa-phone-volume sc-header-top__contact__icon__phone"></i><span class="sc-header-top__contact__text"><?= get_field('theme-setting-header-phone', 'option', '') ?></span></a></div>
             <div class="sc-header-top__right">
               <ul class="socials">
-                <li class="socials__item"><a class="socials__link" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="socials__item"><a class="socials__link" href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="socials__item"><a class="socials__link" href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                <li class="socials__item"><a class="socials__link" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                <li class="socials__item"><a class="socials__link" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-fb', 'option', '') ?>"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-tw', 'option', '') ?>"><i class="fab fa-twitter"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-pin', 'option', '') ?>"><i class="fab fa-pinterest-p"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-go', 'option', '') ?>"><i class="fab fa-google-plus-g"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-in', 'option', '') ?>"><i class="fab fa-linkedin-in"></i></a></li>
               </ul>
               <ul class="recruitment">
                 <li class="recruitment__item"><a class="recruitment__link" href="">Liên Hệ</a></li>
@@ -83,3 +82,5 @@ $menus = wp_get_nav_menu_items('main');
 	</header>
 
 	<div id="content" class="site-content">
+        <?= \includes\Bootstrap::$bootstrap->helper->getBanner(); ?>
+

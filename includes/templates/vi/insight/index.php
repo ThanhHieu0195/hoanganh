@@ -1,38 +1,4 @@
 <div class="block-content">
-    <div class="sc-about-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-equal">
-                    <div class="sc-main-title sc-main-title--big">Về Hoàng Anh</div>
-                </div>
-                <div class="col-md-7 col-equal">
-                    <div class="sc-quote">
-                        <div class="sc-quote__icon"></div>
-                        <div class="sc-quote__content">
-                            <div class="sc-quote__content__title">CHÚNG TÔI LÀ HOÀNG ANH</div>
-                            <div class="sc-quote__content__des">
-                                Với sự nhiệt huyết và niềm đam mê, chúng tôi hiểu làm thế nào để
-                                truyền cảm hứng cho mọi người tại Hoàng Anh, tạo môi trường làm
-                                việc chuyên nghiệp, và dẫn dắt công việc lên một tầm cao mới.
-                            </div>
-                        </div>
-                        <div class="sc-quote__bottom">
-                            <div class="sc-quote__bottom__author">DUY T. PHAM</div>
-                            <div class="sc-quote__bottom__position">General Director</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <nav class="breadcrumb-wapper">
-            <ul class="breadcrumb">
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/index.html">home</a></li><i class="fas fa-angle-right"></i>
-                <li class="breadcrumb__item active"><a class="breadcrumb__link active" href="#">Xu Hướng</a></li>
-            </ul>
-        </nav>
-    </div>
     <div class="container">
         <div class="sc-tabs">
             <ul class="sc-tabs__nav-tabs">
