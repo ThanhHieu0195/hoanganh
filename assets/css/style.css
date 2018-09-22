@@ -2221,9 +2221,6 @@ theme.
   height: 115px;
   position: fixed;
   z-index: 999;
-  /* -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 2px 1px rgba(0,0,0,0.2);
-    box-shadow: 0 2px 1px rgba(0,0,0,0.2); */
 }
 
 .header-main-01.fixed {
@@ -2348,7 +2345,7 @@ theme.
   letter-spacing: 1.3px;
   text-transform: capitalize;
   display: inline-block;
-  line-height: 115px;
+  line-height: 114px;
   font-family: "Roboto", sans-serif;
 }
 
