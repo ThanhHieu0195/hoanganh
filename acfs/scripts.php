@@ -6,6 +6,7 @@ if( function_exists('acf_add_local_field_group') ):
     // page
     include 'pages/home.php';
     include 'pages/about-us.php';
+    include 'pages/flavors.php';
     // porttype
     include 'porttypes/videos.php';
 

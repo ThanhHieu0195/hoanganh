@@ -134,4 +134,31 @@ class ACFCS {
             'mime_types' => isset($attrs['mime_types']) ? $attrs['mime_types'] : '',
         );
     }
+
+    public static function getSelect($attrs=array()) {
+        return array (
+            'key' => 'field-' . $attrs['name'],
+            'label' => $attrs['label'],
+            'name' => $attrs['name'],
+            'type' => 'select',
+            'instructions' => isset($attrs['instructions']) ? $attrs['instructions'] : '',
+            'required' => isset($attrs['required']) ? $attrs['required'] : 0,
+            'conditional_logic' => isset($attrs['conditional_logic']) ? $attrs['conditional_logic'] : 0,
+            'wrapper' => isset($attrs['wrapper']) ? $attrs['wrapper'] : array (
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'choices' => isset($attrs['choices']) ? $attrs['choices'] : array (
+            ),
+            'default_value' => isset($attrs['default_value']) ? $attrs['default_value'] : array (
+            ),
+            'allow_null' => isset($attrs['allow_null']) ? $attrs['allow_null'] : 0,
+            'multiple' => isset($attrs['multiple']) ? $attrs['multiple'] : 0,
+            'ui' => isset($attrs['ui']) ? $attrs['ui'] : 0,
+            'ajax' => isset($attrs['ajax']) ? $attrs['ajax'] : 0,
+            'return_format' => isset($attrs['return_format']) ? $attrs['return_format'] : 'value',
+            'placeholder' => isset($attrs['placeholder']) ? $attrs['placeholder'] : '',
+        );
+    }
 }

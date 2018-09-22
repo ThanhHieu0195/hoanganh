@@ -34,7 +34,7 @@ $menus = wp_get_nav_menu_items('main');
 	<header>
         <div class="sc-header-top">
           <div class="container">
-            <div class="sc-header-top__left"><a class="sc-header-top__contact" href="#"><i class="far fa-envelope sc-header-top__contact__icon"></i><span class="sc-header-top__contact__text"><?=get_field('theme-setting-header-email', 'option', '') ?></span></a><a class="sc-header-top__contact" href="#"><i class="fas fa-phone-volume sc-header-top__contact__icon__phone"></i><span class="sc-header-top__contact__text"><?= get_field('theme-setting-header-phone', 'option', '') ?>/span></a></div>
+            <div class="sc-header-top__left"><a class="sc-header-top__contact" href="#"><i class="far fa-envelope sc-header-top__contact__icon"></i><span class="sc-header-top__contact__text"><?=get_field('theme-setting-header-email', 'option', '') ?></span></a><a class="sc-header-top__contact" href="#"><i class="fas fa-phone-volume sc-header-top__contact__icon__phone"></i><span class="sc-header-top__contact__text"><?= get_field('theme-setting-header-phone', 'option', '') ?></span></a></div>
             <div class="sc-header-top__right">
               <ul class="socials">
                 <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-fb', 'option', '') ?>"><i class="fab fa-facebook-f"></i></a></li>
