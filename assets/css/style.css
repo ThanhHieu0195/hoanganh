@@ -2218,7 +2218,7 @@ theme.
 .header-main-01 {
   font-size: 0;
   width: 100%;
-  height: 105px;
+  height: 115px;
   position: fixed;
   z-index: 999;
   /* -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.2);
@@ -2230,9 +2230,14 @@ theme.
   top: 0;
 }
 
+.header-main-01.fixed .mainNav {
+  -webkit-box-shadow: 0px 17px 46px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 17px 46px 0 rgba(0, 0, 0, 0.1);
+}
+
 .mainNav {
   width: 100%;
-  height: 105px;
+  height: 115px;
   line-height: 30px;
   background: #fff;
   z-index: 999;
@@ -2259,7 +2264,7 @@ theme.
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
-  height: 95px;
+  height: 115px;
 }
 
 .slz-hamburger-menu {
@@ -2343,7 +2348,7 @@ theme.
   letter-spacing: 1.3px;
   text-transform: capitalize;
   display: inline-block;
-  line-height: 100px;
+  line-height: 115px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -4711,4 +4716,155 @@ theme.
 
 .ingredient .parllax-common .top-left {
   top: 61px;
+}
+
+.sc-info-contact {
+  margin-bottom: 60px;
+}
+
+.sc-info-contact .sc-main-title--big {
+  font-size: 42px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f3f3f;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-info-contact .sc-main-title--big {
+    font-size: 30px;
+    padding: 0 15px;
+    margin-top: 35px;
+  }
+}
+
+.sc-info-contact .subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5e6d77;
+  margin-top: 20px;
+  margin-bottom: 54px;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-info-contact .subtitle {
+    margin-top: 10px;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.sc-info-contact label {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f3f3f;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-info-contact label {
+    margin-bottom: 8px;
+  }
+}
+
+.sc-info-contact .item {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .sc-info-contact .item {
+    margin-bottom: 20px;
+  }
+}
+
+.sc-info-contact .block-form-contact {
+  width: 570px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sc-info-contact .block-form-contact {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sc-info-contact .block-form-contact {
+    width: 100%;
+  }
+}
+
+.sc-info-contact .block-form-contact input {
+  height: 50px;
+}
+
+.sc-info-contact .block-form-contact input,
+.sc-info-contact .block-form-contact textarea {
+  width: 100%;
+  padding: 0 22px;
+  border: solid 1px #cdd2d5;
+}
+
+.sc-info-contact .block-form-contact input:focus,
+.sc-info-contact .block-form-contact textarea:focus {
+  border-color: #82c341;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+.sc-info-contact .block-form-contact textarea {
+  padding-top: 17px;
+}
+
+.sc-info-contact .info {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5e6d77;
+}
+
+.sc-info-contact .info span.icons {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #82c341;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.sc-info-contact .info a {
+  color: #5e6d77;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sc-info-contact .info a:hover {
+  color: #82c341;
 }
