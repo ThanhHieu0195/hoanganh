@@ -14,6 +14,16 @@ foreach (glob($dir_path. "/classes/*.php") as $filename)
     include $filename;
 }
 
+foreach (glob($dir_path . "/taxonomies/classes/*.php") as $filename)
+{
+    include $filename;
+}
+
+foreach (glob($dir_path . "/posttypes/classes/*.php") as $filename)
+{
+    include $filename;
+}
+
 foreach (glob($dir_path . "/shortcodes/classes/*.php") as $filename)
 {
     include $filename;

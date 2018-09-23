@@ -20,6 +20,7 @@ class Hook implements HookInterface{
         add_action('wp_ajax_admin_ajax', [$this, 'excuteAjaxAdmin']);
         add_action('wp_ajax_front', [$this, 'excuteAjax']);
         add_action('wp_ajax_nopriv_front', [$this, 'excuteAjax']);
+        add_action('init', [$this, 'registerTaxonomy']);
         add_action('init', [$this, 'registerPostType']);
         add_action('admin_menu', [$this, 'registerMenu']);
         add_filter( 'template_include', [$this, 'customTemplate']);
@@ -161,8 +162,29 @@ class Hook implements HookInterface{
     }
 
     public function registerPostType() {
-        \includes\classes\PostTypeEvents::getInstance();
-        \includes\classes\PostTypeVideos::getInstance();
+        $dir_path = \includes\Bootstrap::getPath();
+        foreach (glob($dir_path . "/posttypes/classes/*.php") as $filename)
+        {
+            $class_name = \includes\Bootstrap::bootstrap()->helper->getClassByPath($filename);
+            /**
+             * @var $model PostType
+             */
+            $class_name = '\\includes\\posttypes\\'.$class_name;
+            $class_name::getInstance();
+        }
+    }
+
+    public function registerTaxonomy() {
+        $dir_path = \includes\Bootstrap::getPath();
+        foreach (glob($dir_path . "/taxonomies/classes/*.php") as $filename)
+        {
+            $class_name = \includes\Bootstrap::bootstrap()->helper->getClassByPath($filename);
+            /**
+             * @var $class_name Taxonomy
+             */
+            $class_name = '\\includes\\taxonomies\\'.$class_name;
+            $class_name::getInstance();
+        }
     }
 
     public function registerMenu() {

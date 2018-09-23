@@ -161,4 +161,23 @@ class ACFCS {
             'placeholder' => isset($attrs['placeholder']) ? $attrs['placeholder'] : '',
         );
     }
+
+    public static function getUrl($attrs=[]) {
+        return array (
+            'key' => 'field-' . $attrs['name'],
+            'label' => $attrs['label'],
+            'name' => $attrs['name'],
+            'type' => 'url',
+            'instructions' => isset($attrs['instructions']) ? $attrs['instructions'] : '',
+            'required' => isset($attrs['required']) ? $attrs['required'] : 0,
+            'conditional_logic' => isset($attrs['conditional_logic']) ? $attrs['conditional_logic'] : 0,
+            'wrapper' => isset($attrs['wrapper']) ? $attrs['wrapper'] : array (
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'default_value' => isset($attrs['default_value']) ? $attrs['default_value'] : '',
+            'placeholder' => isset($attrs['placeholder']) ? $attrs['placeholder'] : '',
+        );
+    }
 }
