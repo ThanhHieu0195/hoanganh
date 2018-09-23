@@ -41,6 +41,7 @@ class Hook implements HookInterface{
             'bootstrap' => 'assets/lib/css/bootstrap.min.css',
             'slick' => 'assets/lib/js/slick/slick.css',
             'slick-theme' => 'assets/lib/js/slick/slick-theme.css',
+            'popup-video' => 'assets/lib/css/magnific-popup.css',
             'hoanganh' => 'assets/css/style.css',
             'response' => 'assets/css/response.css'
         );
@@ -55,6 +56,7 @@ class Hook implements HookInterface{
             'jquery-3' => 'assets/lib/js/jquery-3.3.1.min.js',
             'bootstrap' => 'assets/lib/js/bootstrap.min.js',
             'slick' => 'assets/lib/js/slick/slick.min.js',
+            'js-popup' => 'assets/lib/js/jquery.magnific-popup.min.js',
             'parallax' => 'assets/js/parallax.js',
             'hoanganh' => 'assets/js/main.js',
             'banner-slider' => 'assets/js/banner-slider.js',

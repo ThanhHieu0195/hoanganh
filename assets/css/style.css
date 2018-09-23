@@ -3746,6 +3746,7 @@ theme.
   position: relative;
   overflow: hidden;
   z-index: 1;
+  display: block;
 }
 
 .sc-video__item__image::before {
