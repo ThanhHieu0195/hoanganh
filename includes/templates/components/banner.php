@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 col-equal">
-                <div class="sc-main-title sc-main-title--big"><?= $banner_title ?></div>
+                <div class="sc-main-title sc-main-title--big"><?= get_the_title() ?></div>
             </div>
             <div class="col-md-7 col-equal">
                 <div class="sc-quote">

@@ -3,24 +3,7 @@
 $tab_types = array(
     ACFCS::fieldTab(['name' => 'tab-type', 'label' => 'Type']),
     ACFCS::getText(['name' => 'type-title', 'label' => 'Title']),
-    ACFCS::getRepeater([
-        'name' => 'type-items',
-        'label' => 'Types',
-        'layout' => 'block',
-        'sub_fields' => [
-            ACFCS::getText(['name' => 'title', 'label' => 'Title']),
-            ACFCS::getAreaText(['name' => 'description', 'label' => 'Description']),
-            ACFCS::getRepeater([
-                'name' => 'concepts',
-                'label' => 'Concepts',
-                'sub_fields' => [
-                    ACFCS::getText(['name' => 'concept', 'label' => 'Concept']),
-                ]
-            ]),
-            ACFCS::getImage(['name' => 'bg', 'label' => 'Background']),
-            ACFCS::getSelect(['name' => 'type', 'label' => 'type', 'choices' => ['1' => 'type 1', '2' => 'type 2'], 'default_value' => '1'])
-        ]
-    ]),
+    ACFCS::getText(['name' => 'type-number', 'label' => 'Number show']),
 );
 
 $tab_technologies = array(

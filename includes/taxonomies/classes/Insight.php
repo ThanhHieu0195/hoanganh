@@ -6,7 +6,7 @@ class Insight extends \includes\classes\Taxonomy {
     public function getAttributes()
     {
         return  array(
-            'hierarchical'          => false,
+            'hierarchical'          => true,
             'labels'                => $this->getConfigs(),
             'show_ui'               => true,
             'show_admin_column'     => true,

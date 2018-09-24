@@ -14,6 +14,10 @@ class Helper implements HelperInterface {
         return $template = \includes\Bootstrap::getPath() . '/templates/' . $name . '.php';
     }
 
+    public function getPathSingle($name) {
+        return $template = \includes\Bootstrap::getPath() . '/templates/singles/' . $name . '.php';
+    }
+
     public function render( $_file_, $_params_ = [] ) {
         $_obInitialLevel_ = ob_get_level();
         ob_start();

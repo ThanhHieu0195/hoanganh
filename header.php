@@ -44,8 +44,8 @@ $menus = wp_get_nav_menu_items('main');
                 <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-in', 'option', '') ?>"><i class="fab fa-linkedin-in"></i></a></li>
               </ul>
               <ul class="recruitment">
-                <li class="recruitment__item"><a class="recruitment__link" href="">Liên Hệ</a></li>
-                <li class="recruitment__item"><a class="recruitment__link" href="">Tuyển Dụng</a></li>
+                <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/contact' ?>"><?= translate_i18n('Liên Hệ') ?></a></li>
+                <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/recruitment' ?>"><?= translate_i18n('Tuyển Dụng') ?></a></li>
                 <li class="recruitment__item__active flag"><a href=""><img src="<?= $path_template_url ?>/assets/images/home/header_english_flag.png"><span>En</span></a></li>
                 <li class="recruitment__item__active flag"><a href=""><img src="<?= $path_template_url ?>/assets/images/home/header_vietnam_flag.png"><span>Vi</span></a></li>
               </ul>

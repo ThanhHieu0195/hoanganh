@@ -180,4 +180,25 @@ class ACFCS {
             'placeholder' => isset($attrs['placeholder']) ? $attrs['placeholder'] : '',
         );
     }
+
+    public static function getMap($attrs = []) {
+        return array (
+            'key' => 'field-' . $attrs['name'],
+            'label' => $attrs['label'],
+            'name' => $attrs['name'],
+            'type' => 'google_map',
+            'instructions' => isset($attrs['instructions']) ? $attrs['instructions'] : '',
+            'required' => isset($attrs['required']) ? $attrs['required'] : 0,
+            'conditional_logic' => isset($attrs['conditional_logic']) ? $attrs['conditional_logic'] : 0,
+            'wrapper' => isset($attrs['wrapper']) ? $attrs['wrapper'] : array (
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'center_lat' => isset($attrs['center_lat']) ? $attrs['center_lat'] : '',
+            'center_lng' => isset($attrs['default_value']) ? $attrs['default_value'] : '',
+            'zoom' => isset($attrs['zoom']) ? $attrs['zoom'] : '',
+            'height' => isset($attrs['height']) ? $attrs['height'] : ''
+        );
+    }
 }

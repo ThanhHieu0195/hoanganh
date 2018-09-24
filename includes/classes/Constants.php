@@ -16,6 +16,8 @@ Class Constants {
         self::DEFAULT_SLUG  . 'flavors/' => 'flavors',
         self::DEFAULT_SLUG  . 'research/' => 'research',
         self::DEFAULT_SLUG  . 'insight/' => 'insight',
+        self::DEFAULT_SLUG  . 'recruitment/' => 'recruitment',
+        self::DEFAULT_SLUG  . 'contact/' => 'contact',
         // self::DEFAULT_SLUG . 'en/' => 'home',
     ];
 }

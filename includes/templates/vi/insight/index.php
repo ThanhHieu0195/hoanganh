@@ -1,11 +1,20 @@
+<?php
+$cats = get_categories();
+$cats_filter = [];
+foreach ($cats as $idx => $cat) {
+    /**
+     * @var $cat WP_Term
+     */
+    $tab_all = translate_i18n('Tất cả');
+    $cats_filter[] = "<li class=\"active sc-tabs__nav-tabs__item\"><a class=\"sc-tabs__nav-tabs__link\" data-toggle=\"tab\" href=\"all\">{$tab_all}</a></li>";
+    $cats_filter[] = "<li class=\"sc-tabs__nav-tabs__item\"><a class=\"sc-tabs__nav-tabs__link\" data-toggle=\"tab\" href=\"{$cat->slug}\">{$cat->name}</a></li>";
+}
+?>
 <div class="block-content">
     <div class="container">
         <div class="sc-tabs">
             <ul class="sc-tabs__nav-tabs">
-                <li class="active sc-tabs__nav-tabs__item"><a class="sc-tabs__nav-tabs__link" data-toggle="tab" href="#home">Tất Cả</a></li>
-                <li class="sc-tabs__nav-tabs__item"><a class="sc-tabs__nav-tabs__link" data-toggle="tab" href="#menu1">Xu Hướng Thị Trường</a></li>
-                <li class="sc-tabs__nav-tabs__item"><a class="sc-tabs__nav-tabs__link" data-toggle="tab" href="#menu2">Đổi Mới</a></li>
-                <li class="sc-tabs__nav-tabs__item"><a class="sc-tabs__nav-tabs__link" data-toggle="tab" href="#menu3">Điểm Nổi Bật</a></li>
+                <?= implode('', $cats_filter) ?>
             </ul>
             <div class="tab-content sc-tabs__tab-content">
                 <div class="tab-pane fade in active" id="home">

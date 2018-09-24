@@ -1,5 +1,13 @@
 <?php
 extract($params);
+
+/**
+ * @var $post WP_Post
+ */
+$post = get_post($post_id);
+$bg = get_the_post_thumbnail_url($post_id);
+$title = $post->post_title;
+$description = $post->post_excerpt;
 ?>
 <div class="block-item right">
     <div class="row">
@@ -10,12 +18,7 @@ extract($params);
             <div class="block-content">
                 <div class="title"><?= esc_html($title) ?></div>
                 <div class="description">
-                    <?= esc_html($description) ?>
-                    <?php if(!empty($concepts)): ?>
-                    <ul>
-                        <li><?= implode('</li><li>', $concepts) ?> </li>
-                    </ul>
-                    <?php endif; ?>
+                    <?= $description ?>
                 </div>
             </div>
         </div>

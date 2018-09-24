@@ -202,4 +202,10 @@ function get_breadcrumb() {
  * import acf 
  */
 require get_template_directory() . '/acfs/scripts.php';
+function my_acf_init() {
+
+    acf_update_setting('google_api_key', 'AIzaSyC_5pPy8mvpqkeABmBfEMMqSCdLhEwDMO4');
+}
+
+add_action('acf/init', 'my_acf_init');
 
