@@ -10,7 +10,7 @@ $items = get_field('gf-items', $page_id, []);
                     <div class="col-xs-12 col-sm-12 col-md-4">
                         <div class="carousel-slide-for">
                             <ul class="nav nav-tabs" role="tablist">
-                                <?php if (count($items) > 0): ?>
+                                <?php if (!empty($items)): ?>
                                 <?php foreach ($items as $idx => $item):
                                     $bg = wp_get_attachment_image_url($item['field-bg'], 'full');
                                     $class_active = $idx == 0 ? 'active' : '';
@@ -31,6 +31,7 @@ $items = get_field('gf-items', $page_id, []);
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-8">
                         <div class="tab-content">
+                        <?php if (!empty($items)): ?>
                         <?php foreach ($items as $idx => $item):
                             $class_active = $idx == 0 ? 'in active' : '';
                             ?>
@@ -43,6 +44,7 @@ $items = get_field('gf-items', $page_id, []);
                                 </div>
                             </div>
                         <?php endforeach; ?>
+                        <?php endif; ?>
                         </div>
                     </div>
                 </div>

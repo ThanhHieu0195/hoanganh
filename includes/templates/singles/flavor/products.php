@@ -11,7 +11,7 @@ $items = get_field('p-items', $page_id, []);
                 <?= get_field('p-concept', $page_id, '') ?>
             </div>
             <?php
-            if (count($items) > 0):
+            if (!empty($items)):
             foreach ($items as $item):
                 $bg = wp_get_attachment_image_url($item['field-bg'], 'full');
             ?>

@@ -1,7 +1,7 @@
 <?php
 $items = get_field('rd-items', $page->ID, []);
 
-if (count($items) > 0):
+if (!empty($items)):
 ?>
 <div class="sc-innovation--rd-center">
     <div class="block-section-lg">

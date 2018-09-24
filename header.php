@@ -32,6 +32,7 @@ $menus = wp_get_nav_menu_items('main');
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<header>
+        <div id="home_url" data-url="<?= get_home_url() ?>"></div>
         <div class="sc-header-top">
           <div class="container">
             <div class="sc-header-top__left"><a class="sc-header-top__contact" href="#"><i class="far fa-envelope sc-header-top__contact__icon"></i><span class="sc-header-top__contact__text"><?=get_field('theme-setting-header-email', 'option', '') ?></span></a><a class="sc-header-top__contact" href="#"><i class="fas fa-phone-volume sc-header-top__contact__icon__phone"></i><span class="sc-header-top__contact__text"><?= get_field('theme-setting-header-phone', 'option', '') ?></span></a></div>
@@ -46,8 +47,8 @@ $menus = wp_get_nav_menu_items('main');
               <ul class="recruitment">
                 <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/contact' ?>"><?= translate_i18n('Liên Hệ') ?></a></li>
                 <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/recruitment' ?>"><?= translate_i18n('Tuyển Dụng') ?></a></li>
-                <li class="recruitment__item__active flag"><a href=""><img src="<?= $path_template_url ?>/assets/images/home/header_english_flag.png"><span>En</span></a></li>
-                <li class="recruitment__item__active flag"><a href=""><img src="<?= $path_template_url ?>/assets/images/home/header_vietnam_flag.png"><span>Vi</span></a></li>
+                <li class="recruitment__item__active flag"><a href="#" onclick="language.events.changeLanguage('en')"><img src="<?= $path_template_url ?>/assets/images/home/header_english_flag.png"><span>En</span></a></li>
+                <li class="recruitment__item__active flag"><a href="#" onclick="language.events.changeLanguage('vi')"><img src="<?= $path_template_url ?>/assets/images/home/header_vietnam_flag.png"><span>Vi</span></a></li>
               </ul>
             </div>
           </div>

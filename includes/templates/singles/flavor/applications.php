@@ -25,7 +25,7 @@ $items = get_field('app-items', $page_id, []);
                 <div class="sc-subtitle">
                     <?= get_field('app-concept', $page_id, '') ?>
                 </div>
-                <?php if (count($items) > 0): ?>
+                <?php if (!empty($items)): ?>
                 <?php foreach ($items as $item):
                     $bg = wp_get_attachment_image_url($item['field-bg'], 'full');
                     ?>
