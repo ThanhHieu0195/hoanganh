@@ -6,7 +6,7 @@
  *
  * @package hoanganh
  */
-
+session_start();
 if ( ! function_exists( 'hoanganh_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -204,9 +204,16 @@ function get_breadcrumb() {
 define('KEY_MAP', 'AIzaSyC_5pPy8mvpqkeABmBfEMMqSCdLhEwDMO4');
 require get_template_directory() . '/acfs/scripts.php';
 function my_acf_init() {
-
     acf_update_setting('google_api_key', KEY_MAP);
 }
 
 add_action('acf/init', 'my_acf_init');
 
+if (!isset($_SESSION['i18n'])) {
+    $_SESSION['i18n'] = [];
+}
+
+if (isset($_GET['i18n']) && $_GET['i18n'] == base64_encode('i18n')) {
+    echo json_encode($_SESSION['i18n'], JSON_UNESCAPED_UNICODE);
+    die;
+}

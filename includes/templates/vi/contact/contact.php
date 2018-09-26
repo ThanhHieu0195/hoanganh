@@ -1,9 +1,44 @@
 <?php
+$has_notify = false;
+if (!empty($_POST)) {
+    $has_notify = true;
+    $name = isset($_POST['name']) ? $_POST['name'] : '';
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+    $content = isset($_POST['content']) ? $_POST['content'] : '';
+    $page = get_page($_POST['page_id']);
+    $error = true;
+
+    if (!empty($name) && !empty($email) && !empty($content)) {
+        $desc = 'from: ' . $email . ' - ' . substr($content, 0, 15) . '...';
+        $post_id = wp_insert_post([
+            'post_title' => $desc,
+            'post_content' => $content,
+            'post_excerpt' => $content,
+            'post_type' => 'contact',
+            'post_author' => -1,
+            'meta_input' => [
+                'field-name' => $name,
+                'field-content' => $content,
+                'field-email' => $email
+            ]
+        ]);
+        if (!empty($post_id)) {
+            $error = false;
+        }
+    }
+
+    $message = translate_i18n('Thao tác thành công');
+    if ($error) {
+        $message = translate_i18n('Thao tác thất bại');
+    }
+}
+
 $map = get_field('address-map', $page->ID, [
     'address' => '',
     'lat' => '',
     'lng' => ''
 ]);
+
 ?>
 <main>
     <div class="block-content">
@@ -18,7 +53,7 @@ $map = get_field('address-map', $page->ID, [
                                 <label><?= translate_i18n('Gửi Thư Đến') ?></label>
                                 <div class="info">
                                     <span class="ion-ios-email-outline icons"></span>
-                                    address-map  <a class="info-content" href="#"><?= get_field('field-mail', $page->ID, '') ?></a>
+                                    <?= translate_i18n('address-map') ?>  <a class="info-content" href="#"><?= get_field('field-mail', $page->ID, '') ?></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -39,20 +74,30 @@ $map = get_field('address-map', $page->ID, [
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-12">
                         <div class="block-form-contact">
-                            <form action="">
+                            <form action="" method="post">
+                                <?php if ($has_notify): ?>
+                                <div class="notify <?= !empty($error) ? 'error' : 'success' ?>">
+                                    <?= $message ?>
+                                </div>
+                                <?php endif ?>
+                                <input type="hidden" name="page_id" value="<?= $page->ID ?>">
                                 <div class="item">
                                     <label><?= translate_i18n('Tên của bạn') ?></label>
-                                    <input type="text" name="fname" placeholder="<?= translate_i18n('Nguyễn Văn A') ?>">
+                                    <input type="text" name="name" placeholder="<?= translate_i18n('Nguyễn Văn A') ?>">
                                 </div>
                                 <div class="item">
                                     <label><?= translate_i18n('Email của bạn') ?></label>
-                                    <input type="text" name="femail" placeholder="<?= translate_i18n('nguyenvana@gmail.com') ?>">
+                                    <input type="text" name="email" placeholder="<?= translate_i18n('nguyenvana@gmail.com') ?>">
                                 </div>
                                 <div class="item">
                                     <label><?= translate_i18n('Lời nhắn của bạn') ?></label>
-                                    <textarea rows="4" cols="50"><?= translate_i18n('Để lại lời nhắn ...') ?></textarea>
+                                    <textarea name="content" rows="4" cols="50"><?= translate_i18n('Để lại lời nhắn ...') ?></textarea>
                                 </div>
-                                <div class="sc-button"><a class="main-color" href="#"><span><?= translate_i18n('Gửi Lời Nhắn') ?></span></a></div>
+                                <div class="sc-button">
+                                    <button class="main-color" type="submit">
+                                        <span><?= translate_i18n('Gửi Lời Nhắn') ?></span>
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>

@@ -36,6 +36,7 @@ class Language implements HelperInterface {
     }
 
     public function translateText($key) {
+        $_SESSION['i18n'][$key] = $key;
         $arr = explode('/', $key);
         $value = $this->data;
         for ($i=0; $i<count($arr); $i++) {
