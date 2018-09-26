@@ -47,18 +47,6 @@ if ( post_password_required() ) {
 		endif;
 
 	endif; // Check for have_comments().
-	?>
-	<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="#" style="display:none;">Cancel reply</a></small></h3>
-	<label for="comment">Comment</label>
-	<div class="sc-form__group">
-		<div class="sc-form__item--half">
-			<input class="sc-form__control" type="text" name="name" placeholder="Your name">
-		</div>
-		<div class="sc-form__item--half">
-			<input class="sc-form__control" type="text" name="email" placeholder="Your email">
-		</div>
-	</div>
-	<?php
 	comment_form();
 	?>
 
