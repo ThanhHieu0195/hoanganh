@@ -58,9 +58,11 @@ $(document).ready(function() {
 });
 
 function myMap() {
+  let lat = parseFloat($('#googleMap').data('lat'));
+  let lng = parseFloat($('#googleMap').data('lng'));
     var mapProp= {
-        center:new google.maps.LatLng(51.508742,-0.120850),
-        zoom:5,
+        center:new google.maps.LatLng(lat,lng),
+        zoom:15,
     };
     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }

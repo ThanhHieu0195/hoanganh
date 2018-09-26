@@ -1,9 +1,9 @@
 <?php
 // generate fields
 $tab_types = array(
-    ACFCS::fieldTab(['name' => 'tab-type', 'label' => 'Type']),
-    ACFCS::getText(['name' => 'type-title', 'label' => 'Title']),
-    ACFCS::getText(['name' => 'type-number', 'label' => 'Number show']),
+    ACFCS::fieldTab(['name' => 'tab-flavor', 'label' => 'Flavors']),
+    ACFCS::getText(['name' => 'flavor-title', 'label' => 'Title']),
+    ACFCS::getText(['name' => 'flavor-number', 'label' => 'Number show']),
 );
 
 $tab_technologies = array(
@@ -22,18 +22,10 @@ $tab_technologies = array(
 );
 
 $tab_flavors = array(
-    ACFCS::fieldTab(['name' => 'tab-flavors', 'label' => 'Flavors']),
-    ACFCS::getText(['name' => 'flavors-title', 'label' => 'Title']),
-    ACFCS::getAreaText(['name' => 'flavors-description', 'label' => 'Description']),
-    ACFCS::getRepeater([
-        'name' => 'flavors-items',
-        'label' => 'Flavors',
-        'sub_fields' => [
-            ACFCS::getText(['name' => 'title', 'label' => 'Title']),
-            ACFCS::getAreaText(['name' => 'description', 'label' => 'Description']),
-            ACFCS::getImage(['name' => 'bg', 'label' => 'Background'])
-        ]
-    ])
+    ACFCS::fieldTab(['name' => 'tab-ingredient', 'label' => 'Ingredients']),
+    ACFCS::getText(['name' => 'ingredient-title', 'label' => 'Title']),
+    ACFCS::getAreaText(['name' => 'ingredient-description', 'label' => 'Description']),
+    ACFCS::getText(['name' => 'ingredient-number', 'label' => 'Number show']),
 );
 
 $flavors_fields = array_merge($tab_types, $tab_technologies, $tab_flavors);

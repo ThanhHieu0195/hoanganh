@@ -26,7 +26,7 @@ $menus = wp_get_nav_menu_items('main');
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" crossorigin="anonymous">
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -46,8 +46,11 @@ $menus = wp_get_nav_menu_items('main');
               </ul>
               <ul class="recruitment">
                 <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/contact' ?>"><?= translate_i18n('Liên Hệ') ?></a></li>
-                <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/recruitment' ?>"><?= translate_i18n('Tuyển Dụng') ?></a></li>
-                <li class="recruitment__item__active flag"><a href="#" onclick="language.events.changeLanguage('en')"><img src="<?= $path_template_url ?>/assets/images/home/header_english_flag.png"><span>En</span></a></li>
+                  <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/recruitment' ?>"><?= translate_i18n('Tuyển Dụng') ?></a></li>
+                  <?php if (is_user_logged_in()): ?>
+                  <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/post-listing' ?>"><?= translate_i18n('Tin tức nội bộ') ?></a></li>
+                <?php endif; ?>
+                  <li class="recruitment__item__active flag"><a href="#" onclick="language.events.changeLanguage('en')"><img src="<?= $path_template_url ?>/assets/images/home/header_english_flag.png"><span>En</span></a></li>
                 <li class="recruitment__item__active flag"><a href="#" onclick="language.events.changeLanguage('vi')"><img src="<?= $path_template_url ?>/assets/images/home/header_vietnam_flag.png"><span>Vi</span></a></li>
               </ul>
             </div>

@@ -26,28 +26,7 @@ if ( post_password_required() ) {
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-		<h2 class="comments-title">
-			<?php
-			$hoanganh_comment_count = get_comments_number();
-			if ( '1' === $hoanganh_comment_count ) {
-				printf(
-					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'hoanganh' ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			} else {
-				printf( // WPCS: XSS OK.
-					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $hoanganh_comment_count, 'comments title', 'hoanganh' ) ),
-					number_format_i18n( $hoanganh_comment_count ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			}
-			?>
-		</h2><!-- .comments-title -->
-
 		<?php the_comments_navigation(); ?>
-
 		<ol class="comment-list">
 			<?php
 			wp_list_comments( array(

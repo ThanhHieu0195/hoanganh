@@ -196,6 +196,7 @@ class Hook implements HookInterface{
 	    $mapping = \includes\classes\Constants::MAPP_TEMPLATE;
         $path = \includes\Bootstrap::getPath();
         $slug = \includes\Bootstrap::bootstrap()->helper->getSubUrl();
+
         if (array_key_exists($slug, $mapping)) {
             $slug = $mapping[$slug];
 

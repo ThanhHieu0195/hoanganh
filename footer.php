@@ -81,6 +81,7 @@ $footer_icon_url = get_option('footer_icon', '');
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?= KEY_MAP ?>&amp;callback=myMap"></script>
 
 </body>
 </html>

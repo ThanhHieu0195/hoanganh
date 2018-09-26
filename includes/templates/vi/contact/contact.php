@@ -18,7 +18,7 @@ $map = get_field('address-map', $page->ID, [
                                 <label><?= translate_i18n('Gửi Thư Đến') ?></label>
                                 <div class="info">
                                     <span class="ion-ios-email-outline icons"></span>
-                                    <a class="info-content" href="#"><?= get_field('field-mail', $page->ID, '') ?></a>
+                                    address-map  <a class="info-content" href="#"><?= get_field('field-mail', $page->ID, '') ?></a>
                                 </div>
                             </div>
                             <div class="item">
@@ -37,7 +37,6 @@ $map = get_field('address-map', $page->ID, [
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-7 col-md-7 col-sm-12">
                         <div class="block-form-contact">
                             <form action="">
@@ -60,6 +59,11 @@ $map = get_field('address-map', $page->ID, [
                 </div>
             </div>
         </div>
-        <div id="googleMap" style="width:100%;height:400px;"></div>
+        <?php
+
+        ?>
+        <div id="googleMap"
+             style="width:100%;height:400px;"
+             data-lat="<?= $map['lat'] ?>" data-lng="<?= $map['lng'] ?>"></div>
     </div>
 </main>

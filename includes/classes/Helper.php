@@ -76,6 +76,14 @@ class Helper implements HelperInterface {
         if (count($matches) > 0) {
             $slug = $matches[1];
         }
+
+        // remove query
+        $matches = [];
+        preg_match('/(.*)\?(.*)$/', $slug, $matches);;
+        if (count($matches) > 0) {
+            $slug = $matches[1];
+        }
+
         return $slug;
     }
 

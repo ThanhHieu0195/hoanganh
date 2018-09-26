@@ -201,10 +201,11 @@ function get_breadcrumb() {
 /**
  * import acf 
  */
+define('KEY_MAP', 'AIzaSyC_5pPy8mvpqkeABmBfEMMqSCdLhEwDMO4');
 require get_template_directory() . '/acfs/scripts.php';
 function my_acf_init() {
 
-    acf_update_setting('google_api_key', 'AIzaSyC_5pPy8mvpqkeABmBfEMMqSCdLhEwDMO4');
+    acf_update_setting('google_api_key', KEY_MAP);
 }
 
 add_action('acf/init', 'my_acf_init');
