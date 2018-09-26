@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-md-4 col-md-offset-1">
                         <div class="block-item">
-                            <div class="sc-team-block__block-image"><img src="<?= get_template_directory_uri() ?>/assets/images/ingredient/c_realnutri.png" alt=""></div>
+                            <div class="sc-team-block__block-image"><img src="<?= wp_get_attachment_image_url(get_field('i-bg', $page_id, ''), 'full') ?>" alt=""></div>
                             <div class="block-content">
                                 <div class="title"><?= get_field('i-app-title', $page_id, '') ?></div>
                                 <?= get_field('i-app-desc', $page_id, '') ?>

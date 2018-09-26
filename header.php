@@ -9,14 +9,7 @@
  * @package hoanganh
  */
 $path_template_url = get_template_directory_uri();
-$logo_url = '';
-
-$logo = get_field('theme-setting-header-logo', 'option');
-if ( !empty($logo) ) {
-    $logo_url = $logo['url'];
-}
 $menus = wp_get_nav_menu_items('main');
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -30,19 +23,40 @@ $menus = wp_get_nav_menu_items('main');
 </head>
 
 <body <?php body_class(); ?>>
+<?php
+$logo_url = '';
+$logo = get_field('theme-setting-header-logo', 'option');
+if ( !empty($logo) ) {
+    $logo_url = $logo['url'];
+}
+?>
 <div id="page" class="site">
 	<header>
         <div id="home_url" data-url="<?= get_home_url() ?>"></div>
         <div class="sc-header-top">
           <div class="container">
-            <div class="sc-header-top__left"><a class="sc-header-top__contact" href="#"><i class="far fa-envelope sc-header-top__contact__icon"></i><span class="sc-header-top__contact__text"><?=get_field('theme-setting-header-email', 'option', '') ?></span></a><a class="sc-header-top__contact" href="#"><i class="fas fa-phone-volume sc-header-top__contact__icon__phone"></i><span class="sc-header-top__contact__text"><?= get_field('theme-setting-header-phone', 'option', '') ?></span></a></div>
+
+            <div class="sc-header-top__left">
+                <a class="sc-header-top__contact" href="#">
+                    <i class="far fa-envelope sc-header-top__contact__icon"></i>
+                    <span class="sc-header-top__contact__text">
+                        <?=get_field('theme-setting-email', 'option', '') ?></span>
+                </a>
+                <a class="sc-header-top__contact" href="#">
+                    <i class="fas fa-phone-volume sc-header-top__contact__icon__phone"></i>
+                    <span class="sc-header-top__contact__text">
+                        <?= get_field('theme-setting-phone', 'option', '') ?>
+                    </span>
+                </a>
+            </div>
+
             <div class="sc-header-top__right">
               <ul class="socials">
-                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-fb', 'option', '') ?>"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-tw', 'option', '') ?>"><i class="fab fa-twitter"></i></a></li>
-                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-pin', 'option', '') ?>"><i class="fab fa-pinterest-p"></i></a></li>
-                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-go', 'option', '') ?>"><i class="fab fa-google-plus-g"></i></a></li>
-                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-header-in', 'option', '') ?>"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-fb', 'option', '') ?>"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-tw', 'option', '') ?>"><i class="fab fa-twitter"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-pin', 'option', '') ?>"><i class="fab fa-pinterest-p"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-go', 'option', '') ?>"><i class="fab fa-google-plus-g"></i></a></li>
+                <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-in', 'option', '') ?>"><i class="fab fa-linkedin-in"></i></a></li>
               </ul>
               <ul class="recruitment">
                 <li class="recruitment__item"><a class="recruitment__link" href="<?= get_home_url() . '/contact' ?>"><?= translate_i18n('Liên Hệ') ?></a></li>

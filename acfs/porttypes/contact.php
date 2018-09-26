@@ -1,19 +1,22 @@
 <?php
 // generate fields
-    $header_fields = [
-        ACFCS::getImage(['name' => 'theme-setting-header-logo', 'label' => 'Logo']),
-    ];
+
+$video_fields = [
+    ACFCS::getText(['name' => 'field-name', 'label' => 'Name']),
+    ACFCS::getText(['name' => 'field-email', 'label' => 'Email']),
+    ACFCS::getAreaText(['name' => 'field-content', 'label' => 'Content']),
+];
 
 acf_add_local_field_group(array (
-    'key' => 'theme-setting-header',
-    'title' => 'Header',
-    'fields' => $header_fields,
+    'key' => 'group_porttype_contact',
+    'title' => 'Contact',
+    'fields' => $video_fields,
     'location' => array (
         array (
             array (
-                'param' => 'options_page',
+                'param' => 'post_type',
                 'operator' => '==',
-                'value' => 'acf-options-header',
+                'value' => 'contact',
             ),
         )
     ),
@@ -28,4 +31,3 @@ acf_add_local_field_group(array (
     'active' => 1,
     'description' => '',
 ));
-
