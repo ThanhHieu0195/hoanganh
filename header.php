@@ -75,7 +75,7 @@ if ( !empty($logo) ) {
           <header class="header-main-01">
             <div class="mainNav">
               <div class="fixed-menu">
-                <div class="logo"><a href="#"><img src="<?= $logo_url ?>" alt="logo"></a></div>
+                <div class="logo"><a href="<?= get_home_url() ?>"><img src="<?= $logo_url ?>" alt="logo"></a></div>
                 <div class="main-header pc" id="menu">
                   <ul>
                       <?= \includes\Bootstrap::$bootstrap->helper->getMenu($menus); ?>
