@@ -117,3 +117,11 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.comments-area .comment-reply-title,
+.comments-area .comment-form label {
+  margin-bottom: 10px;
+}
+.comment-respond .comment-reply-title,
+.comment-respond .comment-form label {
+  display: none;
+}
