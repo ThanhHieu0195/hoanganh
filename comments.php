@@ -47,6 +47,16 @@ if ( post_password_required() ) {
 		endif;
 
 	endif; // Check for have_comments().
+	?>
+	<div class="sc-form__group">
+		<div class="sc-form__item--half">
+			<input class="sc-form__control" type="text" name="name" placeholder="Your name">
+		</div>
+		<div class="sc-form__item--half">
+			<input class="sc-form__control" type="text" name="email" placeholder="Your email">
+		</div>
+	</div>
+	<?php
 	comment_form();
 	?>
 
