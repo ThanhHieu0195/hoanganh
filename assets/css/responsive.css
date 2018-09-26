@@ -118,7 +118,7 @@
   transition: all 0.3s ease;
 }
 .comments-area .comment-reply-title,
-.comments-area .comment-form label {
+.comments-area label {
   margin-bottom: 10px;
 }
 .comment-respond .comment-reply-title,
