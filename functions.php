@@ -6,7 +6,7 @@
  *
  * @package hoanganh
  */
-
+session_start();
 if ( ! function_exists( 'hoanganh_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -209,3 +209,11 @@ function my_acf_init() {
 
 add_action('acf/init', 'my_acf_init');
 
+if (!isset($_SESSION['i18n'])) {
+    $_SESSION['i18n'] = [];
+}
+
+if (isset($_GET['i18n']) && $_GET['i18n'] == base64_encode('i18n')) {
+    echo json_encode($_SESSION['i18n'], JSON_UNESCAPED_UNICODE);
+    die;
+}
