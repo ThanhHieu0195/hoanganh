@@ -257,6 +257,12 @@ a:hover, a:focus {
   }
 }
 
+@media (max-width: 600px) {
+  .sc-main-title--big {
+    font-size: 32px;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -2079,7 +2085,7 @@ theme.
 .breadcrumb-wapper .breadcrumb i::before {
   color: #cccccc;
 }
-
+.breadcrumb-wapper a,
 .breadcrumb-wapper .breadcrumb__link {
   text-transform: capitalize;
   font-size: 18px;
