@@ -272,7 +272,8 @@ body {
   padding: 108px 0 110px;
 }
 
-.sc-team-block.layout-2 .layer:nth-child(2) {
+.sc-team-block.layout-2 .layer:nth-child(2),
+.sc-team-block .layer:nth-child(2) {
   position: relative !important;
 }
 
