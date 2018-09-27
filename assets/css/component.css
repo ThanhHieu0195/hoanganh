@@ -15,6 +15,24 @@
     background-color: transparent;
     border-radius: 0;
     color: #82c341;
+    border: 0;
+}
+
+.sc-carousel-layout-2 .nav-tabs > li.active > a .block-title, 
+.sc-carousel-layout-2 .nav-tabs > li.active > a:focus .block-title, 
+.sc-carousel-layout-2 .nav-tabs > li.active > a:hover .block-title {
+    color: #82c341;
+    border: 0;
+}
+
+.sc-carousel-layout-2 .nav > li > a:focus, .sc-carousel-layout-2 .nav > li > a:hover {
+    background-color: transparent;
+    color: #3f3f3f;
+    border: 0;
+}
+.sc-carousel-layout-2 .nav > li > a:focus .block-title, 
+.sc-carousel-layout-2 .nav > li > a:hover .block-title {
+    color: #82c341;
 }
 
 @media screen and (max-width: 375px) {
