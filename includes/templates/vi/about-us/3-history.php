@@ -23,7 +23,7 @@ $list_history = get_field('ls-history', $page->ID, []);
                                 <div class="content-left">
                                     <div class="sc-accordion__heading__title"><?= $history['field-title'] ?></div>
                                     <div class="sc-accordion__heading__since"><?= $history['field-timeline'] ?></div>
-                                </div><a class="sc-accordion__arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?= $idx ?>" <?= $idx == 0 ? 'aria-expanded="true"' ? : '' ?>><i class="fas fa-angle-down"></i></a>
+                                </div><a class="sc-accordion__arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?= $idx ?>" <?= $idx == 0 ? 'aria-expanded="true"' : '' ?>><i class="fas fa-angle-down"></i></a>
                             </div>
                         </div>
                     </div>
