@@ -32,7 +32,21 @@ $tab_products = array(
     ]]),
 );
 
-$flavor_fields = array_merge($tab_items, $tab_applications, $tab_products);
+$tab_background = array(
+    ACFCS::fieldTab(['name' => 'tab-image-background', 'label' => 'Image Background']),
+    ACFCS::getImage(['name' => 'top-left', 'label' => 'top-left']),
+    ACFCS::getImage(['name' => 'middle-left', 'label' => 'middle-left']),
+    ACFCS::getImage(['name' => 'bottom-left', 'label' => 'bottom-left']),
+    ACFCS::getImage(['name' => 'bottom-left-left', 'label' => 'bottom-left-left']),
+
+    ACFCS::getImage(['name' => 'top-right', 'label' => 'top-right']),
+    ACFCS::getImage(['name' => 'middle-right', 'label' => 'middle-right']),
+    ACFCS::getImage(['name' => 'middle-right-right', 'label' => 'middle-right-right']),
+    ACFCS::getImage(['name' => 'bottom-right', 'label' => 'bottom-right']),
+    ACFCS::getImage(['name' => 'bottom-right-right', 'label' => 'bottom-right-right']),
+);
+
+$flavor_fields = array_merge($tab_items, $tab_applications, $tab_products, $tab_background);
 
 if (!empty($page)) {
     acf_add_local_field_group(array (
