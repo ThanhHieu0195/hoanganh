@@ -13,6 +13,17 @@
     background-color: #f9f9f9;
 }
 
+.sc-slider-video.slider button {
+    line-height: 1;
+    text-align: center;
+    padding-left: 29px;
+}
+
+
+.sc-slider-video.slider.active button {
+    padding-left: 25px;
+}
+
 .sc-team-block + .sc-carousel-layout-2 .carousel-slide-for,
 .sc-team-block + .sc-carousel-layout-2 .block-item{
     background-color: #fff;
