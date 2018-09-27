@@ -16,7 +16,9 @@ $permalink = get_permalink($post_id);
         </div>
         <div class="col-lg-offset-4 col-md-offset-0 col-xs-12 col-sm-12 col-md-8">
             <div class="block-content">
-                <div class="title"><?= esc_html($title) ?></div>
+                <div class="title">
+                    <a href="<?= esc_url($permalink) ?>"><?= esc_html($title) ?></a>
+                </div>
                 <div class="description">
                     <?= $description ?>
                 </div>
