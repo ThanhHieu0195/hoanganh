@@ -1,6 +1,9 @@
 .custom-nav-for {
     bottom: 8px;
 }
+#menu ul {
+    text-align: right;
+}
 
 @media screen and (min-width: 1500px) {
     .sc-team-block .block-item.top-right {
