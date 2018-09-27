@@ -25,8 +25,7 @@ $videos = get_field('footer-videos', 'option', []);
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="title">Subscribe for <span>Hoang Anh</span> viewpoints!</div>
-                <div class="description"><?= get_field('footer-text-banner', 'option', '') ?></div>
+                <?= get_field('footer-text-banner', 'option', '') ?>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="form">
