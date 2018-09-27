@@ -21,6 +21,15 @@ $tab_inv= array(
     ])
 );
 
+$tab_inv_bg = array(
+    ACFCS::fieldTab(['name' => 'tab-bg-inv', 'label' => 'Background Inovation']),
+    ACFCS::getImage(['name' => 'inv_bg_top', 'label' => 'bg 
+    top']),
+    ACFCS::getImage(['name' => 'inv_bg_bottom', 'label' => 'bg bottom']),
+    ACFCS::getImage(['name' => 'inv_bg_left', 'label' => 'bg left']),
+    ACFCS::getImage(['name' => 'inv_bg_right', 'label' => 'bg right']),
+);
+
 $tab_rd = array(
     ACFCS::fieldTab(['name' => 'tab-rd', 'label' => 'R&D']),
     ACFCS::getText(['name' => 'rd-title', 'label' => 'Title']),
@@ -36,7 +45,7 @@ $tab_rd = array(
 );
 
 
-$research_fields = array_merge($tab_info, $tab_inv, $tab_rd);
+$research_fields = array_merge($tab_info, $tab_inv, $tab_inv_bg, $tab_rd);
 
 $page = get_page_by_path('research');
 if (!empty($page)) {
