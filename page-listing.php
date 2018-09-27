@@ -3,7 +3,7 @@
 get_header();
 ?>
 <?php
-$techs = get_field('tech-list', $page->ID, []);
+$techs = get_field('tech-list', get_the_ID(), []);
 if (!empty($techs)):
     ?>
 
