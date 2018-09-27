@@ -13,7 +13,7 @@ $bottom_right = wp_get_attachment_image_url(get_field('bottom-right', $page_id, 
 $bottom_right_right = wp_get_attachment_image_url(get_field('bottom-right-right', $page_id, ''), 'full');
 ?>
 <div class="sc-technology-layout-1 parllax-common">
-    <div id="parallax">
+    <div>
         <div class="layer" data-depth="0.1">
             <div class="block-layer top-left"><img src="<?= esc_url($top_left) ?>" alt="">
             </div>
