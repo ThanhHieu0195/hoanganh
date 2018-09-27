@@ -14,9 +14,9 @@ if (!empty($techs)):
                 }
 
                     $title = $tech['field-title'];
-                    $content = $tech['field-content'];
+                    $content = $tech['field-desc'];
                     $bg = wp_get_attachment_image_url($tech['field-bg'], 'full');
-                    $url = $tech['field-url'];
+                    $url = $tech['field-view_url'];
                     ?>
                 <div class="block-item <?= $pos_class ?>">
                     <div class="row">
