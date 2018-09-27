@@ -44,7 +44,7 @@ class Hook implements HookInterface{
             'slick-theme' => 'assets/lib/js/slick/slick-theme.css',
             'popup-video' => 'assets/lib/css/magnific-popup.css',
             'hoanganh' => 'assets/css/style.css',
-            'response' => 'assets/css/response.css'
+            'response' => 'assets/css/responsive.css'
         );
         foreach ($styles as $style) {
             wp_enqueue_style($style, $path .'/'. $style, array(), self::VERSION);

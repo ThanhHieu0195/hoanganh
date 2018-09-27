@@ -2,6 +2,7 @@
 // generate fields
     $footer_fields = [
         ACFCS::fieldTab(['name' => 'tab-footer-general', 'label' => 'General']),
+        ACFCS::getText(['name' => 'footer-text-banner', 'label' => 'Text Banner']),
         ACFCS::getImage(['name' => 'footer-logo', 'label' => 'Background']),
         ACFCS::fieldTab(['name' => 'tab-footer-links', 'label' => 'Link']),
         ACFCS::getRepeater(['name' => 'footer-links', 'label' => 'Items', 'sub_fields' => [
