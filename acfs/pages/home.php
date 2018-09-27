@@ -298,7 +298,7 @@ $tab_teams = array(
         'mime_types' => '',
     ),
     array (
-        'key' => 'field_5b93941d0a0ac',
+        'key' => 'team1_view_more',
         'label' => 'View more',
         'name' => 'team1_view_more',
         'type' => 'url',
@@ -417,7 +417,7 @@ $tab_teams = array(
         'mime_types' => '',
     ),
     array (
-        'key' => 'field_5b9394662bee6',
+        'key' => 'team2_view_more',
         'label' => 'View more',
         'name' => 'team2_view_more',
         'type' => 'url',
