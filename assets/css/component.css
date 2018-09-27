@@ -1,0 +1,12 @@
+.custom-nav-for {
+    bottom: 8px;
+}
+
+@media screen and (min-width: 1500px) {
+    .sc-team-block .block-item.top-right {
+        right: -1577px;
+    }
+    .sc-team-block .block-item.bottom-left {
+        left: 17px;
+    }
+}
