@@ -6,8 +6,8 @@ Class Constants {
 	const MAX_PROJECT = 8;
 	const MAX_POST = 9;
 
-//	 const DEFAULT_SLUG = 'hoanganh/';
-	const DEFAULT_SLUG = '~simplet1/hoanganh/';
+	 const DEFAULT_SLUG = 'hoanganh/';
+//	const DEFAULT_SLUG = '~simplet1/hoanganh/';
 
     const MAPP_TEMPLATE = [
         self::DEFAULT_SLUG  => 'home',

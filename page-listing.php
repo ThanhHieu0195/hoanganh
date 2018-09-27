@@ -1,8 +1,5 @@
-<?php /* Template Name: Listing page */ ?>
-
+<?php /* Template Name: Listing page */
 get_header();
-?>
-<?php
 $techs = get_field('tech-list', get_the_ID(), []);
 if (!empty($techs)):
     ?>
@@ -45,7 +42,5 @@ if (!empty($techs)):
         </div>
     </main>
 
-<?php endif; ?>
-
-<?php
+<?php endif; 
 get_footer();
