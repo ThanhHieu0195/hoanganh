@@ -64,16 +64,16 @@
 }
 @media screen and (min-width: 1700px) {
     .sc-team-block .block-item.top-right {
-        right: -1760px;
+        right: -1700px;
     }
 }
 @media screen and (min-width: 1800px) {
     .sc-team-block .block-item.top-right {
-        right: -1860px;
+        right: -1800px;
     }
 }
 @media screen and (min-width: 1900px) {
     .sc-team-block .block-item.top-right {
-        right: -1960px;
+        right: -1900px;
     }
 }
