@@ -5,7 +5,7 @@
 $tech_fields = array(
     ACFCS::getRepeater(['name' => 'tech-list', 'label' => 'Technology List', 'sub_fields' => [
         ACFCS::getText(['name' => 'title', 'label' => 'Title']),
-        ACFCS::getAreaText(['name' => 'Content', 'label' => 'Content']),
+        ACFCS::getAreaText(['name' => 'content', 'label' => 'Content']),
         ACFCS::getImage(['name' => 'bg', 'label' => 'Background']),
         ACFCS::getUrl(['name' => 'Url', 'label' => 'url']),
     ]]),
