@@ -179,7 +179,7 @@ function get_breadcrumb() {
                     $cat = get_the_category();
                     if (!empty($cat)) {
                         echo "<i class=\"fas fa-angle-right\"></i>";
-                        echo $cat[0]->name . ' &bull; ';
+                        echo $cat[0]->name;
                     }
 
                     if (is_single()) {
