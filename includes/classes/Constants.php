@@ -19,7 +19,7 @@ Class Constants {
         self::DEFAULT_SLUG  . 'recruitment/' => 'recruitment',
         self::DEFAULT_SLUG  . 'contact/' => 'contact',
         self::DEFAULT_SLUG  . 'post-listing/' => 'post-listing',
-        self::DEFAULT_SLUG  . 'technology-listing/' => 'technology-listing',
+//        self::DEFAULT_SLUG  . 'technology-listing/' => 'technology-listing',
 
         // self::DEFAULT_SLUG . 'en/' => 'home',
     ];
