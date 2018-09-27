@@ -2,6 +2,7 @@
 // generate fields
     $header_fields = [
         ACFCS::getImage(['name' => 'theme-setting-header-logo', 'label' => 'Logo']),
+        ACFCS::getImage(['name' => 'theme-setting-header-banner', 'label' => 'Banner']),
     ];
 
 acf_add_local_field_group(array (

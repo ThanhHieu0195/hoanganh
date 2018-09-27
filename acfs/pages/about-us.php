@@ -1,15 +1,5 @@
 <?php
 // generate fields
-$tab_banner = array(
-    ACFCS::fieldTab(['name' => 'tab-banner', 'label' => 'Banner']),
-    ACFCS::getText(['name' => 'banner-title', 'label' => 'Title']),
-    ACFCS::getText(['name' => 'banner-subtitle', 'label' => 'Subtitle']),
-    ACFCS::getAreaText(['name' => 'banner-description', 'label' => 'Description']),
-    ACFCS::getText(['name' => 'banner-author', 'label' => 'Author']),
-    ACFCS::getText(['name' => 'banner-pos', 'label' => 'Pos']),
-    ACFCS::getImage(['name' => 'banner-bg', 'label' => 'Background']),
-);
-
 $tab_message = array(
     ACFCS::fieldTab(['name' => 'tab-message', 'label' => 'Message']),
     ACFCS::getText(['name' => 'message-title', 'label' => 'Title']),
@@ -57,7 +47,7 @@ $tab_news = array(
 );
 
 
-$about_fields = array_merge($tab_banner, $tab_message, $tab_quote1, $tab_quote2, $tab_history, $tab_news);
+$about_fields = array_merge($tab_message, $tab_quote1, $tab_quote2, $tab_history, $tab_news);
 
 $page = get_page_by_path('about-us');
 if (!empty($page)) {
