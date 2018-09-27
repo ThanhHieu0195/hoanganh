@@ -1,9 +1,6 @@
 <?php
-$num = get_field('ingredient-number', $page->ID, '-1');
-$items = get_posts([
-    'post_type' => 'ingredient',
-    'numberposts' => intval($num)
-]);
+$items = get_field('ingredient-items', $page->ID, []);
+if (!empty($items)):
 ?>
 <div class="sc-product-layout-2">
     <div class="container">
@@ -17,10 +14,10 @@ $items = get_posts([
                 /**
                  * @var $item WP_Post
                  */
-                $bg = get_the_post_thumbnail_url($item->ID);
-                $title = $item->post_title;
-                $description = $item->post_excerpt;
-                $permalink = get_permalink($item->ID);
+                $bg = wp_get_attachment_image_url($item['field-bg'], 'full');
+                $title = $item['field-title'];
+                $description = $item['field-desc'];
+                $permalink = '';
                 ?>
             <div class="col-xs-12 col-sm-12 col-md-3">
                 <?= do_shortcode('[ingredient title="' . $title . '" description="' . $description . '" bg="' . $bg . '" link="'.$permalink.'"/]'); ?>
@@ -29,3 +26,5 @@ $items = get_posts([
         </div>
     </div>
 </div>
+
+<?php endif; ?>

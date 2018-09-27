@@ -193,7 +193,7 @@ class Hook implements HookInterface{
     public function registerMenu() {
     }
 
-    public function customTemplate($template) {
+    public function customTemplate($template='') {
 	    $mapping = \includes\classes\Constants::MAPP_TEMPLATE;
         $path = \includes\Bootstrap::getPath();
         $slug = \includes\Bootstrap::bootstrap()->helper->getSubUrl();
