@@ -10,7 +10,7 @@ $tab_all = translate_i18n('Tất cả');
 $cats_filter[] = "<li class=\"active sc-tabs__nav-tabs__item\"><a class=\"sc-tabs__nav-tabs__link\" data-toggle=\"tab\" href=\"#term-all\">{$tab_all}</a></li>";
 $arr['all'] = [];
 
-$next = false;
+$is_next = false;
 
 foreach ($cats as $idx => $cat) {
     /**
@@ -28,7 +28,7 @@ foreach ($cats as $idx => $cat) {
     ]);
 
     if (count($next_posts) > count($arr[$cat->term_id])) {
-        $next = true;
+        $is_next = true;
     }
 
     $arr['all'] = array_merge($arr['all'], $arr[$cat->term_id]);
@@ -94,13 +94,13 @@ foreach ($cats as $idx => $cat) {
                 endif;
                 endforeach; ?>
             </div>
-
+            <?php if ($is_next): ?>
             <div class="sc-button">
                 <a class="main-color" href="?numpage=<?= $numpage + 1 ?>">
                     <span><?= translate_i18n('Xem Thêm') ?></span>
                 </a>
             </div>
-
+            <?php endif; ?>
         </div>
     </div>
 </div>
