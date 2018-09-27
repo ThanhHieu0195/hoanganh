@@ -17,6 +17,16 @@
     color: #82c341;
 }
 
+.sc-carousel-layout-2 .nav-tabs > li.active > a .block-title, 
+.sc-carousel-layout-2 .nav-tabs > li.active > a:focus .block-title, 
+.sc-carousel-layout-2 .nav-tabs > li.active > a:hover .block-title {
+    color: #82c341;
+}
+
+.sc-carousel-layout-2 .nav > li > a:focus, .sc-carousel-layout-2 .nav > li > a:hover {
+    background-color: transparent;
+}
+
 @media screen and (max-width: 375px) {
     .recruitment .flag + .flag {
         padding-left: 15px;
