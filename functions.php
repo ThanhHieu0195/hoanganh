@@ -180,11 +180,15 @@ function get_breadcrumb() {
                     the_category(' &bull; ');
                     if (is_single()) {
                         echo '<i class="fas fa-angle-right"></i>';
-                        echo '<li class="breadcrumb__item active"><a class="breadcrumb__link active" href="#">'.the_title().'</a></li>';
+                        echo '<li class="breadcrumb__item active">
+                                <a class="breadcrumb__link active" href="#">'.get_the_title().'</a>
+                                </li>';
                     }
                 } elseif (is_page()) {
                     echo '<i class="fas fa-angle-right"></i>';
-                    echo '<li class="breadcrumb__item active"><a class="breadcrumb__link active" href="#">'.the_title().'</a></li>';
+                    echo '<li class="breadcrumb__item active">
+                            <a class="breadcrumb__link active" href="#">'.get_the_title().'</a>
+                            </li>';
                 } elseif (is_search()) {
                     echo '<i class="fas fa-angle-right"></i>Search Results for... ';
                     echo '"<em>';
