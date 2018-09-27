@@ -42,5 +42,5 @@ if (!empty($techs)):
         </div>
     </main>
 
-<?php endif; 
+<?php endif;
 get_footer();
