@@ -51,6 +51,7 @@
 
 .comment-form textarea {
   height: 85px;
+  font-size: 14px;
 }
 
 .comment-form p {
@@ -158,6 +159,10 @@
   display: none;
 }
 
+.comment-awaiting-moderation {
+  padding-left: 90px;
+}
+
 .comment-metadata {
   position: absolute;
   right: 0;
@@ -211,6 +216,7 @@
     position: relative;
     padding-left: 40px;
   }
+  .comment-awaiting-moderation,
   .comment-content {
     padding-left: 40px;
   }

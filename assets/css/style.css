@@ -257,6 +257,12 @@ a:hover, a:focus {
   }
 }
 
+@media (max-width: 600px) {
+  .sc-main-title--big {
+    font-size: 32px;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
