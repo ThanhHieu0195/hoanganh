@@ -1,16 +1,16 @@
 <?php
 $items = get_field('technology-items', $page->ID, []);
 
-$top_left = wp_get_attachment_image_url(get_field('top-left', $page_id, ''), 'full');
-$middle_left = wp_get_attachment_image_url(get_field('middle-left', $page_id, ''), 'full');
-$bottom_left = wp_get_attachment_image_url(get_field('bottom-left', $page_id, ''), 'full');
-$bottom_left_left = wp_get_attachment_image_url(get_field('bottom-left-left', $page_id, ''), 'full');
+$top_left = wp_get_attachment_image_url(get_field('top-left', $page->ID, ''), 'full');
+$middle_left = wp_get_attachment_image_url(get_field('middle-left', $page->ID, ''), 'full');
+$bottom_left = wp_get_attachment_image_url(get_field('bottom-left', $page->ID, ''), 'full');
+$bottom_left_left = wp_get_attachment_image_url(get_field('bottom-left-left', $page->ID, ''), 'full');
 
-$top_right = wp_get_attachment_image_url(get_field('top-right', $page_id, ''), 'full');
-$middle_right = wp_get_attachment_image_url(get_field('middle-right', $page_id, ''), 'full');
-$middle_right_right = wp_get_attachment_image_url(get_field('middle-right-right', $page_id, ''), 'full');
-$bottom_right = wp_get_attachment_image_url(get_field('bottom-right', $page_id, ''), 'full');
-$bottom_right_right = wp_get_attachment_image_url(get_field('bottom-right-right', $page_id, ''), 'full');
+$top_right = wp_get_attachment_image_url(get_field('top-right', $page->ID, ''), 'full');
+$middle_right = wp_get_attachment_image_url(get_field('middle-right', $page->ID, ''), 'full');
+$middle_right_right = wp_get_attachment_image_url(get_field('middle-right-right', $page->ID, ''), 'full');
+$bottom_right = wp_get_attachment_image_url(get_field('bottom-right', $page->ID, ''), 'full');
+$bottom_right_right = wp_get_attachment_image_url(get_field('bottom-right-right', $page->ID, ''), 'full');
 ?>
 <div class="sc-technology-layout-1">
     <div class="container">
