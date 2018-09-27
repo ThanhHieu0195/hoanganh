@@ -22,7 +22,7 @@ $items = get_posts([
                 $description = $item->post_excerpt;
                 $permalink = get_permalink($item->ID);
                 ?>
-            <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-3">
                 <?= do_shortcode('[ingredient title="' . $title . '" description="' . $description . '" bg="' . $bg . '" link="'.$permalink.'"/]'); ?>
             </div>
             <?php endforeach; ?>
