@@ -44,7 +44,7 @@ $bg2 = wp_get_attachment_image_url(get_field('quote_bg2', $page_id, ''), 'full')
                             <?= $description2 ?>
                         </div>
                         <div class="sc-button sc-banner__content__button">
-                            <a class="text-sub-color" href="<?= esc_url($viewmore1) ?>">
+                            <a class="text-sub-color" href="<?= esc_url($viewmore2) ?>">
                                 <span><?= translate_i18n('xem thêm') ?></span>
                             </a>
                         </div>

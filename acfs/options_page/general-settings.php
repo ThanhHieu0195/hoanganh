@@ -4,6 +4,7 @@ $header_fields = [
     ACFCS::getText(['name' => 'theme-setting-email', 'label' => 'Email']),
     ACFCS::getText(['name' => 'theme-setting-phone', 'label' => 'Phone']),
     ACFCS::getText(['name' => 'theme-setting-address', 'label' => 'Address']),
+    ACFCS::getUrl(['name' => 'theme-setting-address-link', 'label' => 'Address link']),
 
     ACFCS::getText(['name' => 'theme-setting-fb', 'label' => 'facebook']),
     ACFCS::getText(['name' => 'theme-setting-tw', 'label' => 'Twitter']),
