@@ -1,6 +1,6 @@
 <?php
 $numpage = isset($_GET['numpage']) ? intval($_GET['numpage']) : 1;
-$numberposts = 10;
+$numberposts = 3;
 
 $cats = get_categories();
 $cats_filter = [];
@@ -69,13 +69,17 @@ foreach ($cats as $idx => $cat) {
                     <div class="row">
                         <?php for($i=1; $i<count($items); $i++):
                         $item = $items[$i];
+                        $permalink = get_permalink($item->ID);
                         ?>
                         <div class="col-md-6">
                             <div class="sc-post-block">
-                                <div class="sc-post-block__image"><img src="<?= get_the_post_thumbnail_url($item->ID) ?>" alt="">
+                                <div class="sc-post-block__image">
+                                    <img src="<?= get_the_post_thumbnail_url($item->ID) ?>" alt="">
                                 </div>
                                 <div class="sc-post-block__content">
-                                    <div class="sc-post-block__content__title"><?= $item->post_title ?></div>
+                                    <div class="sc-post-block__content__title">
+                                        <a href="<?= esc_url($permalink) ?>"><?= $item->post_title ?></a>
+                                    </div>
                                     <div class="sc-post-block__content__info">
                                         <span><?= get_the_date(get_option('date_format'), $item->ID) ?></span>
                                         <span class="separate">|</span>
