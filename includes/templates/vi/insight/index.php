@@ -1,6 +1,6 @@
 <?php
 $numpage = isset($_GET['numpage']) ? intval($_GET['numpage']) : 1;
-$numberposts = 2;
+$numberposts = get_field('numberposts', $page->ID, 10);
 
 $cats = get_categories();
 $cats_filter = [];
