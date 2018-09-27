@@ -176,17 +176,22 @@ function get_breadcrumb() {
                 <?php
                 echo '<li class="breadcrumb__item"><a class="breadcrumb__link" href="'.home_url().'">home</a></li>';
                 if (is_category() || is_single()) {
-					if (is_category()) {
-						echo "<i class=\"fas fa-angle-right\"></i>";
-						echo '<li class="breadcrumb__item active">'.the_category(' &bull; ').'</li>';
-					}
+                    $cat = get_the_category();
+                    if (!empty($cat)) {
+                        echo "<i class=\"fas fa-angle-right\"></i>";
+                        echo $cat[0]->name;
+                    }
                     if (is_single()) {
                         echo '<i class="fas fa-angle-right"></i>';
-                        echo '<li class="breadcrumb__item active"><a class="breadcrumb__link active" href="#">'.the_title().'</a></li>';
+                        echo '<li class="breadcrumb__item active">
+                                <a class="breadcrumb__link active" href="#">'.get_the_title().'</a>
+                                </li>';
                     }
                 } elseif (is_page()) {
                     echo '<i class="fas fa-angle-right"></i>';
-                    echo '<li class="breadcrumb__item active"><a class="breadcrumb__link active" href="#">'.the_title().'</a></li>';
+                    echo '<li class="breadcrumb__item active">
+                            <a class="breadcrumb__link active" href="#">'.get_the_title().'</a>
+                           </li>';
                 } elseif (is_search()) {
                     echo '<i class="fas fa-angle-right"></i>Search Results for... ';
                     echo '"<em>';

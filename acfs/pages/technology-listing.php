@@ -11,30 +11,27 @@ $tech_fields = array(
     ]]),
 );
 
-$page = get_page_by_path('technology-listing');
-if (!empty($page)) {
-    acf_add_local_field_group(array (
-        'key' => 'group_technology-listing',
-        'title' => 'Technology Listing',
-        'fields' => $tech_fields,
-        'location' => array (
+acf_add_local_field_group(array (
+    'key' => 'group_technology-listing',
+    'title' => 'Technology Listing',
+    'fields' => $tech_fields,
+    'location' => array (
+        array (
             array (
-                array (
-                    'param' => 'page',
-                    'operator' => '==',
-                    'value' => $page->ID,
-                ),
-            )
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => array (
-            0 => 'the_content',
-        ),
-        'active' => 1,
-        'description' => '',
-    ));
-}
+                'param' => 'page_template',
+                'operator' => '==',
+                'value' => 'page-listing.php',
+            ),
+        )
+    ),
+    'menu_order' => 0,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'hide_on_screen' => array (
+        0 => 'the_content',
+    ),
+    'active' => 1,
+    'description' => '',
+));
