@@ -7,7 +7,7 @@ $tech_fields = array(
         ACFCS::getText(['name' => 'title', 'label' => 'Title']),
         ACFCS::getAreaText(['name' => 'content', 'label' => 'Content']),
         ACFCS::getImage(['name' => 'bg', 'label' => 'Background']),
-        ACFCS::getUrl(['name' => 'url', 'label' => 'Url']),
+        ACFCS::getUrl(['name' => 'view_url', 'label' => 'Url']),
     ]]),
 );
 
