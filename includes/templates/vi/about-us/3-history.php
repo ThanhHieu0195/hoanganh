@@ -23,12 +23,12 @@ $list_history = get_field('ls-history', $page->ID, []);
                                 <div class="content-left">
                                     <div class="sc-accordion__heading__title"><?= $history['field-title'] ?></div>
                                     <div class="sc-accordion__heading__since"><?= $history['field-timeline'] ?></div>
-                                </div><a class="sc-accordion__arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true"><i class="fas fa-angle-down"></i></a>
+                                </div><a class="sc-accordion__arrow" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?= $idx ?>" aria-expanded="true"><i class="fas fa-angle-down"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="panel-collapse collapse <?= $idx == 0 ? 'in' : '' ?>" id="collapse1">
+                <div class="panel-collapse collapse <?= $idx == 0 ? 'in' : '' ?>" id="collapse-<?= $idx ?>">
                     <div class="panel-body sc-accordion__body">
                         <?php if (!empty($history['field-items'])): ?>
                         <?php foreach ($history['field-items'] as $item): ?>

@@ -53,7 +53,7 @@ $videos = get_field('footer-videos', 'option', []);
               <ul class="infomation">
                 <li>
                     <span><i class="fas fa-map-marker-alt"></i></span>
-                    <a href="#"><?= get_field('theme-setting-address', 'option', '') ?></a>
+                    <a href="<?= get_field('theme-setting-address-link', 'option', '') ?>"><?= get_field('theme-setting-address', 'option', '') ?></a>
                 </li>
                 <li>
                     <span><i class="fas fa-phone"></i></span>
