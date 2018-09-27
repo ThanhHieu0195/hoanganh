@@ -4530,7 +4530,7 @@ theme.
 }
 
 .active.sc-tabs__nav-tabs__item .sc-tabs__nav-tabs__link::after {
-  background-color: #82c341;
+  width: 100%;
 }
 
 .sc-tabs__nav-tabs__link {
@@ -4544,6 +4544,7 @@ theme.
 
 .sc-tabs__nav-tabs__link:hover {
   width: 100%;
+  color: #82c341;
 }
 
 .sc-tabs__nav-tabs__link::after {
