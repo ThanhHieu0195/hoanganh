@@ -9,14 +9,23 @@
     background-color: #f9f9f9;
 }
 
+.sc-carousel-layout-2 .nav-tabs > li.active > a, 
+.sc-carousel-layout-2 .nav-tabs > li.active > a:focus, 
+.sc-carousel-layout-2 .nav-tabs > li.active > a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    color: #82c341;
+}
+
 @media screen and (max-width: 375px) {
     .recruitment .flag + .flag {
         padding-left: 15px;
     }
 }
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 320px) {
     .recruitment .flag {
         padding-left: 15px;
+        padding-right: 15px;
     }
 }
 @media screen and (min-width: 1500px) {
