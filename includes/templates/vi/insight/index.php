@@ -1,4 +1,7 @@
 <?php
+$numpage = isset($_GET['numpage']) ? intval($_GET['numpage']) : 1;
+$numberposts = 10;
+
 $cats = get_categories();
 $cats_filter = [];
 $posts = [];
@@ -7,15 +10,27 @@ $tab_all = translate_i18n('Tất cả');
 $cats_filter[] = "<li class=\"active sc-tabs__nav-tabs__item\"><a class=\"sc-tabs__nav-tabs__link\" data-toggle=\"tab\" href=\"#term-all\">{$tab_all}</a></li>";
 $arr['all'] = [];
 
+$next = false;
+
 foreach ($cats as $idx => $cat) {
     /**
      * @var $cat WP_Term
      */
     $cats_filter[] = "<li class=\"sc-tabs__nav-tabs__item\"><a class=\"sc-tabs__nav-tabs__link\" data-toggle=\"tab\" href=\"#term-{$cat->term_id}\">{$cat->name}</a></li>";
     $arr[$cat->term_id] = get_posts([
-        'numberposts' => 10,
+        'numberposts' => $numberposts * $numpage,
         'category' => [$cat->term_id]
     ]);
+
+    $next_posts = get_posts([
+        'numberposts' => $numberposts * ($numpage + 1),
+        'category' => [$cat->term_id]
+    ]);
+
+    if (count($next_posts) > count($arr[$cat->term_id])) {
+        $next = true;
+    }
+
     $arr['all'] = array_merge($arr['all'], $arr[$cat->term_id]);
 }
 ?>
@@ -79,6 +94,13 @@ foreach ($cats as $idx => $cat) {
                 endif;
                 endforeach; ?>
             </div>
+
+            <div class="sc-button">
+                <a class="main-color" href="?numpage=<?= $numpage + 1 ?>">
+                    <span><?= translate_i18n('Xem Thêm') ?></span>
+                </a>
+            </div>
+
         </div>
     </div>
 </div>
