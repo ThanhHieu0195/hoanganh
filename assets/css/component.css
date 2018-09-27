@@ -9,6 +9,16 @@
     background-color: #f9f9f9;
 }
 
+@media screen and (max-width: 375px) {
+    .recruitment .flag + .flag {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 325px) {
+    .recruitment .flag {
+        padding-left: 15px;
+    }
+}
 @media screen and (min-width: 1500px) {
     .sc-team-block .block-item.top-right {
         right: -1577px;
