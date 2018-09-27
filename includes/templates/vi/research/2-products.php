@@ -10,14 +10,12 @@ if (!empty($items)):
 ?>
 <div class="sc-innovation">
     <div class="block-section-lg" id="parallax">
-
         <div class="layer" data-depth="0.1">
             <div class="block-item top-left"><img src="<?= $bg_left ?>" alt=""></div>
         </div>
         <div class="layer" data-depth="0.1">
             <div class="block-item bottom-left"><img src="<?= $bg_bottom ?>" alt=""></div>
         </div>
-
         <div class="container">
             <div class="sc-main-title"><?= get_field('inv-title', $page->ID, '') ?></div>
             <?php foreach ($items as $item):
@@ -30,7 +28,6 @@ if (!empty($items)):
             </div>
             <?php endforeach; ?>
         </div>
-
         <div class="layer" data-depth="0.1">
             <div class="block-item top-right"><img src="<?= $bg_top ?>" alt=""></div>
         </div>

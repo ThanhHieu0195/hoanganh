@@ -68,7 +68,7 @@ class Hook implements HookInterface{
             'post-carousel' => 'assets/js/post-carousel.js',
             'team-parallax' => 'assets/js/team-parallax.js',
             'jquery-matchHeight' => 'assets/lib/js/jquery-matchHeight.js',
-            'language' => 'assets/js/language.js'
+//            'language' => 'assets/js/language.js'
         );
         foreach ($scripts as $script) {
             wp_enqueue_script($script, $path .'/'. $script, array('jquery'), self::VERSION, true);
