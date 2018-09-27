@@ -4443,7 +4443,6 @@ theme.
 
 .parllax-common .block-layer {
   position: absolute;
-  z-index: -1;
 }
 
 @media screen and (max-width: 1024px) {
