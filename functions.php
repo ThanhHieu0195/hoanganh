@@ -176,8 +176,10 @@ function get_breadcrumb() {
                 <?php
                 echo '<li class="breadcrumb__item"><a class="breadcrumb__link" href="'.home_url().'">home</a></li>';
                 if (is_category() || is_single()) {
-                    echo "<i class=\"fas fa-angle-right\"></i>";
-                    the_category(' &bull; ');
+					if (is_category()) {
+						echo "<i class=\"fas fa-angle-right\"></i>";
+						echo '<li class="breadcrumb__item active">'.the_category(' &bull; ').'</li>';
+					}
                     if (is_single()) {
                         echo '<i class="fas fa-angle-right"></i>';
                         echo '<li class="breadcrumb__item active"><a class="breadcrumb__link active" href="#">'.the_title().'</a></li>';
@@ -199,7 +201,7 @@ function get_breadcrumb() {
 }
 
 /**
- * import acf 
+ * import acf
  */
 define('KEY_MAP', 'AIzaSyC_5pPy8mvpqkeABmBfEMMqSCdLhEwDMO4');
 require get_template_directory() . '/acfs/scripts.php';
