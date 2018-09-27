@@ -4170,7 +4170,7 @@ theme.
   text-align: left;
 }
 
-.block-item .title {
+.block-item .title a {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   font-weight: bold;
@@ -4183,7 +4183,7 @@ theme.
 }
 
 @media screen and (max-width: 768px) {
-  .block-item .title {
+  .block-item .title a {
     margin-top: 20px;
   }
 }
