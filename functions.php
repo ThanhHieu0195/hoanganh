@@ -181,7 +181,6 @@ function get_breadcrumb() {
                         echo "<i class=\"fas fa-angle-right\"></i>";
                         echo $cat[0]->name;
                     }
-
                     if (is_single()) {
                         echo '<i class="fas fa-angle-right"></i>';
                         echo '<li class="breadcrumb__item active">
@@ -207,7 +206,7 @@ function get_breadcrumb() {
 }
 
 /**
- * import acf 
+ * import acf
  */
 define('KEY_MAP', 'AIzaSyC_5pPy8mvpqkeABmBfEMMqSCdLhEwDMO4');
 require get_template_directory() . '/acfs/scripts.php';

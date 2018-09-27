@@ -2085,7 +2085,7 @@ theme.
 .breadcrumb-wapper .breadcrumb i::before {
   color: #cccccc;
 }
-
+.breadcrumb-wapper a,
 .breadcrumb-wapper .breadcrumb__link {
   text-transform: capitalize;
   font-size: 18px;
