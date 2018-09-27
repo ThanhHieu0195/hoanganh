@@ -8,7 +8,7 @@ $bg_left = wp_get_attachment_image_url(get_field('inv_bg_left', $page->ID, ''), 
 
 if (!empty($items)):
 ?>
-<div class="sc-innovation">
+<div class="sc-innovation sc-team-block">
     <div class="block-section-lg" id="parallax">
         <div class="layer" data-depth="0.1">
             <div class="block-item top-left"><img src="<?= $bg_left ?>" alt=""></div>
