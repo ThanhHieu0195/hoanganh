@@ -5,6 +5,10 @@
     text-align: right;
 }
 
+.container + .carousel-post {
+    background-color: #f9f9f9;
+}
+
 @media screen and (min-width: 1500px) {
     .sc-team-block .block-item.top-right {
         right: -1577px;
