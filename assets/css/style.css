@@ -4543,7 +4543,7 @@ theme.
 }
 
 .sc-tabs__nav-tabs__link:hover {
-  color: #82c341;
+  width: 100%;
 }
 
 .sc-tabs__nav-tabs__link::after {
