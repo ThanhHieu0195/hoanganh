@@ -1,7 +1,7 @@
 <?php
 $items = get_field('technology-items', $page->ID, []);
 ?>
-<div class="sc-technology-layout-1">
+<div class="sc-technology-layout-1 parllax-common">
     <div class="container">
         <div class="row">
             <div class="sc-main-title text-center"><?= get_field('technology-title') ?></div>
