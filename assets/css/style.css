@@ -4417,7 +4417,7 @@ theme.
   cursor: pointer;
 }
 
-@media screen and (max-wiidth: 320px) {
+@media screen and (max-width: 320px) {
   .sc-carousel-layout-2 .carousel-slide-wrapper .slick-arrow {
     width: 30px;
     height: 30px;
