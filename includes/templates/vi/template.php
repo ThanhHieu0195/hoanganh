@@ -5,6 +5,9 @@ global $post;
 // render all file folder home
 $dir_path = dirname(__FILE__);
 $slug = \includes\Bootstrap::$bootstrap->hook->template;
+?>
+<div class="<?= $slug ?>-page">
+<?php 
 foreach (glob($dir_path . "/{$slug}/*.php") as $filename)
 {
     echo \includes\Bootstrap::bootstrap()->helper->render($filename, [
@@ -13,4 +16,7 @@ foreach (glob($dir_path . "/{$slug}/*.php") as $filename)
 
     ]);
 }
+?>
+</div>
+<?php
 get_footer('bosevent');
