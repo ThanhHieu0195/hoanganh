@@ -5707,6 +5707,7 @@ theme.
 
 .error-404.not-found {
   text-align: center;
+  padding-bottom: 80px;
 }
 
 .error-404.not-found h1 {
@@ -5725,7 +5726,7 @@ theme.
 .error-404.not-found h3 {
   font-size: 26px;
   font-family: "Playfair Display", serif;
-  margin-top: 30px;
+  margin-top: 10px;
   font-weight: bold;
   color: #3f3f3f;
 }
@@ -5737,5 +5738,9 @@ theme.
 @media screen and (max-width: 768px) {
   .error-404.not-found h1 {
     font-size: 65px;
+  }
+
+  .error-404.not-found {
+    padding-bottom: 50px;
   }
 }
