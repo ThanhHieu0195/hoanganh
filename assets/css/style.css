@@ -2716,7 +2716,7 @@ theme.
     position: relative;
     left: 15px;
     margin: 0 auto;
-    display: inline-block;
+    display: block;
   }
   .main-menu-mobile {
     display: block;
