@@ -1,5 +1,5 @@
 <div class="sc-team-block layout-3 parllax-common">
-        <div id="parallax">
+        <div>
             <div class="layer" data-depth="0.1">
                 <div class="block-layer top-left"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-34.png" alt=""></div>
             </div>

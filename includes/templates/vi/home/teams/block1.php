@@ -10,7 +10,7 @@ $bg_right = wp_get_attachment_image_url(get_field('teams_bg_right', $page_id, ''
 $bg_left = wp_get_attachment_image_url(get_field('teams_bg_left', $page_id, ''), 'full');
 ?>
 <div class="sc-team-block layout-2">
-    <div id="parallax">
+    <div>
         <div class="layer" data-depth="0.1">
             <div class="block-item top-left"><img src="<?= $bg_left ?>" alt=""></div>
         </div>

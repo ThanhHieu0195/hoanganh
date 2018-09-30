@@ -201,4 +201,29 @@ class ACFCS {
             'height' => isset($attrs['height']) ? $attrs['height'] : ''
         );
     }
+
+    public static function getObject($attrs = []) {
+        return array (
+            'key' => 'field-' . $attrs['name'],
+            'label' => $attrs['label'],
+            'name' => $attrs['name'],
+            'type' => 'post_object',
+            'instructions' => isset($attrs['instructions']) ? $attrs['instructions'] : '',
+            'required' => isset($attrs['required']) ? $attrs['required'] : 0,
+            'conditional_logic' => isset($attrs['conditional_logic']) ? $attrs['conditional_logic'] : 0,
+            'wrapper' => isset($attrs['wrapper']) ? $attrs['wrapper'] : array (
+                'width' => '',
+                'class' => '',
+                'id' => '',
+            ),
+            'post_type' => isset($attrs['post_type']) ? $attrs['post_type'] : array (
+            ),
+            'taxonomy' => isset($attrs['taxonomy']) ? $attrs['taxonomy'] : array (
+            ),
+            'allow_null' => isset($attrs['allow_null']) ? $attrs['allow_null'] : 0,
+            'multiple' => isset($attrs['multiple']) ? $attrs['multiple'] : 0,
+            'return_format' => isset($attrs['return_format']) ? $attrs['return_format'] : 'object',
+            'ui' => isset($attrs['ui']) ? $attrs['ui'] : 1,
+        );
+    }
 }

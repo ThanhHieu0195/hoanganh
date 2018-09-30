@@ -1,20 +1,31 @@
 <?php
 $items = get_field('app-items', $page_id, []);
+
+$top_left = wp_get_attachment_image_url(get_field('top-left', $page_id, ''), 'full');
+$middle_left = wp_get_attachment_image_url(get_field('middle-left', $page_id, ''), 'full');
+$bottom_left = wp_get_attachment_image_url(get_field('bottom-left', $page_id, ''), 'full');
+$bottom_left_left = wp_get_attachment_image_url(get_field('bottom-left-left', $page_id, ''), 'full');
+
+$top_right = wp_get_attachment_image_url(get_field('top-right', $page_id, ''), 'full');
+$middle_right = wp_get_attachment_image_url(get_field('middle-right', $page_id, ''), 'full');
+$middle_right_right = wp_get_attachment_image_url(get_field('middle-right-right', $page_id, ''), 'full');
+$bottom_right = wp_get_attachment_image_url(get_field('bottom-right', $page_id, ''), 'full');
+$bottom_right_right = wp_get_attachment_image_url(get_field('bottom-right-right', $page_id, ''), 'full');
 ?>
 <div class="sc-technology-layout-1 parllax-common">
-    <div id="parallax">
+    <div>
         <div class="layer" data-depth="0.1">
-            <div class="block-layer top-left"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-34.png" alt="">
+            <div class="block-layer top-left"><img src="<?= esc_url($top_left) ?>" alt="">
             </div>
         </div>
         <div class="layer" data-depth="0.1">
-            <div class="block-layer middle-left"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-29.png" alt="">
+            <div class="block-layer middle-left"><img src="<?= esc_url($middle_left) ?>" alt="">
             </div>
         </div>
         <div class="layer" data-depth="0.1">
-            <div class="block-layer bottom-left"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-33.png" alt="">
+            <div class="block-layer bottom-left"><img src="<?= esc_url($bottom_left) ?>" alt="">
             </div>
-            <div class="block-layer bottom-left-left"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-31.png" alt="">
+            <div class="block-layer bottom-left-left"><img src="<?= esc_url($bottom_left_left) ?>" alt="">
             </div>
         </div>
         <div class="container">
@@ -48,19 +59,19 @@ $items = get_field('app-items', $page_id, []);
             </div>
         </div>
         <div class="layer" data-depth="0.1">
-            <div class="block-layer top-right"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-37.png" alt="">
+            <div class="block-layer top-right"><img src="<?= esc_url($top_right) ?>" alt="">
             </div>
         </div>
         <div class="layer" data-depth="0.1">
-            <div class="block-layer middle-right"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-36.png" alt="">
+            <div class="block-layer middle-right"><img src="<?= esc_url($middle_right) ?>" alt="">
             </div>
-            <div class="block-layer middle-right-right"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-35.png" alt="">
+            <div class="block-layer middle-right-right"><img src="<?= esc_url($middle_right_right) ?>" alt="">
             </div>
         </div>
         <div class="layer" data-depth="0.1">
-            <div class="block-layer bottom-right"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-38.png" alt="">
+            <div class="block-layer bottom-right"><img src="<?= esc_url($bottom_right) ?>" alt="">
             </div>
-            <div class="block-layer bottom-right-right"><img src="<?= get_template_directory_uri() ?>/assets/images/flavor/h4-rev-img-5.png" alt="">
+            <div class="block-layer bottom-right-right"><img src="<?= esc_url($bottom_right_right) ?>" alt="">
             </div>
         </div>
     </div>

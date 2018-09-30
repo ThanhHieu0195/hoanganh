@@ -9,6 +9,26 @@
     background-color: #f9f9f9;
 }
 
+.sc-team-block + .sc-carousel-layout-2 {
+    background-color: #f9f9f9;
+}
+
+.sc-slider-video.slider button {
+    line-height: 1;
+    text-align: center;
+    padding-left: 29px;
+}
+
+
+.sc-slider-video.slider.active button {
+    padding-left: 25px;
+}
+
+.sc-team-block + .sc-carousel-layout-2 .carousel-slide-for,
+.sc-team-block + .sc-carousel-layout-2 .block-item{
+    background-color: #fff;
+}
+
 .sc-carousel-layout-2 .nav-tabs > li.active > a, 
 .sc-carousel-layout-2 .nav-tabs > li.active > a:focus, 
 .sc-carousel-layout-2 .nav-tabs > li.active > a:hover {
@@ -59,21 +79,21 @@
 
 @media screen and (min-width: 1600px) {
     .sc-team-block .block-item.top-right {
-        right: -1660px;
+        right: -1620px;
     }
 }
 @media screen and (min-width: 1700px) {
     .sc-team-block .block-item.top-right {
-        right: -1700px;
+        right: -1720px;
     }
 }
 @media screen and (min-width: 1800px) {
     .sc-team-block .block-item.top-right {
-        right: -1800px;
+        right: -1820px;
     }
 }
 @media screen and (min-width: 1900px) {
     .sc-team-block .block-item.top-right {
-        right: -1900px;
+        right: -192px;
     }
 }
