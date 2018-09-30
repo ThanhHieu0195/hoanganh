@@ -2721,6 +2721,8 @@ theme.
   }
   .main-menu-mobile {
     display: block;
+  }
+  .single-format-standard.logged-in .main-menu-mobile {
     padding-top: 50px;
   }
   #menu a:after {
