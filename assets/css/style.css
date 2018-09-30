@@ -4522,11 +4522,11 @@ theme.
 
 .parllax-common .bottom-right {
   bottom: 96px;
-  right: 0px;
+  right: 35px;
 }
 
 .sc-technology-layout-1.parllax-common .bottom-right {
-  right: 35px;
+  right: 0px;
 }
 
 .parllax-common .bottom-right-right {
