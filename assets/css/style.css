@@ -2780,6 +2780,9 @@ theme.
     text-align: left;
     margin-top: 0px;
   }
+  .sc-header-top__right .socials {
+    display: none;
+  }
 }
 
 .sc-header-top__contact {
