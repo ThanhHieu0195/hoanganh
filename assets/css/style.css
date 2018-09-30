@@ -4798,12 +4798,12 @@ theme.
   .sc-post-block {
     margin-bottom: 15px;
   }
+  .sc-post-block__image,
   .sc-post-block__image {
-    width: 35%;
+    width: 100%;
+    display: block;
   }
-  .sc-post-block__content {
-    width: 65%;
-  }
+
   .sc-post-block__image {
     position: relative;
   }
