@@ -557,7 +557,7 @@ body {
     margin-top: 10px;
   }
   .sc-team-block__block-image::before {
-    padding-top: 80%;
+    padding-top: 100%;
   }
   .sc-team-block__description {
     font-size: 14px;
