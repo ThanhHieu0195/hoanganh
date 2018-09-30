@@ -19,8 +19,7 @@ get_header();
 						<h3 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'hoanganh' ); ?></h3>
 					</header><!-- .page-header -->
 					<div class="page-content">
-						<div class="sc-button"><a class="main-color" href="" tabindex="0"><span>Xem Thêm</span></a></div>
-						<div class="sc-button"><a class="transparent" href="#" tabindex="0"><span>xu hướng mới</span></a></div>
+						<div class="sc-button"><a class="main-color" href="" tabindex="0"><span>Về Trang Chủ</span></a></div>
 					</div><!-- .page-content -->
 				</section><!-- .error-404 -->
 

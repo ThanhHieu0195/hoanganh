@@ -5710,14 +5710,12 @@ theme.
 }
 
 .error-404.not-found h1 {
-  font-size: 80px;
+  font-size: 140px;
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.38;
   letter-spacing: normal;
-  text-align: left;
   color: #82c341;
   text-transform: uppercase;
   letter-spacing: 8.3px;
@@ -5730,4 +5728,14 @@ theme.
   margin-top: 30px;
   font-weight: bold;
   color: #3f3f3f;
+}
+
+.error-404.not-found .page-header {
+  border-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .error-404.not-found h1 {
+    font-size: 65px;
+  }
 }
