@@ -447,7 +447,7 @@ body {
 
 @media (max-width: 600px) {
   .sc-team-block__block-image::before {
-    padding-top: 127%;
+    padding-top: 100%;
   }
 }
 
@@ -557,7 +557,7 @@ body {
     margin-top: 10px;
   }
   .sc-team-block__block-image::before {
-    padding-top: 100%;
+    padding-top: 127%;
   }
   .sc-team-block__description {
     font-size: 14px;
