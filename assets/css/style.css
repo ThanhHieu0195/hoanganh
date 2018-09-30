@@ -2758,6 +2758,7 @@ theme.
 @media screen and (max-width: 768px) {
   .sc-header-top__left {
     float: none;
+    display: none;
   }
 }
 
