@@ -114,6 +114,7 @@ body {
 }
 
 a {
+  color: #3f3f3f;
   text-decoration: unset;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -219,12 +220,12 @@ a:hover, a:focus {
   }
 }
 
-.sc-main-title--big, .sc-main-title--left {
+.sc-main-title--left {
   text-align: left;
   line-height: 1.38;
 }
 
-.sc-main-title--big::after, .sc-main-title--left::after {
+.sc-main-title--left::after {
   width: 104px;
   margin: 11px 0 0;
   background-image: url(../images/left-deco.png);
@@ -232,7 +233,7 @@ a:hover, a:focus {
 }
 
 @media (max-width: 600px) {
-  .sc-main-title--big::after, .sc-main-title--left::after {
+  .sc-main-title--left::after {
     width: 70px;
     height: 15px;
     background-size: 70px 15px;
@@ -242,6 +243,27 @@ a:hover, a:focus {
 .sc-main-title--big {
   font-size: 52px;
   color: #fff;
+  text-align: left;
+}
+
+.sc-main-title--big:after {
+  content: none;
+}
+
+.sc-main-title--big__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sc-main-title--big__icon {
+  width: 104px;
+  height: 20px;
+  margin: 11px 0 0;
+  background-image: url(../images/left-deco.png);
+  background-size: 104px 20px;
 }
 
 .sc-main-title--left::after {
@@ -2904,6 +2926,7 @@ theme.
   position: relative;
   background-repeat: no-repeat;
   background-size: cover, 100%;
+  background-position: bottom;
 }
 
 .sc-banner--left {
@@ -3602,6 +3625,11 @@ theme.
   border: 0;
 }
 
+.sc-accordion .panel-body .sc-accordion__body {
+  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.08);
+}
+
 .sc-accordion .panel-default > .sc-accordion__heading {
   padding: 0;
   -webkit-border-radius: 10px;
@@ -3764,6 +3792,8 @@ theme.
   font-size: 16px;
   line-height: 1.5;
   color: #5e6d77;
+  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.08);
 }
 
 .sc-accordion--recruitment .sc-accordion__body__item {
@@ -4750,6 +4780,14 @@ theme.
   background-color: #f9f9f9;
 }
 
+.sc-innovation .col-md-6:last-child .sc-innovation__item:after {
+  background-color: rgba(130, 195, 65, 0.85);
+}
+
+.sc-innovation .col-md-6:last-child .sc-innovation__item:hover:after {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 .sc-innovation__item {
   margin-top: 60px;
   padding: 140px 0;
@@ -4772,7 +4810,7 @@ theme.
   bottom: 0;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  background-color: rgba(130, 195, 65, 0.85);
+  background-color: rgba(192, 86, 47, 0.7);
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }

@@ -52,6 +52,9 @@
 .comment-form textarea {
   height: 85px;
   font-size: 14px;
+  background-color: #f9f9f9;
+  border: none;
+  padding: 15px;
 }
 
 .comment-form p {
@@ -117,6 +120,15 @@
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .comment-form label {
+    width: 100%;
+  }
+  .comment-form input {
+    width: 100%;
+  }
 }
 
 
@@ -220,4 +232,8 @@
   .comment-content {
     padding-left: 40px;
   }
+}
+
+.research-page .sc-team-block {
+  padding: 0;
 }

@@ -24,7 +24,10 @@
                     <div class="col-md-6 col-md-offset-1">
                         <div class="sc-team-block__block-content">
                             <div class="sc-main-title sc-main-title--big">
-                                <?= get_field('i-title', $page_id, '') ?>
+                                <div class="sc-main-title--big__text">
+                                    <?= get_field('i-title', $page_id, '') ?>
+                                </div>
+                                <div class="sc-main-title--big__icon"></div>
                             </div>
                             <div class="sc-team-block__description">
                                 <?= get_field('i-desc', $page_id, '') ?>

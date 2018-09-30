@@ -178,8 +178,10 @@ function get_breadcrumb() {
                 if (is_category() || is_single()) {
                     $cat = get_the_category();
                     if (!empty($cat)) {
-                        echo "<i class=\"fas fa-angle-right\"></i>";
-                        echo $cat[0]->name;
+						echo "<i class=\"fas fa-angle-right\"></i>";
+						echo '<li class="breadcrumb__item">
+                                <a class="breadcrumb__link" href="#">'.$cat[0]->name.'</a>
+                                </li>';
                     }
                     if (is_single()) {
                         echo '<i class="fas fa-angle-right"></i>';

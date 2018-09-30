@@ -55,7 +55,11 @@ foreach ($cats as $idx => $cat) {
                         <div class="sc-post-block__image"><img src="<?= get_the_post_thumbnail_url($items[0]->ID) ?>" alt="">
                         </div>
                         <div class="sc-post-block__content">
-                            <div class="sc-post-block__content__title"><?= $items[0]->post_title ?></div>
+                            <div class="sc-post-block__content__title">
+                                <a href="<?= esc_url($permalink) ?>">
+                                    <?= $items[0]->post_title ?>
+                                </a>
+                            </div>
                             <div class="sc-post-block__content__info">
                                 <span><?= get_the_date(get_option('date_format'), $items[0]->ID) ?></span>
                                 <span class="separate">|</span>
