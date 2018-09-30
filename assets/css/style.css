@@ -4750,6 +4750,14 @@ theme.
   background-color: #f9f9f9;
 }
 
+.sc-innovation .col-md-6:last-child .sc-innovation__item:after {
+  background-color: rgba(130, 195, 65, 0.85);
+}
+
+.sc-innovation .col-md-6:last-child .sc-innovation__item:hover:after {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 .sc-innovation__item {
   margin-top: 60px;
   padding: 140px 0;
