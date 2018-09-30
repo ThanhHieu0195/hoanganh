@@ -7,7 +7,7 @@
  * @package hoanganh
  */
 
-get_header();
+get_header('404');
 ?>
 	<div class="container">
 		<div id="primary" class="content-area">
@@ -27,4 +27,4 @@ get_header();
 		</div><!-- #primary -->
 	</div>
 <?php
-get_footer();
+get_footer('404');
