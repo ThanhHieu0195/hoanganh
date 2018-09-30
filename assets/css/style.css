@@ -3469,6 +3469,12 @@ theme.
   color: #a6a6a6;
 }
 
+@media screen and (max-width: 1024px) {
+  .sc-about-page {
+    margin-top: 115px;
+  }
+}
+
 @media (max-width: 991px) {
   .sc-about-page {
     padding: 60px 0;
