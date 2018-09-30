@@ -3624,6 +3624,11 @@ theme.
   border: 0;
 }
 
+.sc-accordion .panel-body .sc-accordion__body {
+  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.08);
+}
+
 .sc-accordion .panel-default > .sc-accordion__heading {
   padding: 0;
   -webkit-border-radius: 10px;
