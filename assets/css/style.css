@@ -4489,7 +4489,7 @@ theme.
 }
 
 .sc-carousel-layout-2 .carousel-slide-for .carousel-slide-for__item {
-  padding: 15px 0px 0px 0px;
+  padding: 0;
   width: 100%;
 }
 
@@ -4497,6 +4497,7 @@ theme.
   display: block;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  padding: 40px 40px 0;
 }
 
 @media screen and (max-width: 768px) {
