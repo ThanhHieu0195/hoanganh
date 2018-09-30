@@ -2465,7 +2465,7 @@ theme.
   transition: all 0.3s ease;
 }
 
-#menu li a:after {
+#menu ul > li a:after {
   content: '';
   position: absolute;
   bottom: 30px;
@@ -2478,7 +2478,7 @@ theme.
   transition: width 0.5s ease;
 }
 
-#menu > li:hover a:after {
+#menu ul > li:hover a:after {
   width: 100%;
 }
 
