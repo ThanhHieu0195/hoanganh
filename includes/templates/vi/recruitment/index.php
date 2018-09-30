@@ -6,7 +6,7 @@ $jobs = get_field('jobs', $page->ID, []);
         <div class="panel-group sc-accordion sc-accordion--recruitment" id="accordion">
             <?php foreach($jobs as $idx => $job):
                 $class_active = ($idx == 0) ? 'in' : '';
-                ?>
+            ?>
             <div class="panel panel-default sc-accordion__item">
                 <div class="panel-heading sc-accordion__heading">
                     <div class="panel-title"><a class="sc-accordion__heading__title" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?= $idx ?>" aria-expanded="true"><?= $job['field-title'] ?></a>
