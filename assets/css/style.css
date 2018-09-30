@@ -2700,6 +2700,7 @@ theme.
     display: block;
     left: 15px;
     right: 0;
+    z-index: 1;
   }
   .header-main-01 {
     position: fixed;
