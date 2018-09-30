@@ -447,7 +447,7 @@ body {
 
 @media (max-width: 600px) {
   .sc-team-block__block-image::before {
-    padding-top: 100%;
+    padding-top: 127%;
   }
 }
 
