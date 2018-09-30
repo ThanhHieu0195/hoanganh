@@ -4333,6 +4333,7 @@ theme.
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #f9f9f9;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
