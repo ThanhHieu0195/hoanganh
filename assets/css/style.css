@@ -4522,6 +4522,10 @@ theme.
 
 .parllax-common .bottom-right {
   bottom: 96px;
+  right: 0px;
+}
+
+.sc-technology-layout-1.parllax-common .bottom-right {
   right: 35px;
 }
 
