@@ -4333,8 +4333,24 @@ theme.
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #f9f9f9;
+  height: 100%;
 }
 
+.sc-carousel-layout-2 .tab-content {
+  height: 100%;
+}
+.sc-carousel-layout-2 .block-item .block-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.42;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f3f3f;
+  margin-bottom: 10px;
+}
 @media screen and (max-width: 768px) {
   .sc-carousel-layout-2 .block-item {
     padding: 20px;
@@ -4468,7 +4484,7 @@ theme.
   height: 40px;
 }
 
-.parllax-common {
+.sc-team-block.layout-3.parllax-common {
   position: relative;
 }
 
@@ -4523,6 +4539,22 @@ theme.
 .parllax-common .bottom-right {
   bottom: 96px;
   right: 35px;
+}
+
+.sc-technology-layout-1.parllax-common .bottom-right {
+  right: 0px;
+}
+
+.sc-team-block.layout-3.parllax-common .bottom-right {
+  bottom: 43px;
+}
+
+.sc-team-block.layout-3.parllax-common .middle-right {
+  top: 62%;
+}
+
+.parllax-common .top-right {
+  right: 31px;
 }
 
 .parllax-common .bottom-right-right {
