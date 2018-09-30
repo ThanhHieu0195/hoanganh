@@ -4484,6 +4484,9 @@ theme.
 
 .parllax-common .top-left {
   left: 52px;
+  top: 335px;
+}
+.sc-technology-layout-1.parllax-common .top-left {
   top: 30px;
 }
 
@@ -4519,7 +4522,7 @@ theme.
 
 .parllax-common .bottom-right {
   bottom: 96px;
-  right: 114px;
+  right: 0px;
 }
 
 .parllax-common .bottom-right-right {
