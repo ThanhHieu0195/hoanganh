@@ -2510,7 +2510,7 @@ theme.
 }
 
 .sub-menu {
-  display: block;
+  display: none;
   position: absolute;
   opacity: 0;
   padding: 0;
@@ -2545,6 +2545,7 @@ theme.
   -moz-transform: translateY(0);
   opacity: 1;
   z-index: 9;
+  display: block;
 }
 
 .sub-menu li {
