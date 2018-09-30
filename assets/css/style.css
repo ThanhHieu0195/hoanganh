@@ -2698,6 +2698,8 @@ theme.
   }
   .slz-hamburger-menu {
     display: block;
+    left: 15px;
+    right: 0;
   }
   .header-main-01 {
     position: fixed;
@@ -2713,7 +2715,8 @@ theme.
     top: 10px;
     position: relative;
     left: 15px;
-    margin: 0;
+    margin: 0 auto;
+    display: inline-block;
   }
   .main-menu-mobile {
     display: block;
@@ -2731,7 +2734,8 @@ theme.
     min-width: 750px;
   }
   .slz-hamburger-menu {
-    right: 15px;
+    left: 15px;
+    right: auto;
   }
 }
 
