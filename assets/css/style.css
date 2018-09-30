@@ -5737,10 +5737,6 @@ theme.
 
 @media screen and (max-width: 768px) {
   .error-404.not-found h1 {
-    font-size: 65px;
-  }
-
-  .error-404.not-found {
-    padding-bottom: 50px;
+    font-size: 80px;
   }
 }
