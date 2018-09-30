@@ -4468,7 +4468,7 @@ theme.
   height: 40px;
 }
 
-.parllax-common {
+.sc-team-block.layout-3.parllax-common {
   position: relative;
 }
 
@@ -4527,6 +4527,18 @@ theme.
 
 .sc-technology-layout-1.parllax-common .bottom-right {
   right: 0px;
+}
+
+.sc-team-block.layout-3.parllax-common .bottom-right {
+  bottom: 43px;
+}
+
+.sc-team-block.layout-3.parllax-common .middle-right {
+  top: 62%;
+}
+
+.parllax-common .top-right {
+  right: 31px;
 }
 
 .parllax-common .bottom-right-right {
