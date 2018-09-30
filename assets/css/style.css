@@ -4926,7 +4926,7 @@ theme.
   }
   .sc-innovation__item {
     margin-top: 30px;
-    padding: 100px 0;
+    padding: 60px 0;
   }
   .sc-innovation__title {
     font-size: 24px;
@@ -4935,7 +4935,7 @@ theme.
     background: #fff;
   }
   .sc-innovation--rd-center .sc-innovation__item {
-    padding: 70px 0 90px;
+    padding: 55px 0 75px;
   }
 }
 
