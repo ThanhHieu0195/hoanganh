@@ -2438,6 +2438,9 @@ theme.
   #menu li {
     line-height: 20px;
   }
+  .sc-header-top {
+    display: none;
+  }
 }
 
 #menu li.has-childe:hover i {
