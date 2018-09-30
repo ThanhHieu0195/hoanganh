@@ -9,21 +9,23 @@
 
 get_header();
 ?>
+	<div class="container">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+				<section class="error-404 not-found">
+					<header class="page-header">
+						<h1 class="title">404</h1>
+						<h3 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'hoanganh' ); ?></h3>
+					</header><!-- .page-header -->
+					<div class="page-content">
+						<div class="sc-button"><a class="main-color" href="" tabindex="0"><span>Xem Thêm</span></a></div>
+						<div class="sc-button"><a class="transparent" href="#" tabindex="0"><span>xu hướng mới</span></a></div>
+					</div><!-- .page-content -->
+				</section><!-- .error-404 -->
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'hoanganh' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	</div>
 <?php
 get_footer();
