@@ -2686,6 +2686,9 @@ theme.
   .main-header.pc {
     display: none;
   }
+  .main-menu-mobile .sub-menu {
+    display: block;
+  }
   .slz-hamburger-menu {
     display: block;
   }
