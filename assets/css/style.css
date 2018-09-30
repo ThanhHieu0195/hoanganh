@@ -2721,6 +2721,7 @@ theme.
   }
   .main-menu-mobile {
     display: block;
+    padding-top: 50px;
   }
   #menu a:after {
     content: none;
