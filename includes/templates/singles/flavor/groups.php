@@ -7,7 +7,7 @@ $items = get_field('gf-items', $page_id, []);
             <div class="carousel-slide-wrapper">
                 <div class="sc-main-title text-center"><?= get_field('gf-title', $page_id, '') ?></div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-equal">
                         <div class="carousel-slide-for">
                             <ul class="nav nav-tabs" role="tablist">
                                 <?php if (!empty($items)): ?>
@@ -29,7 +29,7 @@ $items = get_field('gf-items', $page_id, []);
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-8">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-equal">
                         <div class="tab-content">
                         <?php if (!empty($items)): ?>
                         <?php foreach ($items as $idx => $item):
