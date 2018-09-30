@@ -4133,6 +4133,10 @@ theme.
   .block-item {
     padding: 20px;
   }
+
+  .block-item .block-content {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 425px) {
