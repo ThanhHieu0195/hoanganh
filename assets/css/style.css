@@ -4373,14 +4373,13 @@ theme.
 }
 
 .sc-carousel-layout-2 .slick-slide.slick-current {
-  background-color: #82c341;
   padding-bottom: 15px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
 .sc-carousel-layout-2 .slick-slide.slick-current .block-title {
-  color: #fff;
+  color: #82c341;
 }
 
 .sc-carousel-layout-2 .slick-slide:focus {
