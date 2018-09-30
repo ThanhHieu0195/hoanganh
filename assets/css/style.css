@@ -2925,6 +2925,7 @@ theme.
   position: relative;
   background-repeat: no-repeat;
   background-size: cover, 100%;
+  background-position: bottom;
 }
 
 .sc-banner--left {
