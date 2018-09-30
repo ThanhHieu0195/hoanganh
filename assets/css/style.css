@@ -4250,6 +4250,7 @@ theme.
 .sc-technology-layout-1 .block-item .title {
   font-size: 20px;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 .sc-technology-layout-1 .block-item .block-content {
@@ -4574,6 +4575,7 @@ theme.
 
 .sc-product-layout-2.layout-3 .block-item .title {
   margin-top: 15px;
+  font-weight: bold;
 }
 
 .sc-tabs {
