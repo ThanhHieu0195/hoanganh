@@ -45,7 +45,12 @@ $map = get_field('address-map', $page->ID, [
         <div class="sc-info-contact">
             <div class="container">
                 <div class="row">
-                    <div class="sc-main-title sc-main-title--big"><?= get_field('title', $page->ID, '') ?></div>
+                    <div class="sc-main-title sc-main-title--big">
+                        <div class="sc-main-title--big__text">
+                            <?= get_field('title', $page->ID, '') ?>
+                        </div>
+                        <div class="sc-main-title--big__icon"></div>
+                    </div>
                     <div class="subtitle"><?= $map['address'] ?></div>
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <div class="block-info-contact">
