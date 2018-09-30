@@ -2693,7 +2693,7 @@ theme.
     display: block;
   }
   .header-main-01 {
-    position: relative;
+    position: fixed;
     background-color: transparent;
   }
   .contact-menu {
