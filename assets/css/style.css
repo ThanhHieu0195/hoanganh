@@ -4517,6 +4517,7 @@ theme.
 @media screen and (max-width: 768px) {
   .sc-carousel-layout-2 .carousel-slide-for .carousel-slide-for__item a {
     text-align: center;
+    padding: 10px;
   }
 }
 
