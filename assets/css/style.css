@@ -4336,6 +4336,9 @@ theme.
   height: 100%;
 }
 
+.sc-carousel-layout-2 .tab-content {
+  height: 100%;
+}
 @media screen and (max-width: 768px) {
   .sc-carousel-layout-2 .block-item {
     padding: 20px;
