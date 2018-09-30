@@ -2771,7 +2771,7 @@ theme.
   .sc-header-top__right {
     float: none;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 }
 
