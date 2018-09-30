@@ -3791,6 +3791,8 @@ theme.
   font-size: 16px;
   line-height: 1.5;
   color: #5e6d77;
+  -webkit-box-shadow: 0 4px 26px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 26px rgba(0, 0, 0, 0.08);
 }
 
 .sc-accordion--recruitment .sc-accordion__body__item {
