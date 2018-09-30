@@ -5704,3 +5704,30 @@ theme.
 .sc-info-contact .info a:hover {
   color: #82c341;
 }
+
+.error-404.not-found {
+  text-align: center;
+}
+
+.error-404.not-found h1 {
+  font-size: 80px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #82c341;
+  text-transform: uppercase;
+  letter-spacing: 8.3px;
+  text-shadow: 3px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.error-404.not-found h3 {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
