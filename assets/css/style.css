@@ -2340,9 +2340,9 @@ theme.
 }
 
 .header-main-01 .main-header {
-  width: calc(100% - 200px);
-  -webkit-width: -webkit-calc(100% - 200px);
-  -moz-width: calc(100% - 200px);
+  width: calc(100% - 180px);
+  -webkit-width: -webkit-calc(100% - 180px);
+  -moz-width: calc(100% - 180px);
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
@@ -2463,6 +2463,10 @@ theme.
   padding: 0 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+#menu li:last-child a {
+  padding-right: 0;
 }
 
 #menu li a:after {
