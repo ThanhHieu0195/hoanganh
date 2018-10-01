@@ -122,9 +122,17 @@ class Helper implements HelperInterface {
 
     public function getMenu($menus) {
         $arr_parents = [];
+        $current_slug = $this->getSubUrl();
         for ($i=0; $i<count($menus); $i++) {
             $menu = $menus[$i];
-            echo '<li><a href="' .$menu->url. '">' .$menu->title. '</a>';
+            $class_avtive = '';
+            if (!empty($current_slug)) {
+                if (strpos($menu->url, $current_slug)) {
+                    $class_avtive = 'active';
+                }
+            }
+
+            echo '<li class="'.$class_avtive.'"><a href="' .$menu->url. '">' .$menu->title. '</a>';
             if ($i < count($menus)-1) {
                 $menuNext = $menus[$i+1];
 
