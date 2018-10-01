@@ -27,4 +27,6 @@
         </div>
     </div>
 </div>
-<?php get_breadcrumb(); ?>
+<?php
+\includes\Bootstrap::bootstrap()->helper->get_breadcrumb();
+?>
