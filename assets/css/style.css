@@ -2485,7 +2485,8 @@ theme.
   transition: width 0.5s ease;
 }
 
-#menu li:hover a:after {
+#menu li:hover a:after,
+#menu li.active a:after {
   width: 100%;
 }
 
