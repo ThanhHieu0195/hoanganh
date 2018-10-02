@@ -1,5 +1,7 @@
 <?php
 $has_notify = false;
+$secret = \includes\classes\Constants::CAPTCHA_SECRET;
+$site_key = \includes\classes\Constants::CAPTCHA_SITEKEY;
 if (!empty($_POST)) {
     $has_notify = true;
     $name = isset($_POST['name']) ? $_POST['name'] : '';
@@ -31,6 +33,11 @@ if (!empty($_POST)) {
     if ($error) {
         $message = translate_i18n('Thao tác thất bại');
     }
+    $arr = [
+        'error' => $error,
+        'message' => $message
+    ];
+    exit(200);
 }
 
 $map = get_field('address-map', $page->ID, [
@@ -79,7 +86,7 @@ $map = get_field('address-map', $page->ID, [
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-12">
                         <div class="block-form-contact">
-                            <form action="" method="post">
+                            <form>
                                 <?php if ($has_notify): ?>
                                 <div class="notify <?= !empty($error) ? 'error' : 'success' ?>">
                                     <?= $message ?>
@@ -98,10 +105,14 @@ $map = get_field('address-map', $page->ID, [
                                     <label><?= translate_i18n('Lời nhắn của bạn') ?></label>
                                     <textarea name="content" rows="4" cols="50"><?= translate_i18n('Để lại lời nhắn ...') ?></textarea>
                                 </div>
+
+                                <div class="g-recaptcha" data-sitekey="<?= $site_key ?>"
+                                data-secret="<?= $secret ?>"></div>
+
                                 <div class="sc-button">
-                                    <button class="main-color" type="submit">
+                                    <a class="main-color" id="btn-sendcontact" href="#">
                                         <span><?= translate_i18n('Gửi Lời Nhắn') ?></span>
-                                    </button>
+                                    </a>
                                 </div>
                             </form>
                         </div>
@@ -109,9 +120,6 @@ $map = get_field('address-map', $page->ID, [
                 </div>
             </div>
         </div>
-        <?php
-
-        ?>
         <div id="googleMap"
              style="width:100%;height:400px;"
              data-lat="<?= $map['lat'] ?>" data-lng="<?= $map['lng'] ?>"></div>

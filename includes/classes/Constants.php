@@ -6,8 +6,8 @@ Class Constants {
 	const MAX_PROJECT = 8;
 	const MAX_POST = 9;
 
-	 const DEFAULT_SLUG = 'hoanganh/';
-	// const DEFAULT_SLUG = '~simplet1/hoanganh/';
+//	 const DEFAULT_SLUG = 'hoanganh/';
+	 const DEFAULT_SLUG = '~simplet1/hoanganh/';
 
     const MAPP_TEMPLATE = [
         self::DEFAULT_SLUG  => 'home',
@@ -23,4 +23,9 @@ Class Constants {
 
         // self::DEFAULT_SLUG . 'en/' => 'home',
     ];
+
+    // app
+    const CAPTCHA_SECRET = '6LfJA3MUAAAAAJ_HPOKYJqeN7qRvY-oOjJoIw6-I';
+    const CAPTCHA_SITEKEY = '6LfJA3MUAAAAAMm-qlFmHfq0-uGD31eLBJyZ0Xr6';
+
 }
