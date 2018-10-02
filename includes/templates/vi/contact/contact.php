@@ -106,7 +106,7 @@ $map = get_field('address-map', $page->ID, [
                                     <textarea name="content" rows="4" cols="50"><?= translate_i18n('Để lại lời nhắn ...') ?></textarea>
                                 </div>
 
-                                <div class="g-recaptcha" data-sitekey="<?= $site_key ?>"
+                                <div id="g-recaptcha" class="g-recaptcha" data-sitekey="<?= $site_key ?>"
                                 data-secret="<?= $secret ?>"></div>
 
                                 <div class="sc-button">
