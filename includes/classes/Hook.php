@@ -145,6 +145,51 @@ class Hook implements HookInterface{
                         }
                     }
                     break;
+                case 'addForm':
+                    $secret = \includes\classes\Constants::CAPTCHA_SECRET;
+                    $response = $_POST['response'];
+                    $results = [
+                        'error' => 1,
+                        'message' => translate_i18n('thao tác thất bại')
+                    ];
+                    $name = isset($_POST['name']) ? $_POST['name'] : '';
+                    $email = isset($_POST['email']) ? $_POST['email'] : '';
+                    $content = isset($_POST['content']) ? $_POST['content'] : '';
+                    $error = 1;
+
+                    if (!empty($name) && !empty($email) && !empty($content)) {
+                        $verify=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}");
+                        $captcha_success=json_decode($verify);
+                        if ($captcha_success->success==true) {
+                            $desc = 'from: ' . $email . ' - ' . substr($content, 0, 15) . '...';
+                            $post_id = wp_insert_post([
+                                'post_title' => $desc,
+                                'post_content' => $content,
+                                'post_excerpt' => $content,
+                                'post_type' => 'contact',
+                                'post_author' => -1,
+                                'meta_input' => [
+                                    'field-name' => $name,
+                                    'field-content' => $content,
+                                    'field-email' => $email
+                                ]
+                            ]);
+                            if (!empty($post_id)) {
+                                $error = 0;
+                            }
+                        } else {
+                            $results['message'] = translate_i18n('captcha không đúng');
+                        }
+                    } else {
+                        $results['message'] = translate_i18n('Thiếu thông tin');
+                    }
+
+                    if (!$error) {
+                        $results['message'] = translate_i18n('Thao tác thành công');
+                    }
+                    $results['error'] = $error;
+
+                    echo json_encode($results);
             }
         }
         exit(200);
