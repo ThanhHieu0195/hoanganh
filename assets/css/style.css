@@ -2468,6 +2468,10 @@ theme.
   transition: all 0.3s ease;
 }
 
+.g-recaptcha {
+  margin-bottom: 30px;
+}
+
 #menu li:last-child a {
   padding-right: 0;
 }

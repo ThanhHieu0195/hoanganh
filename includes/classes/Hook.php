@@ -60,6 +60,7 @@ class Hook implements HookInterface{
             'slick' => 'assets/lib/js/slick/slick.min.js',
             'js-popup' => 'assets/lib/js/jquery.magnific-popup.min.js',
             'parallax' => 'assets/js/parallax.js',
+            'recaptcha' => 'assets/js/recaptcha.js',
             'hoanganh' => 'assets/js/main.js',
             'banner-slider' => 'assets/js/banner-slider.js',
             'couter' => 'assets/js/counter.js',
