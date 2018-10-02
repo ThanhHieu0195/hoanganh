@@ -84,7 +84,10 @@ function myMap() {
     map.data.loadGeoJson(geojson_url, null, loadMarkers) 
 }
 
-google.maps.event.addDomListener(window, 'load', myMap);
+$(document).ready(function() {
+  myMap();
+});
+
 
 // var map;
 // var markers = []
