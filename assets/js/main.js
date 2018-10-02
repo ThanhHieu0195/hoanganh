@@ -56,7 +56,23 @@ $(document).ready(function() {
 		fixedContentPos: false
 	});
 });
+function loadMarkers() {
+  console.log('creating markers')
+  map.data.forEach(function(feature) {
+    
+    // geojson format is [longitude, latitude] but google maps marker position attribute
+    // expects [latitude, longitude]
+    var latitude = feature.getGeometry().get().lat()
+    var longitude = feature.getGeometry().get().lng()
+    var titleText = feature.getProperty('title')
 
+    var marker = new google.maps.Marker({
+      position: {lat: latitude, lng:longitude},
+      title: titleText,
+      map: map
+     });
+  });
+}
 function myMap() {
   let lat = parseFloat($('#googleMap').data('lat'));
   let lng = parseFloat($('#googleMap').data('lng'));
@@ -64,14 +80,11 @@ function myMap() {
         center:new google.maps.LatLng(lat,lng),
         zoom:15,
     };
-    var marker = new google.maps.Marker({
-      position: {lat: lat, lng:lng},
-      title: titleText,
-      map: map
-     });
     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    map.data.loadGeoJson(geojson_url, null, marker) 
+    map.data.loadGeoJson(geojson_url, null, loadMarkers) 
 }
+
+google.maps.event.addDomListener(window, 'load', myMap);
 
 // var map;
 // var markers = []
