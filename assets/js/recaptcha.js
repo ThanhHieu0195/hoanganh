@@ -19,14 +19,19 @@ $( document ).ready(function(e) {
         response = '03AL4dnxqFTrU1_v6KTM2WyW0WvUw-44XMlHa4gZGiGE4bW5zriL0lDbLL3n-qnuIXr84AN4bV6BYM8tkL-i14hg9yhXMKkJv12FaF9Z-M4TpfMJ4i-yHsaiECRRmX8MrEvNsshlocKhPdKSWAy1CmXWZ3QRd0MtXvjrc-AT76K69KCv-fdfh1CZ_V_bx2b0p19CIlUv1aaeXAGKFWBvyWM0X3zGNklO51iJln3iSQZi2Ksi1S3Z0GFvSI4Toembc7CSieh2FhOLsZ7KLI-zBPZyiOPdASai5N5g';
         $.ajax({
           url: 'https://www.google.com/recaptcha/api/siteverify',
-          data: {serect: recaptcha.params.serect, response: response},
+          data: {serect: recaptcha.params.serect, response: response, remote: 'localhost'},
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST'
           }
-        }).
-        done(function (res) {
-          console.log(res);
+        }).done(function(result, status) {
+          console.log('it work');
+
+        }).fail(function(data, status, headers, config) {
+          console.log('error');
+
         });
       }
     }
