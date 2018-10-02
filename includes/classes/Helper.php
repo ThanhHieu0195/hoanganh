@@ -114,7 +114,7 @@ class Helper implements HelperInterface {
         for ($i=0; $i<count($menus); $i++) {
             $menu = $menus[$i];
             $class_avtive = '';
-            if (!empty($current_slug)) {
+            if (!empty($current_slug) && $current_slug != CURRENT_THEME_PATH) {
                 if (strpos($menu->url, $current_slug)) {
                     $class_avtive = 'active';
                 }
