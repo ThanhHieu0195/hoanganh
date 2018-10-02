@@ -64,13 +64,7 @@ function myMap() {
         center:new google.maps.LatLng(lat,lng),
         zoom:15,
     };
-    var marker = new google.maps.Marker({
-      position: {lat: latitude, lng:longitude},
-      title: titleText,
-      map: map
-     });
     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    map.data.loadGeoJson(geojson_url, null, marker) 
 }
 
 // var map;
