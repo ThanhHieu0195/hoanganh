@@ -80,6 +80,7 @@ function myMap() {
         center:new google.maps.LatLng(lat,lng),
         zoom:15,
     };
+    geojson_url = 'https://raw.githubusercontent.com/gizm00/blog_code/master/appendto/python_maps/collection.geojson';
     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
     map.data.loadGeoJson(geojson_url, null, loadMarkers) 
 }
