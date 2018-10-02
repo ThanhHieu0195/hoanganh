@@ -56,6 +56,7 @@ $(document).ready(function() {
 		fixedContentPos: false
 	});
 });
+var map;
 function loadMarkers() {
   console.log('creating markers')
   map.data.forEach(function(feature) {
