@@ -39,7 +39,11 @@ $site_key = \includes\classes\Constants::CAPTCHA_SITEKEY;
                                 <label><?= translate_i18n('Số Điện Thoại') ?></label>
                                 <div class="info">
                                     <span class="ion-ios-telephone-outline icons"></span>
-                                    <span class="info-content"><?= get_field('field-phone', $page->ID, '') ?></span>
+                                    <span class="info-content">
+                                        <a href="tel:<?= get_field('field-phone', $page->ID, '') ?>">
+                                            <?= get_field('field-phone', $page->ID, '') ?>
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
