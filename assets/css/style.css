@@ -4504,6 +4504,12 @@ theme.
   vertical-align: top;
 }
 
+.sc-carousel-layout-2 .holder-wrapper {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}
+
 .sc-carousel-layout-2 .block-title {
   max-width: 140px;
   margin-left: 15px;
