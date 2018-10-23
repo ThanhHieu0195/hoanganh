@@ -42,10 +42,10 @@ $videos = get_field('footer-videos', 'option', []);
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12"><a href="#"><img src="<?= $footer_icon_url ?>" alt=""></a>
               <ul class="socials">
-                  <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-fb', 'option', '') ?>"><i class="fab fa-facebook-f"></i></a></li>
-                  <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-tw', 'option', '') ?>"><i class="fab fa-twitter"></i></a></li>
-                  <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-pin', 'option', '') ?>"><i class="fab fa-pinterest-p"></i></a></li>
-                  <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-go', 'option', '') ?>"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-fb', 'option', '') ?>"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-tw', 'option', '') ?>"><i class="fab fa-twitter"></i></a></li>
+                  <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-pin', 'option', '') ?>"><i class="fab fa-pinterest-p"></i></a></li>
+                  <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-go', 'option', '') ?>"><i class="fab fa-google-plus-g"></i></a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -78,7 +78,7 @@ $videos = get_field('footer-videos', 'option', []);
               <ul class="list-video">
                   <?php foreach ($videos as $video): ?>
                 <li>
-                    <a href="<?= $video['field-link'] ?>"><img src="<?= wp_get_attachment_image_url($video['field-bg'], 'full') ?>" alt=""></a>
+                    <a target="_blank" href="<?= $video['field-link'] ?>"><img src="<?= wp_get_attachment_image_url($video['field-bg'], 'full') ?>" alt=""></a>
                 </li>
                 <?php endforeach; ?>
               </ul>

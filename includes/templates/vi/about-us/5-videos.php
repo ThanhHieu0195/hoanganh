@@ -13,7 +13,7 @@ $items = get_posts(['post_type' => 'videos  ', 'numberposts' => 6]);
                     ?>
                 <div class="col-md-4">
                     <div class="sc-video__item">
-                        <a class="sc-video__item__image popup-youtube" href="<?= esc_url($url) ?>">
+                        <a class="sc-video__item__image popup-youtube" href="<?= esc_url($url) ?>" target="_blank">
                             <img src="<?= get_the_post_thumbnail_url($video->ID) ?>" alt="">
                             <div class="sc-video__item__button-play">
                                 <i class="fas fa-play"></i>
