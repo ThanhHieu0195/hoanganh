@@ -4125,9 +4125,16 @@ theme.
   height: 160px;
   border-radius: 50%;
   margin: 0 auto;
-} 
+}
 
-.sc-technology-layout-1 .block-item .block-image img {
+.sc-product-layout-2 .block-item .block-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 5px;
+}
+
+.sc-technology-layout-1 .block-item .block-image img,
+.sc-technology-layout-2 .block-item .block-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
