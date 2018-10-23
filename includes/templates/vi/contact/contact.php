@@ -1,50 +1,10 @@
 <?php
-$has_notify = false;
-$secret = \includes\classes\Constants::CAPTCHA_SECRET;
-$site_key = \includes\classes\Constants::CAPTCHA_SITEKEY;
-if (!empty($_POST)) {
-    $has_notify = true;
-    $name = isset($_POST['name']) ? $_POST['name'] : '';
-    $email = isset($_POST['email']) ? $_POST['email'] : '';
-    $content = isset($_POST['content']) ? $_POST['content'] : '';
-    $page = get_page($_POST['page_id']);
-    $error = true;
-
-    if (!empty($name) && !empty($email) && !empty($content)) {
-        $desc = 'from: ' . $email . ' - ' . substr($content, 0, 15) . '...';
-        $post_id = wp_insert_post([
-            'post_title' => $desc,
-            'post_content' => $content,
-            'post_excerpt' => $content,
-            'post_type' => 'contact',
-            'post_author' => -1,
-            'meta_input' => [
-                'field-name' => $name,
-                'field-content' => $content,
-                'field-email' => $email
-            ]
-        ]);
-        if (!empty($post_id)) {
-            $error = false;
-        }
-    }
-
-    $message = translate_i18n('Thao tác thành công');
-    if ($error) {
-        $message = translate_i18n('Thao tác thất bại');
-    }
-    $arr = [
-        'error' => $error,
-        'message' => $message
-    ];
-    exit(200);
-}
-
 $map = get_field('address-map', $page->ID, [
     'address' => '',
     'lat' => '',
     'lng' => ''
 ]);
+$site_key = \includes\classes\Constants::CAPTCHA_SITEKEY;
 
 ?>
 <main>
@@ -79,7 +39,11 @@ $map = get_field('address-map', $page->ID, [
                                 <label><?= translate_i18n('Số Điện Thoại') ?></label>
                                 <div class="info">
                                     <span class="ion-ios-telephone-outline icons"></span>
-                                    <span class="info-content"><?= get_field('field-phone', $page->ID, '') ?></span>
+                                    <span class="info-content">
+                                        <a href="tel:<?= get_field('field-phone', $page->ID, '') ?>">
+                                            <?= get_field('field-phone', $page->ID, '') ?>
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -87,11 +51,9 @@ $map = get_field('address-map', $page->ID, [
                     <div class="col-lg-7 col-md-7 col-sm-12">
                         <div class="block-form-contact">
                             <form>
-                                <?php if ($has_notify): ?>
-                                <div class="notify <?= !empty($error) ? 'error' : 'success' ?>">
-                                    <?= $message ?>
+                                <div id="message-error" style="display: none">
+
                                 </div>
-                                <?php endif ?>
                                 <input type="hidden" name="page_id" value="<?= $page->ID ?>">
                                 <div class="item">
                                     <label><?= translate_i18n('Tên của bạn') ?></label>
@@ -106,11 +68,9 @@ $map = get_field('address-map', $page->ID, [
                                     <textarea name="content" rows="4" cols="50"><?= translate_i18n('Để lại lời nhắn ...') ?></textarea>
                                 </div>
 
-                                <div id="g-recaptcha" class="g-recaptcha" data-sitekey="<?= $site_key ?>"
-                                data-secret="<?= $secret ?>"></div>
-
+                                <div id="g-recaptcha" class="g-recaptcha" data-sitekey="<?= $site_key ?>"></div>
                                 <div class="sc-button">
-                                    <a class="main-color" id="btn-sendcontact" href="#">
+                                    <a class="main-color" id="btn-sendcontact" href="javascript:void(0)" onclick="recaptcha.methods.verify()">
                                         <span><?= translate_i18n('Gửi Lời Nhắn') ?></span>
                                     </a>
                                 </div>

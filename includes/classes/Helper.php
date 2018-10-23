@@ -174,6 +174,20 @@ class Helper implements HelperInterface {
                                 </li>';
                     }
                     if (is_single()) {
+                        if ( is_singular(['flavor']) ) {
+                            echo '<i class="fas fa-angle-right"></i>';
+                            echo '<li class="breadcrumb__item">
+                                <a class="breadcrumb__link" href="#">'.translate('hương thực phẩm').'</a>
+                                </li>';
+                        }
+
+                        if ( is_singular(['ingredient']) ) {
+                            echo '<i class="fas fa-angle-right"></i>';
+                            echo '<li class="breadcrumb__item">
+                                <a class="breadcrumb__link" href="#">'.translate('nguyên liệu thực phẩm').'</a>
+                                </li>';
+                        }
+
                         echo '<i class="fas fa-angle-right"></i>';
                         echo '<li class="breadcrumb__item active">
                                 <a class="breadcrumb__link active" href="#">'.get_the_title().'</a>

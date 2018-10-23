@@ -20,6 +20,9 @@ $menus = wp_get_nav_menu_items('main');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" crossorigin="anonymous">
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript">
+      var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+    </script>
     <?php wp_head(); ?>
 </head>
 
