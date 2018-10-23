@@ -4124,6 +4124,7 @@ theme.
   width: 160px;
   height: 160px;
   border-radius: 50%;
+  margin: 0 auto;
 } 
 
 .sc-technology-layout-1 .block-item .block-image img {
