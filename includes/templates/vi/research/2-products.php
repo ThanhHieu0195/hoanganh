@@ -23,7 +23,7 @@ if (!empty($items)):
                 ?>
             <div class="col-md-6">
                 <div class="sc-innovation__item" style="background-image:url(<?= esc_url($bg) ?>);">
-                    <div class="sc-innovation__title"><?= $item['field-item'] ?></div>
+                    <a href="<?= esc_url($item['field-url']) ?>" class="sc-innovation__title"><?= $item['field-item'] ?></div>
                 </div>
             </div>
             <?php endforeach; ?>
