@@ -194,6 +194,13 @@ class Helper implements HelperInterface {
                                 </li>';
                     }
                 } elseif (is_page()) {
+                     if ( is_page_template('page-listing.php') ) {
+                            echo '<i class="fas fa-angle-right"></i>';
+                            echo '<li class="breadcrumb__item">
+                                <a class="breadcrumb__link" href="#">'.translate('nghiên cứu').'</a>
+                                </li>';
+                        }
+                        
                     echo '<i class="fas fa-angle-right"></i>';
                     echo '<li class="breadcrumb__item active">
                             <a class="breadcrumb__link active" href="#">'.get_the_title().'</a>
