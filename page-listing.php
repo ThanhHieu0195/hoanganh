@@ -3,7 +3,6 @@ get_header();
 $techs = get_field('tech-list', get_the_ID(), []);
 if (!empty($techs)):
     ?>
-
     <main>
         <div class="block-content">
             <div class="sc-product-layout-1">
