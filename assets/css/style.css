@@ -4952,6 +4952,15 @@ theme.
   color: #ffffff;
 }
 
+.sc-innovation__title a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sc-innovation__title a:hover {
+  color: #82c341;
+}
+
 .sc-innovation--rd-center {
   background: #fff;
 }
