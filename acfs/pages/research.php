@@ -16,7 +16,7 @@ $tab_inv= array(
         'label' => 'Items',
         'sub_fields' => [
             ACFCS::getText(['name' => 'item', 'label' => 'item']),
-            ACFCS::getUrl(['name' => 'url', 'label' => 'Url']),
+            ACFCS::getUrl(['name' => 'url', 'label' => 'Link']),
             ACFCS::getImage(['name' => 'bg', 'label' => 'Background']),
         ]
     ])
