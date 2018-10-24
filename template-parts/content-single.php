@@ -38,7 +38,7 @@ setPostViews(get_the_ID());
                     <div class="sc-blog-detail__content__title"><?= get_the_title() ?></div>
                     <div class="sc-blog-detail__info">
                         <div class="sc-blog-detail__info__detail">
-                            <div class="info__item"><?= translate_i18n('ngày đăng') ?> :<span class="info__item__content"><?= get_the_date() ?></span></div>
+                            <div class="info__item"><?= translate_i18n('ngày đăng') ?> :<span class="info__item__content"><?= get_the_date(get_option('date_format')) ?></span></div>
 
                         </div>
                         <div class="sc-blog-detail__info__social">
