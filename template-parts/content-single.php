@@ -38,9 +38,8 @@ setPostViews(get_the_ID());
                     <div class="sc-blog-detail__content__title"><?= get_the_title() ?></div>
                     <div class="sc-blog-detail__info">
                         <div class="sc-blog-detail__info__detail">
-                            <div class="info__item"><?= translate_i18n('Viết bởi') ?> :<span class="info__item__content"><?= get_the_author() ?></span></div>
-                            <div class="info__item"><i class="fas fa-user"></i><?= translate_i18n('Lượt xem') ?>:<span class="info__item__content"><?= getPostViews(get_the_ID()) ?></span></div>
-                            <div class="info__item"><i class="fas fa-comment"></i><?= translate_i18n('Lượt bình luận') ?>:<span class="info__item__content"><?= get_comments_number() ?></span></div>
+                            <div class="info__item"><?= translate_i18n('ngày đăng') ?> :<span class="info__item__content"><?= get_the_date() ?></span></div>
+
                         </div>
                         <div class="sc-blog-detail__info__social">
                             <div class="info__item"><i class="fas fa-reply"></i><?= translate_i18n('Chia sẻ qua') ?></div>
