@@ -16,7 +16,7 @@ $list_history = get_field('ls-history', $page->ID, []);
                 <div class="panel-heading sc-accordion__heading">
                     <div class="row">
                         <div class="col-md-5 col-sm-5 col-equal">
-                            <div class="sc-accordion__heading__image"><img src="<?= $path_template_url ?>/assets/images/about-us/lichsu01.png" alt=""></div>
+                            <div class="sc-accordion__heading__image"><img src="<?= $history['field-bg'] ?>" alt=""></div>
                         </div>
                         <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-equal">
                             <div class="panel-title">
