@@ -11,12 +11,14 @@ $list_history = get_field('ls-history', $page->ID, []);
             <?= get_field('history-description', $page->ID, '') ?>
         </div>
         <div class="panel-group sc-accordion" id="accordion">
-            <?php foreach ($list_history as $idx => $history): ?>
+            <?php foreach ($list_history as $idx => $history): 
+                $bg = wp_get_attachment_image_url($history['field-bg'], 'full');
+                ?>
             <div class="panel panel-default sc-accordion__item">
                 <div class="panel-heading sc-accordion__heading">
                     <div class="row">
                         <div class="col-md-5 col-sm-5 col-equal">
-                            <div class="sc-accordion__heading__image"><img src="<?= $history['field-bg'] ?>" alt=""></div>
+                            <div class="sc-accordion__heading__image"><img src="<?= esc_url($bg) ?>" alt=""></div>
                         </div>
                         <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 col-equal">
                             <div class="panel-title">
