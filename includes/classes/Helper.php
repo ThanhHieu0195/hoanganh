@@ -148,11 +148,23 @@ class Helper implements HelperInterface {
             }
 
             $banner_url = $this->getPathTemplate('/components/banner');
+
+            $banner_content_example = '  <div class="sc-quote__icon"></div>
+                    <div class="sc-quote__content">
+                        <div class="sc-quote__content__title">CHÚNG TÔI LÀ HOÀNG ANH</div>
+                        <div class="sc-quote__content__des">
+                            Với sự nhiệt huyết và niềm đam mê, chúng tôi hiểu làm thế nào để truyền cảm hứng cho mọi người tại Hoàng Anh, tạo môi trường làm việc chuyên nghiệp, và dẫn dắt công việc lên một tầm cao mới.
+                        </div>
+                    </div>
+                    <div class="sc-quote__bottom">
+                        <div class="sc-quote__bottom__author">DUY T. PHAM</div>
+                        <div class="sc-quote__bottom__position">General Director</div>
+                    </div>';
+
+                $banner_content = get_field(get_the_ID(), 'banner', $banner_content_example);
+
             echo \includes\Bootstrap::bootstrap()->helper->render($banner_url, [
-                'banner_subtitle' => translate_i18n('CHÚNG TÔI LÀ HOÀNG ANH'),
-                'banner_description' => translate_i18n('Với sự nhiệt huyết và niềm đam mê, chúng tôi hiểu làm thế nào để truyền cảm hứng cho mọi người tại Hoàng Anh, tạo môi trường làm việc chuyên nghiệp, và dẫn dắt công việc lên một tầm cao mới.'),
-                'banner_author' => translate_i18n('DUY T. PHAM'),
-                'banner_pos' => translate_i18n('General Director'),
+                'banner_content' => $banner_content,
                 'banner_bg_url' => $banner_image
             ]);
         }
