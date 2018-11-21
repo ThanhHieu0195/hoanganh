@@ -45,7 +45,7 @@ $bottom_right_right = wp_get_attachment_image_url(get_field('bottom-right-right'
                 $class_sc = 'col-xs-12 col-sm-12 col-md-4';
                 if ( in_array($idx, $arr) ) {
                     $arr[array_search($idx, $arr)] += $arr[1];
-                    $class_sc = 'col-xs-12 col-sm-12 col-md-6';
+                    $class_sc = 'col-xs-12 col-sm-12 col-md-4';
                 }
                 ?>
             <div class="<?= $class_sc ?>">
