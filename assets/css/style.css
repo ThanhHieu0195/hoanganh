@@ -764,7 +764,25 @@ a:hover, a:focus {
   overflow: hidden;
   outline: none;
 }
+.carousel-slide .carousel-slide-for__item .holder-wrapper {
+  position: relative;
+}
 
+.carousel-slide .carousel-slide-for__item .holder-wrapper::before {
+  display: block;
+  padding-top: 80%;
+  content: '';
+}
+
+.carousel-slide .carousel-slide-for__item .holder-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+
+}
 .carousel-slide .carousel-slide-for__item img {
   height: auto;
   max-width: 100%;
