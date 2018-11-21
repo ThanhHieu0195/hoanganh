@@ -2490,6 +2490,10 @@ theme.
   transition: all 0.3s ease;
 }
 
+#menu .sub-menu li a {
+  padding: 0;
+}
+
 .g-recaptcha {
   margin-bottom: 30px;
 }
