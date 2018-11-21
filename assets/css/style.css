@@ -4982,6 +4982,11 @@ theme.
   line-height: 1.36;
   text-align: center;
   color: #ffffff;
+  overflow: hidden;
+  display: -webkit-box;
+  height: 75px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .sc-innovation__title a {
