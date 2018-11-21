@@ -4077,6 +4077,10 @@ theme.
   line-height: 1.5;
   text-align: left;
   color: #3f3f3f;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .sc-video .sc-button {
