@@ -161,7 +161,7 @@ class Helper implements HelperInterface {
                         <div class="sc-quote__bottom__position">General Director</div>
                     </div>';
 
-                $banner_content = get_field(get_the_ID(), 'banner', $banner_content_example);
+                $banner_content = get_field('fields_banner', get_the_ID(),$banner_content_example);
 
             echo \includes\Bootstrap::bootstrap()->helper->render($banner_url, [
                 'banner_content' => $banner_content,
