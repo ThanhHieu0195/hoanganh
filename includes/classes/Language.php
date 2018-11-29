@@ -6,7 +6,7 @@ use includes\Bootstrap;
 use includes\interfaces\HelperInterface;
 
 class Language implements HelperInterface {
-    public $lang = 'vi';
+    public $lang = 'en';
     public $data=[];
     public $format='';
     public function init() {
@@ -15,16 +15,15 @@ class Language implements HelperInterface {
         if (function_exists('get_blog_details')) {
             $blog = get_blog_details(get_current_blog_id());
             $path = $blog->path;
-            preg_match('/\/en\/$/', $path, $arr);
+            preg_match('/\/vi\/$/', $path, $arr);
         }
-
         if (count($arr) > 0) {
-            $this->lang = 'en';
-            $path= '/en/';
-            $this->format = Bootstrap::DATET_FM_EN;
-        } else {
-            $path = '/vi/';
+            $this->lang = 'vi';
+            $path= '/vi/';
             $this->format = Bootstrap::DATET_FM_VI;
+        } else {
+            $path = '/en/';
+            $this->format = Bootstrap::DATET_FM_EN;
         }
         $dir_path = Bootstrap::getPath();
         $filename = $dir_path . '/language_i18n' .  $path . 'language.json';

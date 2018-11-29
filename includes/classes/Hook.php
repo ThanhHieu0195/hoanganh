@@ -69,7 +69,7 @@ class Hook implements HookInterface{
             'post-carousel' => 'assets/js/post-carousel.js',
             'team-parallax' => 'assets/js/team-parallax.js',
             'jquery-matchHeight' => 'assets/lib/js/jquery-matchHeight.js',
-//            'language' => 'assets/js/language.js'
+           'language' => 'assets/js/language.js'
         );
         foreach ($scripts as $script) {
             wp_enqueue_script($script, $path .'/'. $script, array('jquery'), self::VERSION, true);
@@ -240,13 +240,12 @@ class Hook implements HookInterface{
     }
 
     public function customTemplate($template='') {
-	    $mapping = \includes\classes\Constants::MAPP_TEMPLATE;
+        $mapping = \includes\classes\Constants::MAPP_TEMPLATE;
         $path = \includes\Bootstrap::getPath();
         $slug = \includes\Bootstrap::bootstrap()->helper->getSubUrl();
-
+     
         if (array_key_exists($slug, $mapping)) {
             $slug = $mapping[$slug];
-
             $lang = Bootstrap::$bootstrap->language->lang;
             $path_file = $path . '/templates/' . $lang . '/template.php';
             if (file_exists($path_file)) {
@@ -274,23 +273,23 @@ class Hook implements HookInterface{
     public function registerSetting() {
         if( function_exists('acf_add_options_page') ) {
             acf_add_options_page(array(
-                'page_title' 	=> 'Theme General Settings',
-                'menu_title'	=> 'Theme Settings',
-                'menu_slug' 	=> 'theme-general-settings',
-                'capability'	=> 'edit_posts',
-                'redirect'		=> false
+                'page_title'    => 'Theme General Settings',
+                'menu_title'    => 'Theme Settings',
+                'menu_slug'     => 'theme-general-settings',
+                'capability'    => 'edit_posts',
+                'redirect'      => false
             ));
 
             acf_add_options_sub_page(array(
-                'page_title' 	=> 'Theme Header Settings',
-                'menu_title'	=> 'Header',
-                'parent_slug'	=> 'theme-general-settings',
+                'page_title'    => 'Theme Header Settings',
+                'menu_title'    => 'Header',
+                'parent_slug'   => 'theme-general-settings',
             ));
 
             acf_add_options_sub_page(array(
-                'page_title' 	=> 'Theme Footer Settings',
-                'menu_title'	=> 'Footer',
-                'parent_slug'	=> 'theme-general-settings',
+                'page_title'    => 'Theme Footer Settings',
+                'menu_title'    => 'Footer',
+                'parent_slug'   => 'theme-general-settings',
             ));
 
         }
