@@ -189,14 +189,14 @@ class Helper implements HelperInterface {
                         if ( is_singular(['flavor']) ) {
                             echo '<i class="fas fa-angle-right"></i>';
                             echo '<li class="breadcrumb__item">
-                                <a class="breadcrumb__link" href="#">'.translate_i18n('hương thực phẩm').'</a>
+                                <a class="breadcrumb__link" href="'.home_url('flavors').'">'.translate_i18n('hương thực phẩm').'</a>
                                 </li>';
                         }
 
                         if ( is_singular(['ingredient']) ) {
                             echo '<i class="fas fa-angle-right"></i>';
                             echo '<li class="breadcrumb__item">
-                                <a class="breadcrumb__link" href="#">'.translate_i18n('nguyên liệu thực phẩm').'</a>
+                                <a class="breadcrumb__link" href="'.home_url('ingredient').'">'.translate_i18n('nguyên liệu thực phẩm').'</a>
                                 </li>';
                         }
 
@@ -209,7 +209,7 @@ class Helper implements HelperInterface {
                      if ( is_page_template('page-listing.php') ) {
                             echo '<i class="fas fa-angle-right"></i>';
                             echo '<li class="breadcrumb__item">
-                                <a class="breadcrumb__link" href="#">'.translate_i18n('nghiên cứu').'</a>
+                                <a class="breadcrumb__link" href="'.home_url('research').'">'.translate_i18n('nghiên cứu').'</a>
                                 </li>';
                         }
                         
