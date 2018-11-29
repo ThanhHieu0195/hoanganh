@@ -182,7 +182,7 @@ class Helper implements HelperInterface {
                     if (!empty($cat)) {
                         echo "<i class=\"fas fa-angle-right\"></i>";
                         echo '<li class="breadcrumb__item">
-                                <a class="breadcrumb__link" href="#">'.$cat[0]->name.'</a>
+                                <a class="breadcrumb__link" href="'.home_url('insight').'">'.$cat[0]->name.'</a>
                                 </li>';
                     }
                     if (is_single()) {
