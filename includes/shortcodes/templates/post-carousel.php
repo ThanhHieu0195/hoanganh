@@ -1,7 +1,36 @@
 <?php
-$posts = get_posts(array(
-        'numberposts' => 3
+if ($params['type'] == 'company_news') {
+   $posts = get_posts(array(
+        'numberposts' => $params['number'],
+         'meta_query' => array(
+           array(
+               'key' => 'company_new',
+               'value' => 's:1',
+               'compare' => 'like',
+           )
+       )
+    ));
+
+} else {
+    $posts = get_posts(array(
+        'numberposts' => $params['number'],
+          'meta_query' => array(
+              array(
+                    'relation' => 'OR',
+                   array(
+                        'key' => 'company_new',
+                      'compare' => 'NOT EXISTS',
+                    ),
+                     array(
+                        'key' => 'company_new',
+                        'value' => '',
+                      'compare' => '=',
+                    )
+           )
+          
+       )
 ));
+}
 ?>
 <div class="carousel-post">
     <div class="carousel-slide">

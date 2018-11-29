@@ -1,16 +1,15 @@
 <?php 
-
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array (
-	'key' => 'group_5bec488219480',
+	'key' => 'group_5becbc8847e20',
 	'title' => 'Banner',
 	'fields' => array (
 		array (
 			'key' => 'fields_banner',
-			'label' => 'Banner',
+			'label' => 'banner',
 			'name' => 'banner',
-			'type' => 'textarea',
+			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
 			'conditional_logic' => 0,
@@ -20,10 +19,10 @@ acf_add_local_field_group(array (
 				'id' => '',
 			),
 			'default_value' => '',
-			'placeholder' => '',
-			'maxlength' => '',
-			'rows' => '',
-			'new_lines' => 'wpautop',
+			'tabs' => 'all',
+			'toolbar' => 'full',
+			'media_upload' => 1,
+			'delay' => 0,
 		),
 	),
 	'location' => array (

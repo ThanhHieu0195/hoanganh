@@ -5,6 +5,7 @@ class PostCarouselShortcode extends \includes\classes\Shortcode {
     public $shortcode = 'post-carousel';
     public $attributes = [
         'title' => '',
-        'number' => ''
+        'number' => '',
+        'type' => 'post'
     ];
 }

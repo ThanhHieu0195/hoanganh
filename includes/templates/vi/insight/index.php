@@ -19,12 +19,40 @@ foreach ($cats as $idx => $cat) {
     $cats_filter[] = "<li class=\"sc-tabs__nav-tabs__item\"><a class=\"sc-tabs__nav-tabs__link\" data-toggle=\"tab\" href=\"#term-{$cat->term_id}\">{$cat->name}</a></li>";
     $arr[$cat->term_id] = get_posts([
         'numberposts' => $numberposts * $numpage,
-        'category' => [$cat->term_id]
+        'category' => [$cat->term_id],
+        'meta_query' => array(
+              array(
+                    'relation' => 'OR',
+                   array(
+                        'key' => 'company_new',
+                      'compare' => 'NOT EXISTS',
+                    ),
+                     array(
+                        'key' => 'company_new',
+                        'value' => '',
+                      'compare' => '=',
+                    )
+           )
+       )
     ]);
 
     $next_posts = get_posts([
         'numberposts' => $numberposts * ($numpage + 1),
-        'category' => [$cat->term_id]
+        'category' => [$cat->term_id],
+        'meta_query' => array(
+              array(
+                    'relation' => 'OR',
+                   array(
+                        'key' => 'company_new',
+                      'compare' => 'NOT EXISTS',
+                    ),
+                     array(
+                        'key' => 'company_new',
+                        'value' => '',
+                      'compare' => '=',
+                    )
+           )
+       )
     ]);
 
     if (count($next_posts) > count($arr[$cat->term_id])) {
