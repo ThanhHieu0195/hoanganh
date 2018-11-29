@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18bc65b8-f878-4469-9ddb-bd006251a83d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/classes/Helper.php" afterPath="$PROJECT_DIR$/includes/classes/Helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/language_i18n/en/language.json" afterPath="$PROJECT_DIR$/includes/language_i18n/en/language.json" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,19 +37,19 @@
       <file leaf-file-name="Helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/classes/Helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="191" column="97" lean-forward="false" selection-start-line="191" selection-start-column="82" selection-end-line="191" selection-end-column="97" />
+            <state relative-caret-position="273">
+              <caret line="211" column="87" lean-forward="true" selection-start-line="211" selection-start-column="87" selection-end-line="211" selection-end-column="97" />
               <folding>
-                <marker date="1543508503072" expanded="true" signature="4723:5152" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="4875:5125" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="5203:5397" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="6274:6341" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="6274:6425" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="6680:6824" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="7049:7199" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="7362:7500" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="7765:7904" ph="..." />
-                <marker date="1543508503072" expanded="true" signature="8083:8212" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="4723:5152" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="4875:5125" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="5203:5397" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="6274:6341" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="6274:6425" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="6680:6829" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="7054:7209" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="7372:7510" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="7775:7919" ph="..." />
+                <marker date="1543509258129" expanded="true" signature="8098:8227" ph="..." />
               </folding>
             </state>
           </provider>
@@ -57,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/includes/language_i18n/en/language.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="514">
-              <caret line="41" column="46" lean-forward="false" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+              <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -78,6 +80,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>hương thực phẩm</find>
+      <find>nguyên liệu thực phẩm</find>
+      <find>translate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,6 +91,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/includes/classes/Constants.php" />
+        <option value="$PROJECT_DIR$/includes/classes/Helper.php" />
         <option value="$PROJECT_DIR$/includes/language_i18n/en/language.json" />
       </list>
     </option>
@@ -188,7 +193,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="676000" />
+    <option name="totallyTimeSpent" value="784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -255,19 +260,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/classes/Helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="191" column="97" lean-forward="false" selection-start-line="191" selection-start-column="82" selection-end-line="191" selection-end-column="97" />
+        <state relative-caret-position="273">
+          <caret line="211" column="87" lean-forward="true" selection-start-line="211" selection-start-column="87" selection-end-line="211" selection-end-column="97" />
           <folding>
-            <marker date="1543508503072" expanded="true" signature="4723:5152" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="4875:5125" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="5203:5397" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="6274:6341" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="6274:6425" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="6680:6824" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="7049:7199" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="7362:7500" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="7765:7904" ph="..." />
-            <marker date="1543508503072" expanded="true" signature="8083:8212" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="4723:5152" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="4875:5125" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="5203:5397" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="6274:6341" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="6274:6425" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="6680:6829" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="7054:7209" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="7372:7510" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="7775:7919" ph="..." />
+            <marker date="1543509258129" expanded="true" signature="8098:8227" ph="..." />
           </folding>
         </state>
       </provider>
@@ -275,7 +280,7 @@
     <entry file="file://$PROJECT_DIR$/includes/language_i18n/en/language.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
-          <caret line="41" column="46" lean-forward="false" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding />
         </state>
       </provider>
