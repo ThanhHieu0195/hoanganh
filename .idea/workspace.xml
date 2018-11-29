@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18bc65b8-f878-4469-9ddb-bd006251a83d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/about-us/1-message.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/about-us/2-quotes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/about-us/3-history.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/about-us/4-news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/about-us/5-videos.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/blog/article-post.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/blog/article.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/contact/contact.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/events/item.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/flavors/1-flavors.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/flavors/2-technologies.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/flavors/3-ingredients.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/home/1-banner.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/home/2-teams-1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/home/3-quotes.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/home/3-teams-2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/home/4-counters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/home/5-infos.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/home/teams/block1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/home/teams/block2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/insight/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/post-listing/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/recruitment/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/research/1-info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/research/2-products.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/research/3-rd.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/technology-listing/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/templates/en/template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/language_i18n/en/language.json" afterPath="$PROJECT_DIR$/includes/language_i18n/en/language.json" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +35,8 @@
       <file leaf-file-name="Helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/classes/Helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2337">
-              <caret line="74" column="19" lean-forward="false" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+            <state relative-caret-position="161">
+              <caret line="191" column="97" lean-forward="false" selection-start-line="191" selection-start-column="82" selection-end-line="191" selection-end-column="97" />
               <folding>
                 <marker date="1543508503072" expanded="true" signature="4723:5152" ph="..." />
                 <marker date="1543508503072" expanded="true" signature="4875:5125" ph="..." />
@@ -81,7 +53,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="language.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/language_i18n/en/language.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="41" column="46" lean-forward="false" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/templates/en/blog/article.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -93,6 +75,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hương thực phẩm</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -100,6 +87,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/includes/classes/Constants.php" />
+        <option value="$PROJECT_DIR$/includes/language_i18n/en/language.json" />
       </list>
     </option>
   </component>
@@ -200,7 +188,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295000" />
+    <option name="totallyTimeSpent" value="676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -257,10 +245,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/templates/en/blog/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/classes/Helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2337">
-          <caret line="74" column="19" lean-forward="false" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        <state relative-caret-position="161">
+          <caret line="191" column="97" lean-forward="false" selection-start-line="191" selection-start-column="82" selection-end-line="191" selection-end-column="97" />
           <folding>
             <marker date="1543508503072" expanded="true" signature="4723:5152" ph="..." />
             <marker date="1543508503072" expanded="true" signature="4875:5125" ph="..." />
@@ -276,10 +272,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/templates/en/blog/article.php">
+    <entry file="file://$PROJECT_DIR$/includes/language_i18n/en/language.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="514">
+          <caret line="41" column="46" lean-forward="false" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
           <folding />
         </state>
       </provider>
