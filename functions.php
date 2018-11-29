@@ -183,3 +183,18 @@ if (isset($_GET['i18n']) && $_GET['i18n'] == base64_encode('i18n')) {
     echo json_encode($_SESSION['i18n'], JSON_UNESCAPED_UNICODE);
     die;
 }
+
+// Tai them 
+add_filter( 'tiny_mce_before_init', 'override_mp6_tinymce_styles' );
+function override_mp6_tinymce_styles( $mce_init ) {
+	
+	// make sure we don't override other custom <code>content_css</code> files
+	$content_css = get_stylesheet_directory_uri() . '/bd-editor.css';
+	if ( isset( $mce_init[ 'content_css' ] ) )
+	$content_css .= ',' . $mce_init[ 'content_css' ];
+	
+	$mce_init[ 'content_css' ] = $content_css;
+	
+	return $mce_init;
+
+}
