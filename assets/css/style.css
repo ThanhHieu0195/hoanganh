@@ -770,7 +770,7 @@ a:hover, a:focus {
 
 .carousel-slide .carousel-slide-for__item .holder-wrapper::before {
   display: block;
-  padding-top: 60%;
+  padding-top: 50%;
   content: '';
 }
 
