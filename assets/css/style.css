@@ -5864,3 +5864,11 @@ theme.
     font-size: 80px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .block-item .description {
+    height: unset;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    }
+}
