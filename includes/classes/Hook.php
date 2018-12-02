@@ -39,11 +39,11 @@ class Hook implements HookInterface{
     public function addStyles() {
         $path = get_template_directory_uri();
         $styles = array(
+            'hoanganh' => 'assets/css/style.css',
             'bootstrap' => 'assets/lib/css/bootstrap.min.css',
             'slick' => 'assets/lib/js/slick/slick.css',
             'slick-theme' => 'assets/lib/js/slick/slick-theme.css',
             'popup-video' => 'assets/lib/css/magnific-popup.css',
-            'hoanganh' => 'assets/css/style.css',
             'response' => 'assets/css/responsive.css',
             'component' => 'assets/css/component.css',
         );
