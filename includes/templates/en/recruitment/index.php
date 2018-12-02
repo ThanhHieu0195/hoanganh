@@ -4,7 +4,9 @@ $jobs = get_field('jobs', $page->ID, []);
 <main>
     <div class="container">
         <div class="panel-group sc-accordion sc-accordion--recruitment" id="accordion">
-            <?php foreach($jobs as $idx => $job):
+            <?php
+            if (count($jobs) > 0):
+            foreach($jobs as $idx => $job):
                 $class_active = ($idx == 0) ? 'in' : '';
             ?>
             <div class="panel panel-default sc-accordion__item">
@@ -23,7 +25,10 @@ $jobs = get_field('jobs', $page->ID, []);
                     </div>
                 </div>
             </div>
-          <?php endforeach; ?>
+          <?php
+            endforeach;
+            endif;
+            ?>
         </div>
     </div>
 </main>
