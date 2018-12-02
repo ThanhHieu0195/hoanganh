@@ -68,7 +68,7 @@ setPostViews(get_the_ID());
                 }
                 ?>
             </div>
-
+            <?php if (get_post_status($postID) == 'private' ): ?>
             <div class="block__section">
                 <div class="block__section__title"><?= get_comments_number() ?> <?= translate_i18n('Bình luận') ?></div>
                 <div class="comments">
@@ -79,6 +79,7 @@ setPostViews(get_the_ID());
                     ?>
                 </div>
             </div>
+            <?php endif ?>
         </div>
         <div class="col-md-3">
             <?php
