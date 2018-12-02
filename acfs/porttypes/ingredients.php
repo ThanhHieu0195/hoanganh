@@ -12,7 +12,7 @@ $tab_information = array(
 
 $tab_items = array(
     ACFCS::fieldTab(['name' => 'tab-glavor', 'label' => 'Groups']),
-    ACFCS::getText(['name' => 'gf-titl  e', 'label' => 'Title']),
+    ACFCS::getText(['name' => 'gf-title', 'label' => 'Title']),
     ACFCS::getRepeater(['name' => 'gf-items', 'label' => 'Items', 'sub_fields' => [
         ACFCS::getText(['name' => 'title', 'label' => 'Title']),
         ACFCS::getAreaText(['name' => 'concept', 'label' => 'Concept']),
