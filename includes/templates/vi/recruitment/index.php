@@ -5,7 +5,7 @@ $jobs = get_field('jobs', $page->ID, []);
     <div class="container">
         <div class="panel-group sc-accordion sc-accordion--recruitment" id="accordion">
             <?php
-            if (count($jobs) > 0):
+            if (!empty($jobs)):
             foreach($jobs as $idx => $job):
                 $class_active = ($idx == 0) ? 'in' : '';
             ?>
