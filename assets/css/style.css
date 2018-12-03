@@ -2116,6 +2116,7 @@ theme.
   background-color: #fff;
   padding: 0;
   margin-bottom: 0;
+  text-align: left;
 }
 
 .breadcrumb-wapper .breadcrumb__item::before {
@@ -5874,7 +5875,7 @@ theme.
 
 @media (min-width: 992px) {
   .col-md-1, .col-md-10, .col-md-11, .col-md-12, 
-  .col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-8, .col-md-9 {
+  .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
     float: none !important;
     display: inline-block;
     vertical-align: top;
@@ -5885,9 +5886,5 @@ theme.
   }
   .container {
     text-align: center;
-  }
-
-  .sc-about-page .container {
-    text-align: left;
   }
 }
