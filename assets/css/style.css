@@ -5781,6 +5781,10 @@ theme.
   border: solid 1px #cdd2d5;
 }
 
+.sc-info-contact .block-form-contact input::placeholder {
+  color: #82c341;
+}
+
 .sc-info-contact .block-form-contact input:focus,
 .sc-info-contact .block-form-contact textarea:focus {
   border-color: #82c341;
