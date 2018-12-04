@@ -5879,7 +5879,8 @@ theme.
 }
 
 @media (min-width: 992px) {
-  .col-md-4 {
+  .col-md-4,
+  .col-md-3 {
     float: none !important;
     display: inline-block;
     vertical-align: top;
