@@ -5777,6 +5777,7 @@ theme.
 .sc-info-contact .block-form-contact input,
 .sc-info-contact .block-form-contact textarea {
   width: 100%;
+  font-size: 14px;
   padding: 0 22px;
   border: solid 1px #cdd2d5;
 }
