@@ -5891,13 +5891,15 @@ theme.
   .sc-innovation--rd-center .container,
   .insight-page .container {
     font-size: 0;
+    text-align: center;
   }
 
   .row {
     font-size: 0;
   }
   .sc-technology-layout-1.parllax-common .container,
-  .sc-product-layout-2 .container {
+  .sc-product-layout-2 .container,
+  .insight-page .container {
     text-align: center;
   }
 }
