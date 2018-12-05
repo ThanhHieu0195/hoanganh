@@ -5887,17 +5887,17 @@ theme.
     font-size: 16px;
   }
 
-  .sc-innovation.sc-team-block .container {
+  .sc-innovation.sc-team-block .container,
+  .sc-innovation--rd-center .container,
+  .insight-page .container {
     font-size: 0;
   }
 
   .row {
     font-size: 0;
   }
-  .recruitment-page .container {
-    text-align: left;
-  }
-  .container {
+  .sc-technology-layout-1.parllax-common .container,
+  .sc-product-layout-2 .container {
     text-align: center;
   }
 }
