@@ -5894,6 +5894,9 @@ theme.
   .row {
     font-size: 0;
   }
+  .recruitment-page .container {
+    text-align: left;
+  }
   .container {
     text-align: center;
   }
