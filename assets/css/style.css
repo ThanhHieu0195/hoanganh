@@ -720,6 +720,9 @@ a:hover, a:focus {
   .custom-nav-for .title {
     font-size: 20px;
   }
+  .sc-product-layout-1 .block-image {
+    width: 100%;
+  }
 }
 
 .custom-nav-for .info {
