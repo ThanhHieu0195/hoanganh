@@ -5891,6 +5891,10 @@ theme.
     font-size: 16px;
   }
 
+  .sc-innovation.sc-team-block .container {
+    font-size: 0;
+  }
+
   .row {
     font-size: 0;
   }
