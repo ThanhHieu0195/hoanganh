@@ -720,9 +720,6 @@ a:hover, a:focus {
   .custom-nav-for .title {
     font-size: 20px;
   }
-  .sc-product-layout-1 .block-image {
-    width: 100%;
-  }
 }
 
 .custom-nav-for .info {
@@ -5909,5 +5906,11 @@ theme.
   .sc-product-layout-2 .container,
   .insight-page .container {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sc-product-layout-1 .block-image {
+    width: 100%;
   }
 }
