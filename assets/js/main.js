@@ -45,35 +45,35 @@ $(window).bind('scroll', function () {
         $('.header-main-01').removeClass('fixed');
     }
 });
-// $(document).ready(function() {
-// 	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-// 		disableOn: 700,
-// 		type: 'iframe',
-// 		mainClass: 'mfp-fade',
-// 		removalDelay: 160,
-// 		preloader: false,
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
 
-// 		fixedContentPos: false
-// 	});
-// });
-// var map;
-// function loadMarkers() {
-//   console.log('creating markers')
-//   map.data.forEach(function(feature) {
+		fixedContentPos: false
+	});
+});
+var map;
+function loadMarkers() {
+  console.log('creating markers')
+  map.data.forEach(function(feature) {
     
-//     // geojson format is [longitude, latitude] but google maps marker position attribute
-//     // expects [latitude, longitude]
-//     var latitude = feature.getGeometry().get().lat()
-//     var longitude = feature.getGeometry().get().lng()
-//     var titleText = feature.getProperty('title')
+    // geojson format is [longitude, latitude] but google maps marker position attribute
+    // expects [latitude, longitude]
+    var latitude = feature.getGeometry().get().lat()
+    var longitude = feature.getGeometry().get().lng()
+    var titleText = feature.getProperty('title')
 
-//     var marker = new google.maps.Marker({
-//       position: {lat: latitude, lng:longitude},
-//       title: titleText,
-//       map: map
-//      });
-//   });
-// }
+    var marker = new google.maps.Marker({
+      position: {lat: latitude, lng:longitude},
+      title: titleText,
+      map: map
+     });
+  });
+}
 function myMap() {
   let lat = parseFloat($('#googleMap').data('lat'));
   let lng = parseFloat($('#googleMap').data('lng'));
