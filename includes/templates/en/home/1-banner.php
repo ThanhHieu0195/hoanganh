@@ -34,7 +34,7 @@ if ($type == 0):
                     <?= $title ?>
                     <div class="description"><?= $description ?></div>
                     <div class="sc-button"><a class="main-color" href="<?= esc_url($more_url) ?>"><span><?= translate_i18n('Xem Thêm') ?></span></a></div>
-                    <div class="sc-button"><a class="transparent" href="#"><span><?= translate_i18n('xu hướng mới') ?></span></a></div>
+                    <!-- <div class="sc-button"><a class="transparent" href="#"><span><?= translate_i18n('xu hướng mới') ?></span></a></div> -->
                 </div>
             </div>
         <?php endforeach; ?>

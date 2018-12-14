@@ -2,7 +2,8 @@ $( document ).ready(function(e) {
   $('.banner-slider').slick({
       dots: false,
       infinite: true,
-      speed: 300,
+      autoplay: true,
+      autoplaySpeed: 2000,
       infinite: true,
       arrows: true,
       prevArrow: '<a class="arrow arrow--left" href="#" role="button"><span class="ion-chevron-left"></span></a>',
