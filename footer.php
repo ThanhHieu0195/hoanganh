@@ -43,9 +43,10 @@ $videos = get_field('footer-videos', 'option', []);
             <div class="col-lg-3 col-md-6 col-sm-12"><a href="#"><img src="<?= $footer_icon_url ?>" alt=""></a>
               <ul class="socials">
                   <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-fb', 'option', '') ?>"><i class="fab fa-facebook-f"></i></a></li>
-                  <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-tw', 'option', '') ?>"><i class="fab fa-twitter"></i></a></li>
+                  <!-- <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-tw', 'option', '') ?>"><i class="fab fa-twitter"></i></a></li>
                   <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-pin', 'option', '') ?>"><i class="fab fa-pinterest-p"></i></a></li>
-                  <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-go', 'option', '') ?>"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li class="socials__item"><a target="_blank" class="socials__link" href="<?= get_field('theme-setting-go', 'option', '') ?>"><i class="fab fa-google-plus-g"></i></a></li> -->
+                  <li class="socials__item"><a class="socials__link" href="<?= get_field('theme-setting-in', 'option', '') ?>"><i class="fab fa-linkedin-in"></i></a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
