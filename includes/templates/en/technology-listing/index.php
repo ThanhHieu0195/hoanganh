@@ -30,7 +30,7 @@ if (!empty($techs)):
                             <div class="block-content">
                                 <div class="title"><?= esc_html($title) ?></div>
                                 <div class="description">
-                                    <?= wp_trim_words($content, 20, $more ) ?>
+                                    <?= var_dump(wp_trim_words($content, 20, $more )) ?>
                                 </div>
                             </div>
                         </div>
