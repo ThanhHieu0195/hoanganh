@@ -4333,6 +4333,10 @@ theme.
     -webkit-box-orient: vertical;
 }
 
+.sc-product-layout-1 .block-item .description {
+  
+}
+
 .sc-technology-layout-1 {
   background-color: #f7f7f7;
   padding: 110px 0 111px;
