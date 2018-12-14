@@ -22,14 +22,14 @@ $site_key = \includes\classes\Constants::CAPTCHA_SITEKEY;
                     <div class="col-lg-5 col-md-5 col-sm-12">
                         <div class="block-info-contact">
                             <div class="item">
-                                <label><?= translate_i18n('Gửi Thư Đến') ?></label>
+                                <label><?= translate_i18n('Địa chỉ email') ?></label>
                                 <div class="info">
                                     <span class="ion-ios-email-outline icons"></span>
                                     <?= translate_i18n('address-map') ?>  <a class="info-content" href="#"><?= get_field('field-mail', $page->ID, '') ?></a>
                                 </div>
                             </div>
                             <div class="item">
-                                <label><?= translate_i18n('Gửi Fax Đến') ?></label>
+                                <label><?= translate_i18n('Fax') ?></label>
                                 <div class="info">
                                     <span class="ion-ios-email-outline icons"></span>
                                     <span class="info-content"><?= get_field('field-fax', $page->ID, '') ?></span>
