@@ -3,7 +3,7 @@ $( document ).ready(function(e) {
       dots: false,
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 10000,
       infinite: true,
       arrows: true,
       prevArrow: '<a class="arrow arrow--left" href="#" role="button"><span class="ion-chevron-left"></span></a>',
