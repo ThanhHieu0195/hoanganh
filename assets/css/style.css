@@ -240,7 +240,7 @@ a:hover, a:focus {
 }
 
 .sc-main-title--big {
-  font-size: 52px;
+  font-size: 48px;
   color: #fff;
   text-align: left;
 }
@@ -5657,7 +5657,7 @@ theme.
 
 .sc-team-block.layout-3 .sc-main-title--big {
   font-size: 42px;
-  line-height: 1.1;
+  line-height: 1.24;
   font-weight: bold;
   color: #3f3f3f;
   margin-bottom: 27px;
