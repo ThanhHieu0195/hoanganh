@@ -3554,6 +3554,7 @@ theme.
     padding-left: 0px;
     height: auto;
     overflow: auto;
+    -webkit-line-clamp: initial;
   }
   .sc-about-page .sc-quote__icon {
     width: 44px;
