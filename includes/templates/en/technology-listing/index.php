@@ -15,7 +15,6 @@ if (!empty($techs)):
 
                     $title = $tech['field-title'];
                     $content = $tech['field-desc'];
-                    $more = '<div class="readmore">Readmore</div>';
                     $bg = wp_get_attachment_image_url($tech['field-bg'], 'full');
                     $url = $tech['field-view_url'];
                     ?>
@@ -30,7 +29,7 @@ if (!empty($techs)):
                             <div class="block-content">
                                 <div class="title"><?= esc_html($title) ?></div>
                                 <div class="description">
-                                    <?= var_dump(wp_trim_words($content, 20, $more )) ?>
+                                    <?= $content ?>
                                 </div>
                             </div>
                         </div>
