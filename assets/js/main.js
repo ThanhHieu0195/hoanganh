@@ -138,6 +138,6 @@ $(document).ready(function() {
 $(document).ready(function(){
     $('.block-item .description').removeClass('show');
     $('.block-item .read-more').on('click', function(){
-        $('.block-item .read-more').closest().addClass('show');
+        $(this).closest('.read-more').addClass('show');
     })
 })
