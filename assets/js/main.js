@@ -136,7 +136,7 @@ $(document).ready(function() {
 // google.maps.event.addDomListener(window, 'load', initMap);
 
 $(document).ready(function(){
-    // $('.block-item .description').removeClass('show');
+    $('.block-item .description').removeClass('show');
     $('.block-item .read-more').on('click', function(){
         $(this).parent('.block-content').find('.description').addClass('show');
     })
