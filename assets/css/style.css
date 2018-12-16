@@ -4821,6 +4821,12 @@ theme.
   width: 100%;
 }
 
+.sc-post-block.sc-post-block__main .sc-post-block__image, .sc-post-block.sc-post-block__main .sc-post-block__content {
+  vertical-align: top;
+  display: table-cell;
+  width: 50%;
+}
+
 .sc-post-block__image, .sc-post-block__content {
   vertical-align: top;
   display: table-cell;
