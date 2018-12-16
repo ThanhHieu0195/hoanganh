@@ -10,5 +10,6 @@ extract($params);
         <div class="description">
             <?= $description ?>
         </div>
+        <div class="read-more">Read More </div>
     </div>
 </div>
