@@ -52,7 +52,6 @@ $next_posts = get_posts([
                                 <div class="sc-post-block__content__des">
                                     <?= $post->post_excerpt ?>
                                 </div>
-                                <a href="<?= esc_url($permalink) ?>" class="read-more">Read More</a>
                             </div>
                         </div>
                     </div>
