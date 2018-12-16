@@ -16,6 +16,5 @@ $type_items = get_field('flavor-items', $page->ID, []);
         }
         endif;
         ?>
-        <div class="readmore">Read More </div>
     </div>
 </div>
