@@ -2839,6 +2839,14 @@ theme.
   .sc-header-top__right .socials {
     display: none;
   }
+
+  .sc-post-block.sc-post-block__main {
+    display: block;
+  }
+  .sc-post-block.sc-post-block__main .sc-post-block__image, .sc-post-block.sc-post-block__main .sc-post-block__content {
+    display: block;
+    width: 100%;
+  }
 }
 
 .sc-header-top__contact {
