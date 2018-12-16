@@ -11,7 +11,7 @@ if ($params['type'] == 'company_news') {
        )
     ));
 
-} else {
+} else if($type == 'insight') {
     $posts = get_posts(array(
         'numberposts' => $params['number'],
           'meta_query' => array(
@@ -30,6 +30,10 @@ if ($params['type'] == 'company_news') {
           
        )
 ));
+} else {
+    $posts = get_posts(array(
+        'numberposts' => $params['number'],
+       ));
 }
 ?>
 <div class="carousel-post">
