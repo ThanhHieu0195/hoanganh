@@ -51,6 +51,16 @@ blockquote, q {
   quotes: none;
 }
 
+.blockquote {
+  position: relative;
+  padding-left: 0px;
+  overflow: hidden;
+  height: 106px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -3476,7 +3486,7 @@ theme.
   position: relative;
   padding-left: 0px;
   overflow: hidden;
-  height: 120px;
+  height: 106px;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
