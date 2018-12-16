@@ -5924,6 +5924,9 @@ theme.
     -webkit-line-clamp: unset;
     -webkit-box-orient: unset;
     }
+  .read-more {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
