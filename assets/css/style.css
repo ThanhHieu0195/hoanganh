@@ -2715,6 +2715,10 @@ theme.
   padding-left: 0;
 }
 
+#menu.main-menu-mobile ul.sub-menu {
+  padding-left: 15px;
+}
+
 #menu.main-menu-mobile ul li {
   display: block;
   text-align: left;
