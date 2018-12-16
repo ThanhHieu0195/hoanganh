@@ -4342,7 +4342,9 @@ theme.
 }
 
 .sc-product-layout-1 .block-item .description {
-
+  height: auto;
+  overflow: initial;
+  -webkit-line-clamp: initial;
 }
 
 .sc-technology-layout-1 {
