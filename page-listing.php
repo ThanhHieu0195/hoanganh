@@ -31,6 +31,7 @@ if (!empty($techs)):
                                         <div class="description">
                                             <?= $content ?>
                                         </div>
+                                        <div class="read-more">Read More </div>
                                     </div>
                                 </div>
                             </div>
