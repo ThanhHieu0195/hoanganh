@@ -4348,6 +4348,12 @@ theme.
   -webkit-line-clamp: initial;
 }
 
+.sc-carousel-layout-2 .block-item .description {
+  height: auto;
+  overflow: initial;
+  -webkit-line-clamp: initial;
+}
+
 .sc-technology-layout-1 {
   background-color: #f7f7f7;
   padding: 110px 0 111px;
