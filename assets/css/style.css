@@ -59,7 +59,7 @@ q:before, q:after {
 }
 
 blockquote:before {
-  content: "\f35f";
+  content: "\f347";
   display: inline-block;
   font-family: "Ionicons";
   speak: none;
