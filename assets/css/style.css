@@ -4341,7 +4341,7 @@ theme.
     -webkit-box-orient: vertical;
 }
 
-.sc-product-layout-1 .block-item .description {
+.sc-product-layout-1 .block-item .description.show {
   height: auto;
   overflow: initial;
   -webkit-line-clamp: initial;

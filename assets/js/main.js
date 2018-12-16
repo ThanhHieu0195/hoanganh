@@ -137,6 +137,6 @@ $(document).ready(function() {
 
 $(document).ready(function(){
     $('.block-item .read-more').on('click', function(){
-        $('.block-item .description').toggleClass('hidden');
+        $('.block-item .description').toggleClass('show');
     })
 })
