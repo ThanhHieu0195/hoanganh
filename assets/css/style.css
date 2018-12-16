@@ -4339,9 +4339,10 @@ theme.
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+  cursor: pointer;
 }
 
-.sc-product-layout-1 .block-item .description.show {
+.block-item .description.show {
   height: auto;
   overflow: initial;
   -webkit-line-clamp: initial;
