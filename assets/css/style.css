@@ -4421,7 +4421,8 @@ theme.
 
 .sc-carousel-layout-2 .nav-tabs {
   border: 0;
-  height: 410px;
+  /* height: 410px; */
+  height: 100%;
   overflow-y: scroll;
 }
 
@@ -4593,6 +4594,7 @@ theme.
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #f9f9f9;
+  height: 100%;
 }
 
 .sc-carousel-layout-2 .carousel-slide-for .carousel-slide-for__item {
