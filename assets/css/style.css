@@ -4339,10 +4339,19 @@ theme.
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+  cursor: pointer;
 }
 
-.sc-product-layout-1 .block-item .description {
+.block-item .description.show {
+  height: auto;
+  overflow: initial;
+  -webkit-line-clamp: initial;
+}
 
+.sc-carousel-layout-2 .block-item .description {
+  height: auto;
+  overflow: initial;
+  -webkit-line-clamp: initial;
 }
 
 .sc-technology-layout-1 {
@@ -4412,7 +4421,8 @@ theme.
 
 .sc-carousel-layout-2 .nav-tabs {
   border: 0;
-  height: 410px;
+  /* height: 410px; */
+  height: 100%;
   overflow-y: scroll;
 }
 
@@ -4584,6 +4594,7 @@ theme.
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #f9f9f9;
+  height: 100%;
 }
 
 .sc-carousel-layout-2 .carousel-slide-for .carousel-slide-for__item {
@@ -4793,11 +4804,27 @@ theme.
 }
 
 .sc-post-block {
-  display: table;
+  display: block;
   overflow: hidden;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   margin-bottom: 30px;
+}
+
+.sc-post-block.sc-post-block__main{
+  display: table;
+}
+
+.sc-post-block .sc-post-block__image, .sc-post-block .sc-post-block__content {
+  vertical-align: top;
+  display: block;
+  width: 100%;
+}
+
+.sc-post-block.sc-post-block__main .sc-post-block__image, .sc-post-block.sc-post-block__main .sc-post-block__content {
+  vertical-align: top;
+  display: table-cell;
+  width: 50%;
 }
 
 .sc-post-block__image, .sc-post-block__content {
@@ -4806,11 +4833,11 @@ theme.
 }
 
 .sc-post-block__image {
-  width: 35%;
+  width: 50%;
 }
 
 .sc-post-block__content {
-  width: 65%;
+  width: 50%;
 }
 
 .sc-post-block__image {
@@ -4861,6 +4888,7 @@ theme.
 .sc-post-block__content__info {
   margin-bottom: 15px;
   font-size: 14px;
+  text-align: left;
   color: #cdd2d5;
 }
 
@@ -4892,6 +4920,7 @@ theme.
 .sc-post-block__main .sc-post-block__content__des {
   -webkit-line-clamp: 5;
 }
+
 
 .sc-post-block--list .sc-post-block__image, .sc-post-block--list .sc-post-block__content {
   width: 100%;
@@ -4938,6 +4967,7 @@ theme.
   }
   .sc-post-block__content__info {
     margin-bottom: 10px;
+    text-align: left;
   }
   .sc-post-block__main .sc-post-block__image, .sc-post-block__main .sc-post-block__content {
     width: 100%;
@@ -5925,4 +5955,10 @@ theme.
   .sc-product-layout-1 .block-image {
     width: 100%;
   }
+}
+
+.read-more {
+  color: #82c341;
+  text-transform: uppercase;
+  margin-top: 15px;
 }

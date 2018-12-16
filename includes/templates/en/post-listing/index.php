@@ -50,7 +50,7 @@ $next_posts = get_posts([
                                 <span class="separate">|</span>
                                 <span><?= $cat ?></span></div>
                             <div class="sc-post-block__content__des">
-                                <?= $post->post_excerpt ?>...
+                                <?= $post->post_excerpt ?>
                             </div>
                         </div>
                     </div>

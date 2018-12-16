@@ -134,3 +134,9 @@ $(document).ready(function() {
 // google.maps.event.addDomListener(window, 'load', initMap);
 
 // google.maps.event.addDomListener(window, 'load', initMap);
+
+$(document).ready(function(){
+    $('.block-item .read-more').on('click', function(){
+        $(this).parent('.block-content').find('.description').toggleClass('show');
+    })
+})

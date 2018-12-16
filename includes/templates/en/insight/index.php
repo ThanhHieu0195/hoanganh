@@ -94,7 +94,7 @@ foreach ($cats as $idx => $cat) {
                                 <span><?= $cat ?></span>
                             </div>
                             <div class="sc-post-block__content__des">
-                                <?= $items[0]->post_excerpt ?>...
+                                <?= $items[0]->post_excerpt ?>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ foreach ($cats as $idx => $cat) {
                                         <span><?= $cat ?></span>
                                     </div>
                                     <div class="sc-post-block__content__des">
-                                        <?= $item->post_excerpt ?>...
+                                        <?= $item->post_excerpt ?>
                                     </div>
                                 </div>
                             </div>

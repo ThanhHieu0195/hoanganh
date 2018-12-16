@@ -22,6 +22,7 @@ $permalink = get_permalink($post_id);
                 <div class="description">
                     <?= $description ?>
                 </div>
+                <div class="read-more">Read More </div>
             </div>
         </div>
     </div>
