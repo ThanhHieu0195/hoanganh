@@ -137,7 +137,9 @@ $(document).ready(function() {
 
 $(document).ready(function(){
     $('.block-item .read-more').on('click', function(){
+        if($('.block-item .description').hasClass('show')) {
+            $(this).removeClass('show')
+        }
         $(this).parent('.block-content').find('.description').addClass('show');
-        $(this).click();
     })
 })
