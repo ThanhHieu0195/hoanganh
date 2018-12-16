@@ -4872,6 +4872,7 @@ theme.
 .sc-post-block__content__info {
   margin-bottom: 15px;
   font-size: 14px;
+  text-align: left;
   color: #cdd2d5;
 }
 
