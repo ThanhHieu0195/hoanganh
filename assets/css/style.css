@@ -4804,7 +4804,7 @@ theme.
 }
 
 .sc-post-block {
-  display: table;
+  display: block;
   overflow: hidden;
   -webkit-border-radius: 10px;
           border-radius: 10px;
@@ -4813,15 +4813,15 @@ theme.
 
 .sc-post-block__image, .sc-post-block__content {
   vertical-align: top;
-  display: table-cell;
+  display: block;
 }
 
 .sc-post-block__image {
-  width: 35%;
+  width: 100%;
 }
 
 .sc-post-block__content {
-  width: 65%;
+  width: 100%;
 }
 
 .sc-post-block__image {
@@ -4904,6 +4904,7 @@ theme.
   -webkit-line-clamp: 5;
 }
 
+
 .sc-post-block--list .sc-post-block__image, .sc-post-block--list .sc-post-block__content {
   width: 100%;
   display: block;
@@ -4949,6 +4950,7 @@ theme.
   }
   .sc-post-block__content__info {
     margin-bottom: 10px;
+    text-align: left;
   }
   .sc-post-block__main .sc-post-block__image, .sc-post-block__main .sc-post-block__content {
     width: 100%;
