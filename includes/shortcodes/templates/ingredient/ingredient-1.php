@@ -10,6 +10,6 @@ extract($params);
         <div class="description">
             <?= $description ?>
         </div>
-        <div class="read-more"><?= translate_i18n('Xem Thêm') ?></div>
+        <!-- <div class="read-more"><?= translate_i18n('Xem Thêm') ?></div> -->
     </div>
 </div>
