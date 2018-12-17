@@ -5,7 +5,7 @@ $items = get_posts(['post_type' => 'videos  ', 'numberposts' => 6]);
     <div class="block-section-lg">
         <div class="sc-main-title"><?= translate_i18n('video') ?></div>
         <div class="sc-video">
-            <div class="row">
+            <div class="row js-wrap-videos">
                 <?php
                 if (!empty($items)):
                 foreach ($items as $video):
@@ -27,6 +27,9 @@ $items = get_posts(['post_type' => 'videos  ', 'numberposts' => 6]);
                 <?php
                 endforeach;
                 endif;?>
+            </div>
+            <div class="sc-button">
+                <a href="javascript:void(0)" class="js-btn-get-video main-color">See More</a>
             </div>
         </div>
     </div>

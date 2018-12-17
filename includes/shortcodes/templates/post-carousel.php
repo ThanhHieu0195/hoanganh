@@ -11,7 +11,7 @@ if ($params['type'] == 'company_news') {
        )
     ));
 
-} else if($type == 'insight') {
+} else if($params['type'] == 'insight') {
     $posts = get_posts(array(
         'numberposts' => $params['number'],
           'meta_query' => array(

@@ -56,87 +56,27 @@ $(document).ready(function() {
 		fixedContentPos: false
 	});
 });
-// var map;
-// function loadMarkers() {
-//   console.log('creating markers')
-//   map.data.forEach(function(feature) {
-    
-//     // geojson format is [longitude, latitude] but google maps marker position attribute
-//     // expects [latitude, longitude]
-//     var latitude = feature.getGeometry().get().lat()
-//     var longitude = feature.getGeometry().get().lng()
-//     var titleText = feature.getProperty('title')
 
-//     var marker = new google.maps.Marker({
-//       position: {lat: latitude, lng:longitude},
-//       title: titleText,
-//       map: map
-//      });
-//   });
-// }
-function myMap() {
-  let lat = parseFloat($('#googleMap').data('lat'));
-  let lng = parseFloat($('#googleMap').data('lng'));
-    var mapProp= {
-        center:new google.maps.LatLng(lat,lng),
-        zoom:15,
-    };
-    // geojson_url = 'https://raw.githubusercontent.com/gizm00/blog_code/master/appendto/python_maps/collection.geojson';
-    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    // map.data.loadGeoJson(geojson_url, null, loadMarkers) 
-}
-
-$(document).ready(function() {
-  myMap();
-});
-
-
-// var map;
-// var markers = []
-
-// // after the geojson is loaded, iterate through the map data to create markers
-// // and add the pop up (info) windows
-// function loadMarkers() {
-//   console.log('creating markers')
-//   map.data.forEach(function(feature) {
-    
-//     // geojson format is [longitude, latitude] but google maps marker position attribute
-//     // expects [latitude, longitude]
-//     var latitude = feature.getGeometry().get().lat()
-//     var longitude = feature.getGeometry().get().lng()
-//     var titleText = feature.getProperty('title')
-//     var descriptionText = feature.getProperty('description')
-
-//     var marker = new google.maps.Marker({
-//       position: {lat: latitude, lng:longitude},
-//       title: titleText,
-//       map: map
-//      });
-//   });
-// }
-
-// function initMap() {
-//     map_options = {
-//       zoom: 10,
-//       mapTypeId: google.maps.MapTypeId.HYBRID,
-//       center: {lat: 42.9446, lng: -122.1090}
-//     }
-    
-//     map_document = document.getElementById('map')
-//     map = new google.maps.Map(map_document,map_options);
-//     geojson_url = 'https://raw.githubusercontent.com/gizm00/blog_code/master/appendto/python_maps/collection.geojson'
-
-//     console.log('loading geojson')
-//     map.data.loadGeoJson(geojson_url, null, loadMarkers) 
- 
-// }
-
-// google.maps.event.addDomListener(window, 'load', initMap);
-
-// google.maps.event.addDomListener(window, 'load', initMap);
 
 $(document).ready(function(){
     $('.block-item .read-more').on('click', function(){
         $(this).parent('.block-content').find('.description').toggleClass('show');
-    })
+    });
+    
+    
+    // video wrap about
+    if ($('.js-btn-get-video').length > 0) {
+
+        let offset_video = 0;
+        $('.js-btn-get-video').on('click', function() {
+            offset_video += 6;
+            $.get(ajaxurl + '?action=front&method=get-video&offset=' + offset_video, function(res) {
+                let json = $.parseJSON(res);
+                $('.js-wrap-videos').append(json.html);
+                if (!json.next) {
+                    $('.js-btn-get-video').hide();
+                }
+            });
+        });
+    }
 })

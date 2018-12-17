@@ -6,6 +6,10 @@ $video_fields = [
         'name' => 'url',
         'label' => 'File'
     ]),
+     ACFCS::getImage([
+        'name' => 'ig-small',
+        'label' => 'Thumbnail Small'
+    ]),
 ];
 
 acf_add_local_field_group(array (
