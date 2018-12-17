@@ -199,10 +199,13 @@ class Helper implements HelperInterface {
                                 <a class="breadcrumb__link" href="'.home_url('ingredient').'">'.translate_i18n('nguyên liệu thực phẩm').'</a>
                                 </li>';
                         }
-
+                        $title = get_the_title();
+                        if (get_post_type( get_the_ID() ) == 'post') {
+                            $title = 'detail';
+                        }
                         echo '<i class="fas fa-angle-right"></i>';
                         echo '<li class="breadcrumb__item active">
-                                <a class="breadcrumb__link active" href="#">'.get_the_title().'</a>
+                                <a class="breadcrumb__link active" href="#">'.$title.'</a>
                                 </li>';
                     }
                 } elseif (is_page()) {

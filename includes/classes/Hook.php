@@ -110,6 +110,40 @@ class Hook implements HookInterface{
     }
 
     public function excuteAjax() {
+         if (isset($_GET['method'])) {
+            if ($_GET['method'] == 'get-video') {
+                $offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
+                $items = get_posts(['post_type' => 'videos  ', 'numberposts' => 6, 'offset' => $offset]);
+                $is_next = false;
+                if (count($items) == 6) {
+                    $is_next = 1;
+                }
+                $html = '';
+                if (!empty($items)){
+                    foreach ($items as $video){
+                        $url = get_field('url', $video->ID, '');
+                        $html .= '<div class="col-md-4">
+                    <div class="sc-video__item">
+                        <a class="sc-video__item__image popup-youtube" href="'.esc_url($url).'">
+                            <img src="'.get_the_post_thumbnail_url($video->ID).'" alt="">
+                            <div class="sc-video__item__button-play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </a>
+                        <div class="sc-video__item__content">
+                            ' . $video->post_title .'
+                        </div>
+                    </div>
+                </div>';
+                    }
+                }
+                
+                 echo json_encode([
+                     'next' => $is_next,
+                     'html' => $html
+                     ]);
+            }
+        }
         if ( isset($_POST['method']) ) {
             switch ($_POST['method']) {
                 case 'filterEvent':
