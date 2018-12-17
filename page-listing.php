@@ -31,7 +31,7 @@ if (!empty($techs)):
                                         <div class="description">
                                             <?= $content ?>
                                         </div>
-                                        <div class="read-more">Read More </div>
+                                        <div class="read-more"><?= translate_i18n('Xem Thêm') ?></div>
                                     </div>
                                 </div>
                             </div>
