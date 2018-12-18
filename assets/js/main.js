@@ -63,6 +63,19 @@ $(document).ready(function(){
         $(this).parent('.block-content').find('.description').toggleClass('show');
     });
     
+    $('.js-btn-send-email').on('click', function() {
+        let email = $('.wrap-form-email input').val();
+        $.post(ajaxurl, {action: 'front', method: 'send-mail', email: email}, function(res){
+            let json = $.parseJSON(res);
+            if (json.status) {
+                if (language.params.current == 'vi') {
+                    alert('Email của bạn đã được gửi đến hệ thống');
+                } else {
+                    alert('Your email saved!');
+                }
+            }
+        });
+    });
     
     // video wrap about
     if ($('.js-btn-get-video').length > 0) {
