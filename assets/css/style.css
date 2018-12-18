@@ -4603,6 +4603,9 @@ theme.
   .sc-carousel-layout-2 .block-title {
     max-width: 125px;
   }
+  .sc-carousel-layout-2 .block-title h4 {
+    font-size: 30px;
+  }
 }
 
 .sc-carousel-layout-2 .carousel-slide-for {
