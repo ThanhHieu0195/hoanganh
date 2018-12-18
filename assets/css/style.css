@@ -4638,11 +4638,6 @@ theme.
     flex-direction: column-reverse;
   }
 
-  .sc-team-block.layout-3 .sc-team-block__block-content {
-    padding-bottom: 0;
-  }
-
-
   .sc-team-block.layout-3 .block-item {
     padding-bottom: 80px;
   }
@@ -5712,6 +5707,9 @@ theme.
   .sc-team-block.layout-3 .block-item {
     display: block;
     position: relative;
+  }
+  .sc-team-block.layout-3 .sc-team-block__block-content {
+    padding-bottom: 0;
   }
 }
 
