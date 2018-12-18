@@ -4366,6 +4366,7 @@ theme.
 .sc-carousel-layout-2 .block-item .description {
   height: auto;
   overflow: initial;
+  display: block;
   -webkit-line-clamp: initial;
 }
 
