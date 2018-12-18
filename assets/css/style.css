@@ -430,7 +430,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .sc-team-block {
-    padding: 58px 0 60px;
+    padding: 30px 0 60px;
   }
 }
 
@@ -4366,6 +4366,7 @@ theme.
 .sc-carousel-layout-2 .block-item .description {
   height: auto;
   overflow: initial;
+  display: block;
   -webkit-line-clamp: initial;
 }
 
@@ -4603,6 +4604,9 @@ theme.
   .sc-carousel-layout-2 .block-title {
     max-width: 125px;
   }
+  .sc-carousel-layout-2 .block-title h4 {
+    font-size: 23px;
+  }
 }
 
 .sc-carousel-layout-2 .carousel-slide-for {
@@ -4628,6 +4632,14 @@ theme.
   .sc-carousel-layout-2 .carousel-slide-for .carousel-slide-for__item a {
     text-align: center;
     padding: 10px;
+  }
+  .sc-team-block.layout-3 .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sc-team-block.layout-3 .block-item {
+    padding-bottom: 80px;
   }
 }
 
@@ -5696,6 +5708,9 @@ theme.
     display: block;
     position: relative;
   }
+  .sc-team-block.layout-3 .sc-team-block__block-content {
+    padding-bottom: 40px;
+  }
 }
 
 .sc-team-block.layout-3 .block-item .block-content {
@@ -5928,6 +5943,7 @@ theme.
     height: unset;
     -webkit-line-clamp: unset;
     -webkit-box-orient: unset;
+    display: block;
     }
   .read-more {
     display: none;
