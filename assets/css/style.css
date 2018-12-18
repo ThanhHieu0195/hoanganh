@@ -5928,6 +5928,7 @@ theme.
     height: unset;
     -webkit-line-clamp: unset;
     -webkit-box-orient: unset;
+    display: block;
     }
   .read-more {
     display: none;
