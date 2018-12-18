@@ -5709,7 +5709,7 @@ theme.
     position: relative;
   }
   .sc-team-block.layout-3 .sc-team-block__block-content {
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 }
 
