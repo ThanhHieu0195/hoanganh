@@ -4632,6 +4632,19 @@ theme.
     text-align: center;
     padding: 10px;
   }
+  .sc-team-block.layout-3 .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sc-team-block.layout-3 .sc-team-block__block-content {
+    padding-bottom: 0;
+  }
+
+
+  .sc-team-block.layout-3 .block-item {
+    padding-bottom: 80px;
+  }
 }
 
 .sc-carousel-layout-2 .nav-tabs::-webkit-scrollbar {
