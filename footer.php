@@ -38,9 +38,9 @@ if (!empty($img_field)){
                 <?= get_field('footer-text-banner', 'option', '') ?>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-              <div class="form">
+              <div class="form wrap-form-email">
                 <input class="input" type="text" placeholder="<?= translate_i18n('Nhập email của bạn') ?>">
-                <button type="button"><?= translate_i18n('Gửi ĐI') ?></button>
+                <button type="button" class="js-btn-send-mail"><?= translate_i18n('Gửi ĐI') ?></button>
               </div>
             </div>
           </div>

@@ -224,6 +224,14 @@ class Hook implements HookInterface{
                     $results['error'] = $error;
 
                     echo json_encode($results);
+                    break;
+                    case 'send-mail':
+                    $email = $_POST['email'];
+                    $res = wp_mail('hoanganhflavors.foodingredients@gmail.com', 'Email notify', $email);
+                    echo json_encode([
+                        'status' => $res
+                    ]);
+                    break;
             }
         }
         exit(200);
