@@ -5999,6 +5999,12 @@ theme.
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .footer-main .socials {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .sc-product-layout-1 .block-image {
     width: 100%;
