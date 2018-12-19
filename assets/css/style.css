@@ -3269,6 +3269,12 @@ theme.
   }
 }
 
+.footer-main ul.list-video {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
 .footer-main ul.list-video li {
   width: -webkit-calc(33.333% - 10px);
   width: calc(33.333% - 10px);
